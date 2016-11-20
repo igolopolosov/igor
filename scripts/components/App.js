@@ -7,8 +7,8 @@ const links = [
     title: 'Home'
   },
   {
-    to: 'random-book-line',
-    title: 'Random line of Book'
+    to: 'prediction-book',
+    title: 'Prediction Book'
   }
 ];
 

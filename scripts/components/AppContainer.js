@@ -3,7 +3,7 @@ import { Router, IndexRoute, Route, hashHistory } from 'react-router';
 
 import { App } from './App';
 import { Home } from './Home';
-import { RandomBookLine } from './RandomBookLine';
+import { PredictionBook } from './PredictionBook';
 import { NoMatch } from './NoMatch';
 
 export class AppContainer extends React.Component {
@@ -12,7 +12,7 @@ export class AppContainer extends React.Component {
       <Router history={hashHistory}>
         <Route path="/" component={App}>
           <IndexRoute component={Home}/>
-          <Route path="/random-book-line" component={RandomBookLine}/>
+          <Route path="/prediction-book" component={PredictionBook}/>
           <Route path="*" component={NoMatch}/>
         </Route>
       </Router>
