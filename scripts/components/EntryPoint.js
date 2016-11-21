@@ -6,7 +6,7 @@ import { Home } from './Home';
 import { PredictionBook } from './PredictionBook';
 import { NoMatch } from './NoMatch';
 
-export class AppContainer extends React.Component {
+export class EntryPoint extends React.Component {
   render() {
     return (
       <Router history={hashHistory}>

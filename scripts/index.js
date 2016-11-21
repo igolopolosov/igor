@@ -1,8 +1,10 @@
 import React from 'react';
 import {render} from 'react-dom';
-import { AppContainer } from './components/AppContainer';
+import { EntryPoint } from './components/EntryPoint';
+
+import '../styles/index.styl';
 
 render(
-  <AppContainer />,
-  document.getElementById('root')
+  <EntryPoint />,
+  document.getElementById('entry-point')
 );

@@ -1,9 +1,9 @@
 {
   "main": "index.js",
-  "license":"MIT",
-  "repository" : {
-      "type" : "git",
-      "url" : "https://github.com/usehotkey/my-personal-page"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usehotkey/my-personal-page"
   },
   "scripts": {
     "start": "node server.js",
@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "babel-runtime": "^6.3.19",
-    "react": "^0.14.5",
-    "react-dom": "^0.14.5",
+    "react": "^15.4",
+    "react-dom": "^15.4",
     "react-router": "^3.0.0"
   },
   "devDependencies": {
@@ -26,9 +26,13 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "cross-env": "^3.1.1",
+    "css-loader": "^0.26.0",
     "eslint": "^0.21.2",
     "eslint-plugin-react": "^2.3.0",
     "react-transform-hmr": "^1.0.1",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.3.1",
     "webpack": "^1.8.4",
     "webpack-dev-server": "^1.8.0"
   }

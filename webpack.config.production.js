@@ -10,7 +10,7 @@ module.exports = {
     publicPath: '/'
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js', '.styl']
   },
   devtool: 'source-map',
   plugins: [
@@ -22,17 +22,15 @@ module.exports = {
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
-        warnings: false
+        warnings: true,
+        drop_console: true
       }
     })
   ],
   module: {
     loaders: [
-      {
-        test: /\.jsx?$/,
-        loaders: ['babel'],
-        include: path.join(__dirname, 'scripts')
-      }
+      { test: /\.jsx?$/, loaders: ['babel'], include: path.join(__dirname, 'scripts') },
+      { test: /\.styl$/, loader: 'style!css!stylus?resolve url' }
     ]
   }
 };

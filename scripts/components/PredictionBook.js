@@ -17,7 +17,7 @@ export class PredictionBook extends React.Component {
     if (e && e.target && e.target.name) {
       let o = {};
       o[e.target.name] = e.target.value;
-      console.log(o)
+      console.log(o);
       this.setState(o);
     }
 
@@ -41,7 +41,6 @@ export class PredictionBook extends React.Component {
         `;
     }
 
-
     this.setState({ answer: answer });
   }
 
@@ -49,7 +48,7 @@ export class PredictionBook extends React.Component {
 
     return (
       <div>
-        <h1>Prediction by Book</h1>
+        <h1>Prediction Book</h1>
 
         <p>
           Choose some book and enter next information.
@@ -67,7 +66,7 @@ export class PredictionBook extends React.Component {
         </p>
 
         <p>
-          <button onClick={this.generateRandomLine.bind(this)}>Make Magic!</button>
+          <button className='btn-primary' onClick={this.generateRandomLine.bind(this)}>Make Magic!</button>
         </p>
 
         <p>

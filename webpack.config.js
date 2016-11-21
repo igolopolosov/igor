@@ -23,11 +23,8 @@ module.exports = {
   ],
   module: {
     loaders: [
-      {
-        test: /\.jsx?$/,
-        loaders: ['babel'],
-        include: path.join(__dirname, 'scripts')
-      }
+      { test: /\.jsx?$/, loaders: ['babel'], include: path.join(__dirname, 'scripts') },
+      { test: /\.styl$/, loader: 'style!css!stylus?resolve url' }
     ]
   }
 };
