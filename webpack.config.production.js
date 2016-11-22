@@ -1,12 +1,13 @@
 /* eslint-disable no-var */
 var webpack = require('webpack');
 var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './scripts/index',
   output: {
-    path: path.join(__dirname, '../usehotkey.github.io/static'),
-    filename: 'bundle.js',
+    path: path.join(__dirname, '../usehotkey.github.io'),
+    filename: 'bundle.[hash].js',
     publicPath: '/'
   },
   resolve: {
@@ -25,6 +26,10 @@ module.exports = {
         warnings: true,
         drop_console: true
       }
+    }),
+    new HtmlWebpackPlugin({
+      template: 'index.ejs',
+      inject: 'body'
     })
   ],
   module: {

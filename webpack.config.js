@@ -1,6 +1,7 @@
 /* eslint-disable no-var */
 var webpack = require('webpack');
 var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -10,8 +11,8 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    filename: 'bundle.js',
-    publicPath: '/static/'
+    filename: 'bundle.[hash].js',
+    publicPath: '/'
   },
   resolve: {
     extensions: ['', '.js']
@@ -19,7 +20,11 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'index.ejs',
+      inject: 'body'
+    })
   ],
   module: {
     loaders: [
