@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import { Navigation } from './Navigation'
+import { CurrentTime } from './CurrentTime'
 
 const projectLinks = [
   {
@@ -48,7 +49,8 @@ export class App extends React.Component {
                 <small>
                   Igor Golopolosov, 2016. igolopolosov@gmail.com
                 </small>
-              </div>
+              </div>              
+              <CurrentTime/>
           </div>
       </div>
     )
