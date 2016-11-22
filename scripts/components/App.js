@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router';
-import { Navigation } from './Navigation';
+import React from 'react'
+import { Link } from 'react-router'
+import { Navigation } from './Navigation'
 
 const projectLinks = [
   {
@@ -8,10 +8,14 @@ const projectLinks = [
     title: 'Home'
   },
   {
+    to: 'blog',
+    title: 'Blog'
+  },
+  {
     to: 'prediction-book',
     title: 'Prediction Book'
   }
-];
+]
 
 const socialLinks = [
   {
@@ -22,7 +26,7 @@ const socialLinks = [
     to: 'https://github.com/usehotkey',
     title: 'GitHub'
   }
-];
+]
 
 export class App extends React.Component {
 
@@ -47,7 +51,7 @@ export class App extends React.Component {
               </div>
           </div>
       </div>
-    );
+    )
   }
 
 }

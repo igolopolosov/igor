@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export class Home extends React.Component {
 
@@ -10,7 +10,7 @@ export class Home extends React.Component {
           {`My name is Igor and it's my laboratory`}
         </p>
       </div>
-    );
+    )
   }
 
 }

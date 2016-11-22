@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 export class NoMatch extends React.Component {
   render() {
-    return null;
+    return null
   }
 }
