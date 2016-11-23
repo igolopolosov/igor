@@ -1,5 +1,6 @@
 import React from 'react'
 import moment from 'moment'
+import { Pager } from './Pager'
 
 const YANDEX_API_LINK = 'https://cloud-api.yandex.net:443/v1/disk/public/resources/download'
 const PUBLIC_KEY = 'https%3A%2F%2Fyadi.sk%2Fd%2FS16MSRKVz4uRV'
@@ -11,7 +12,9 @@ export class Blog extends React.Component {
     super(props);
 
     this.state = {
-      posts: []
+      posts: [],
+      limit: 2,
+      page: parseInt(this.props.location.query && this.props.location.query.page, 10)
     }
 
     let json = r => r.json()
@@ -38,18 +41,33 @@ export class Blog extends React.Component {
     }
   }
 
+  setPage(page) {
+    this.setState({ page: page })
+  }
+
   render() {
+
+    const { limit, page, posts } = this.state,
+      visiblePosts = (post, i) => i >= (page - 1) * limit && i < page * limit,
+      pages = [...Array(Math.ceil(posts.length / limit))].map((v,i)=>i + 1)
+
     return (
-      <div>
+      <div className='blog'>
         {
-          (this.state.posts || []).map(post =>
-            <div key={post.id}> 
-              <h2>{post.title}</h2>
-              <h3>{moment.unix(post.time).format('LL')}</h3>
-              <p>{post.text}</p>       
+          (posts.filter(visiblePosts) || []).map(post =>
+            <div key={post.id} className='blog-post'> 
+              <h2 className='blog-post__title'>{post.title}</h2>
+              <h3 className='blog-post__info'>
+                <span className='blog-post__tag'>{post.tag}</span>
+                <span className='blog-post__date'>{moment.unix(post.time).format('LL')}</span>                
+              </h3>              
+              <p className='blog-post__text'>{post.text}</p>       
             </div>
           )
         }
+        <Pager pages={pages}
+               current={page}
+               onChange={this.setPage.bind(this)}/>
       </div>
     )
   }
