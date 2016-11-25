@@ -15,6 +15,10 @@ const projectLinks = [
   {
     to: 'prediction-book',
     title: 'Prediction Book'
+  },
+  {
+    to: 'days-from-june-13',
+    title: 'Days from June 13'
   }
 ]
 
