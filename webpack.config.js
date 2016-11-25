@@ -15,7 +15,7 @@ module.exports = {
     publicPath: '/'
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js', '.styl']
   },
   devtool: 'source-map',
   plugins: [

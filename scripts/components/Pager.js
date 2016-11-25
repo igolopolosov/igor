@@ -2,8 +2,7 @@ import React from 'react'
 import { withRouter } from 'react-router'
 
 
-@withRouter
-export class Pager extends React.Component {
+export class PagerContainer extends React.Component {
 
   static propTypes = {
     pages: React.PropTypes.arrayOf(React.PropTypes.number),
@@ -41,3 +40,5 @@ export class Pager extends React.Component {
   }
 
 }
+
+export const Pager = withRouter(PagerContainer)

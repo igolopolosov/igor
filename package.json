@@ -6,8 +6,8 @@
     "url": "https://github.com/usehotkey/my-personal-page"
   },
   "scripts": {
-    "start": "node server.js",
-    "build": "./node_modules/.bin/cross-env BABEL_ENV=production ./node_modules/.bin/webpack --config webpack.config.production.js",
+    "dev": "node server.js",
+    "build": "./node_modules/.bin/cross-env BABEL_ENV=production ./node_modules/.bin/webpack --progress --config webpack.config.production.js",
     "lint": "./node_modules/.bin/eslint ."
   },
   "dependencies": {

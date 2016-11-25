@@ -14,7 +14,7 @@ export class Blog extends React.Component {
     this.state = {
       posts: [],
       limit: 2,
-      page: parseInt(this.props.location.query && this.props.location.query.page, 10)
+      page: parseInt(this.props.location.query && this.props.location.query.page, 10) || 1
     }
 
     let json = r => r.json()
