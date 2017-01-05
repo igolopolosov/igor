@@ -5,12 +5,16 @@ export class DaysFromJune13 extends React.Component {
 
   constructor(props) {
     super(props)
-    
-    let cy = moment().get('year'),
-      june13 = moment('1994-06-13').set('year', moment().isBefore(cy) ? cy - 1 : cy)
+
+    const JUNE_13_DAY = 164    
+    let cm = moment(),
+        cy = cm.year(),
+        june13 = moment('1994-06-13').year(
+          cm.dayOfYear() >= JUNE_13_DAY ? cy : cy - 1
+        )
     
     this.state = {
-      difference: moment().diff(june13, 'days')
+      difference: cm.diff(june13, 'days')
     }
 
     console.log(this.state, june13)
