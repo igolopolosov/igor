@@ -1,7 +1,8 @@
 {
   "ecmaFeatures": {
     "jsx": true,
-    "modules": true
+    "modules": true,
+    "experimentalDecorators": true
   },
   "env": {
     "browser": true,
@@ -11,6 +12,7 @@
   "parser": "babel-eslint",
   "rules": {
     "eol-last": 2,
+    "indent": [0, 3],
     "max-len": [1, 120, 4],
     "no-underscore-dangle": [0],
     "no-var": 2,
@@ -29,12 +31,13 @@
     "react/react-in-jsx-scope": 2,
     "react/self-closing-comp": 2,
     "react/wrap-multilines": 2,
-    "quotes": [2, "single"],
+    "semi": 0,
     "space-before-function-paren": [2, {
       "anonymous": "always",
       "named": "never"
-    }],
-    "strict": [2, "global"]
+    }],    
+    "strict": [2, "global"],
+    "quotes": [2, "single"]
   },
   "plugins": [
     "react"

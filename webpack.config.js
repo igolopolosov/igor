@@ -1,35 +1,44 @@
-/* eslint-disable no-var */
-var webpack = require('webpack');
-var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack'),
+	path = require('path'),
+	HtmlWebpackPlugin = require('html-webpack-plugin'),
+	ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
-  entry: [
-    'webpack-dev-server/client?http://localhost:1488',
-    'webpack/hot/dev-server',
-    './scripts/index'
-  ],
-  output: {
-    path: __dirname,
-    filename: 'bundle.[hash].js',
-    publicPath: '/'
-  },
-  resolve: {
-    extensions: ['', '.js', '.styl']
-  },
-  devtool: 'source-map',
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
-    new HtmlWebpackPlugin({
-      template: 'index.ejs',
-      inject: 'body'
-    })
-  ],
-  module: {
-    loaders: [
-      { test: /\.jsx?$/, loaders: ['babel'], include: path.join(__dirname, 'scripts') },
-      { test: /\.styl$/, loader: 'style!css!stylus?resolve url' }
-    ]
-  }
-};
+	entry: './scripts/index',
+	output: {
+		path: path.join(__dirname, 'dist'),
+		filename: 'bundle.[hash].js',
+		publicPath: '/'
+	},
+	resolve: {
+		extensions: ['*', '.js', '.styl']
+	},
+	devtool: 'source-map',
+	devServer: {
+		contentBase: '/',
+		port: 1488,
+		historyApiFallback: true,
+		hot: true,
+		inline: true
+	},
+	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
+		new webpack.NoEmitOnErrorsPlugin(),
+		new webpack.DefinePlugin({
+			'process.env': {
+				'NODE_ENV': JSON.stringify('development')
+			}
+		}),
+		new ExtractTextPlugin('style.[hash].css'),
+		new HtmlWebpackPlugin({
+			template: 'index.ejs',
+			inject: 'body'
+		})
+	],
+	module: {
+		loaders: [
+			{ test: /\.jsx?$/, loader: 'babel-loader', include: path.join(__dirname, 'scripts') },
+			{ test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader?resolve url' }
+		]
+	}
+}

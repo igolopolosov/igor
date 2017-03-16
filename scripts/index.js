@@ -1,10 +1,10 @@
-import React from 'react';
-import {render} from 'react-dom';
-import { EntryPoint } from './components/EntryPoint';
+import React from 'react'
+import { render } from 'react-dom'
+import { EntryPoint } from './components/EntryPoint'
 
-import '../styles/index.styl';
+import '../styles/index.styl'
 
 render(
-  <EntryPoint />,
-  document.getElementById('entry-point')
-);
+	<EntryPoint />,
+	document.getElementById('entry-point')
+)

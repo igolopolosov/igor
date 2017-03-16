@@ -2,42 +2,48 @@ import React from 'react'
 import { withRouter } from 'react-router'
 
 
-export class PagerContainer extends React.Component {
+class PagerContainer extends React.Component {
 
-  static propTypes = {
-    pages: React.PropTypes.arrayOf(React.PropTypes.number),
-    current: React.PropTypes.number,
-    onChange: React.PropTypes.func
-  }
+	static propTypes = {
+		pages: React.PropTypes.arrayOf(React.PropTypes.number),
+		current: React.PropTypes.number,
+		onChange: React.PropTypes.func,
+		router: React.PropTypes.any,
+		location: React.PropTypes.any
+	}
 
-  constructor(props) {
-    super(props)
-  }
+	constructor(props) {
+		super(props)
+	}
 
-  onChange(page) {
-    this.props.router.push({
-        ...this.props.location,
-        query: {page: page}
-    })
+	/**
+	 * Handler for page changing
+	 * @param {number} page
+	 */
+	onPageChange(page) {
+		this.props.router.push({
+			...this.props.location,
+			query: { page: page }
+		})
 
-    this.props.onChange && this.props.onChange(page)
-  }
+		if (this.props.onChange) {
+			this.props.onChange(page)
+		}
+	}
 
-  render() {
-    return (
-      <div className='pager'>
-        {
-          (this.props.pages || []).map(page => 
-            <a key={page}
-               onClick={this.onChange.bind(this, page)}
-               className={`pager__item ${this.props.current === page && 'pager__item--active'}`}>
-               {page}
-            </a>
-          )
-        }
-      </div>
-    )
-  }
+	render() {
+		return (
+			<div className='pager'>
+				{(this.props.pages || []).map(page =>
+					<a key={page}
+						onClick={this.onPageChange.bind(this, page)}
+						className={`pager__item ${this.props.current === page && 'pager__item--active'}`}>
+						{page}
+					</a>
+				)}
+			</div>
+		)
+	}
 
 }
 
