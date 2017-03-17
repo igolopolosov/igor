@@ -4,7 +4,10 @@ const webpack = require('webpack'),
 	ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
-	entry: './scripts/index',
+	entry: [
+      'babel-polyfill',
+      './scripts/index'
+   ],
 	output: {
 		path: path.join(__dirname, '../usehotkey.github.io'),
 		filename: 'bundle.[hash].js',

@@ -22,7 +22,7 @@ export class Navigation extends React.Component {
 							{link.title}
 						</a>
 					:	<Link className='navigation__link'
-							onlyActiveOnIndex={true}
+							onlyActiveOnIndex
 							activeClassName='navigation__link--active'
 							key={link.to} to={link.to}>
 							{link.title}

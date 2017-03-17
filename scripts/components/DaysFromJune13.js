@@ -16,8 +16,6 @@ export class DaysFromJune13 extends React.Component {
 		this.state = {
 			difference: cm.diff(june13, 'days')
 		}
-
-		console.log(this.state, june13)
 	}
 
 	render() {

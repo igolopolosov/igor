@@ -4,7 +4,11 @@ const webpack = require('webpack'),
 	ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
-	entry: './scripts/index',
+	entry: [
+      'babel-polyfill',
+      'react-hot-loader/patch',
+      './scripts/index'
+   ],
 	output: {
 		path: path.join(__dirname, 'dist'),
 		filename: 'bundle.[hash].js',
@@ -13,7 +17,7 @@ module.exports = {
 	resolve: {
 		extensions: ['*', '.js', '.styl']
 	},
-	devtool: 'source-map',
+	devtool: 'eval',
 	devServer: {
 		contentBase: '/',
 		port: 1488,
@@ -37,8 +41,15 @@ module.exports = {
 	],
 	module: {
 		loaders: [
-			{ test: /\.jsx?$/, loader: 'babel-loader', include: path.join(__dirname, 'scripts') },
-			{ test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader?resolve url' }
+			{
+				test: /\.jsx?$/,
+				loader: ['react-hot-loader/webpack', 'babel-loader'],
+				include: path.join(__dirname, 'scripts')
+			},
+			{
+				test: /\.styl$/,
+				loader: 'style-loader!css-loader!stylus-loader?resolve url'
+			}
 		]
 	}
 }

@@ -13,12 +13,12 @@
   "rules": {
     "eol-last": 2,
     "indent": [0, 3],
+    "jsx-quotes": [2, "prefer-single"],
     "max-len": [1, 120, 4],
     "no-underscore-dangle": [0],
     "no-var": 2,
     "react/display-name": 0,
     "react/jsx-boolean-value": 2,
-    "react/jsx-quotes": 2,
     "react/jsx-no-undef": 2,
     "react/jsx-sort-props": 0,
     "react/jsx-uses-react": 2,
@@ -31,13 +31,12 @@
     "react/react-in-jsx-scope": 2,
     "react/self-closing-comp": 2,
     "react/wrap-multilines": 2,
-    "semi": 0,
     "space-before-function-paren": [2, {
       "anonymous": "always",
       "named": "never"
     }],    
     "strict": [2, "global"],
-    "quotes": [2, "single"]
+    "quotes": [2, "single", { "avoidEscape": true }]
   },
   "plugins": [
     "react"

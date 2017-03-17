@@ -1,18 +1,12 @@
 import React from 'react'
 
-export class Home extends React.Component {
-
-	render() {
-		return (
-			<div>
+export const Home = () => (
+	<div>
 				<h1>
-					{`Hello, world!`}
+					{'Hello, world!'}
 				</h1>
 				<p>
-					{`My name is Igor and it's my laboratory.`}
+					{"My name is Igor and it's my laboratory."}
 				</p>
 			</div>
-		)
-	}
-
-}
+)
