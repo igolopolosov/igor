@@ -13,7 +13,7 @@ export class Blog extends React.Component {
 	}
 
 	constructor(props) {
-		super(props);
+		super(props)
 
 		this.state = {
 			posts: [],
@@ -24,19 +24,16 @@ export class Blog extends React.Component {
 		const makeJSON = r => r.json()
 
 		fetch(`${YANDEX_API_LINK}?public_key=${PUBLIC_KEY}&path=${BLOG_PATH}`, { method: 'GET' })
-			.then(makeJSON)
-			.then(r => {
-				if (r.error) {
-					throw r
-				}
-				return fetch(r.href, { method: 'GET' })
-			})
-			.then(makeJSON)
-			.then(r => {
-				this.showPosts(r)
-			}).catch(e => {
-				console.warn(e.message, e)
-			});
+		.then(makeJSON)
+		.then(r => {
+			if (r.error) {
+				throw r
+			}
+			return fetch(r.href, { method: 'GET' })
+		})
+		.then(makeJSON)
+		.then(r => this.showPosts(r))
+		.catch(e => console.warn(e.message, e))
 	}
 
 	/**

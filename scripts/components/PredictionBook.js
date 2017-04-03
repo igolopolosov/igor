@@ -1,12 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
+const selectPages = (amount) => ({ type: 'SELECT_PAGES', amount })
+const selectLines = (amount) => ({ type: 'SELECT_LINES', amount })
+
 @connect(
 	(state) => ({ ...state.prediction }),
-	(dispatch) => ({
-		selectPages: (amount) => dispatch({ type: 'SELECT_PAGES', amount }),
-		selectLines: (amount) => dispatch({ type: 'SELECT_LINES', amount })
-	})
+	{
+		selectPages,
+		selectLines
+	}
 )
 export class PredictionBook extends React.Component {
 
@@ -63,11 +66,11 @@ export class PredictionBook extends React.Component {
 				<p>{`Choose some book and enter next information.`}</p>
 				<p>
 					<label>{`Number of pages in a book: `}</label>
-					<input name='pages' value={pages} onChange={(e) => selectPages(e.target.value)} type='number' />
+					<input value={pages} onChange={(e) => selectPages(e.target.value)} type='number' />
 				</p>
 				<p>
 					<label>{`Number of lines on a page: `}</label>
-					<input name='lines' value={lines} onChange={(e) => selectLines(e.target.value)}  type='number' />
+					<input value={lines} onChange={(e) => selectLines(e.target.value)}  type='number' />
 				</p>
 				<p>
 					<button className='btn-primary' onClick={this.generateRandomLine.bind(this)}>

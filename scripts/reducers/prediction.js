@@ -1,4 +1,4 @@
-export default (state = { pages: '', lines: '' }, action) => {   
+ const prediction = (state = { pages: '', lines: '' }, action) => {   
    switch(action.type) {
    case 'SELECT_PAGES':
       return { ...state, pages: action.amount }
@@ -8,3 +8,5 @@ export default (state = { pages: '', lines: '' }, action) => {
       return state
    }
 }
+
+export default prediction
