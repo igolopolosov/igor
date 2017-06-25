@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const TaptapGooglePlay = () => (
+export const TapPrivacyPolicy = () => (
 	<div className='privacy-policy'>
 		<h2>Privacy Policy</h2>
-		<p> Igor Golopolosov built the Tap, Tap! app as a Free app. This SERVICE is provided by Igor Golopolosov at no cost and is intended for use as is.
+		<p> Igor Golopolosov built the Tap, 1.000.000 times! app as a Free app. This SERVICE is provided by Igor Golopolosov at no cost and is intended for use as is.
 		</p>
 		<p>This page is used to inform website visitors regarding my policies with the collection, use, and
 			disclosure of Personal Information if anyone decided to use my Service.
@@ -23,7 +23,15 @@ export const TaptapGooglePlay = () => (
 		<div>
 			<p>Link to privacy policy of third party service providers used by the app </p>
 			<ul>
-				<li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a>
+				<li>
+					<a href="https://www.google.com/policies/privacy/" target="_blank">
+						Google Play Services
+					</a>
+				</li>
+				<li>
+					<a href="https://www.apple.com/privacy/privacy-policy/" target="_blank">
+						Apple
+					</a>
 				</li>
 			</ul>
 		</div>

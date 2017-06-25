@@ -10,7 +10,7 @@ import { Blog } from './Blog'
 import { PredictionBook } from './PredictionBook'
 import { DaysFromJune13 } from './DaysFromJune13'
 import { NoMatch } from './NoMatch'
-import {TaptapGooglePlay} from './privacyPolicy/TaptapGooglePlay'
+import {TapPrivacyPolicy} from './privacyPolicy/Tap'
 
 const store = configureStore()
 
@@ -22,7 +22,7 @@ export const App = () => (
 				<Route path='/blog' component={Blog} />
 				<Route path='/prediction-book' component={PredictionBook} />
 				<Route path='/days-from-june-13' component={DaysFromJune13} />
-				<Route path='/privacy-policy-taptap-google-play' component={TaptapGooglePlay} />
+				<Route path='/privacy-policy-tap' component={TapPrivacyPolicy} />
 				<Route path='*' component={NoMatch} />
 			</Route>
 		</Router>
