@@ -27,10 +27,14 @@ const socialLinks = [
 		to: 'https://soundcloud.com/hotkeymusic',
 		title: 'SoundCloud'
 	},
-	{
-		to: 'https://github.com/usehotkey',
-		title: 'GitHub'
-	}
+    {
+        to: 'https://github.com/usehotkey',
+        title: 'GitHub'
+    },
+    {
+        to: 'https://github.com/usehotkey/usehotkey.github.io/blob/master/ResumeGolopolosov.pdf',
+        title: 'CV'
+    }
 ]
 
 export class Main extends React.Component {
