@@ -20,13 +20,13 @@ export class Navigation extends React.PureComponent {
 					? 	<a className='navigation__link'
 							target='_blank'
 							key={link.to} href={link.to}>
-							{link.title}
+							-{link.title}-
 						</a>
 					:	<Link className='navigation__link'
 							onlyActiveOnIndex
 							activeClassName='navigation__link--active'
 							key={link.to} to={link.to}>
-							{link.title}
+							-{link.title}-
 						</Link>
 				)}
 			</div>
