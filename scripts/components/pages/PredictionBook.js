@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
 const selectPages = (amount) => ({ type: 'SELECT_PAGES', amount })
@@ -11,13 +12,13 @@ const selectLines = (amount) => ({ type: 'SELECT_LINES', amount })
 		selectLines
 	}
 )
-export class PredictionBook extends React.Component {
+export class PredictionBook extends React.PureComponent {
 
 	static propTypes = {
-		pages: React.PropTypes.string,
-		lines: React.PropTypes.string,
-		selectPages: React.PropTypes.func,
-		selectLines: React.PropTypes.func,
+		pages: PropTypes.string,
+		lines: PropTypes.string,
+		selectPages: PropTypes.func,
+		selectLines: PropTypes.func,
 	}
 
 	constructor(props) {

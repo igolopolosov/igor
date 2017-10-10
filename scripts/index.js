@@ -1,22 +1,3 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { AppContainer } from 'react-hot-loader'
+import { configureApp } from './configureHotLoader'
 
-import '../styles/index.styl'
-import { App } from './components/App'
-
-
-const render = Component => {
-  ReactDOM.render(
-    <AppContainer>
-      <Component />
-    </AppContainer>,
-    document.getElementById('entry-point')
-  )
-}
-
-render(App)
-
-if (module.hot) {
-  module.hot.accept('./components/App', () => { render(App) })
-}
+configureApp()

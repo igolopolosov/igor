@@ -30,11 +30,10 @@
     "react/prop-types": 2,
     "react/react-in-jsx-scope": 2,
     "react/self-closing-comp": 2,
-    "react/wrap-multilines": 2,
     "space-before-function-paren": [2, {
       "anonymous": "always",
       "named": "never"
-    }],    
+    }],
     "strict": [2, "global"],
     "quotes": [2, "single", { "avoidEscape": true, "allowTemplateLiterals": true }]
   },

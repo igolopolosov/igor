@@ -1,16 +1,18 @@
 import React from 'react'
 import moment from 'moment'
 
-export class CurrentTime extends React.Component {
+const SECOND = 1000
+
+export class CurrentTime extends React.PureComponent {
 
 	constructor(props) {
 		super(props)
 		this.state = {
-			time: moment() / 1000
+			time: moment() / SECOND
 		}
 		setInterval(() => {
-			this.setState({ time: moment() / 1000 })
-		}, 5 * 1000)
+			this.setState({ time: moment() / SECOND })
+		}, 5 * SECOND)
 	}
 
 	render() {

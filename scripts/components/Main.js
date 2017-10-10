@@ -1,7 +1,16 @@
-import React from 'react'
 import moment from 'moment'
-import { Navigation } from './Navigation'
-import { CurrentTime } from './CurrentTime'
+import PropTypes from 'prop-types'
+import React from 'react'
+import { Switch, Route } from 'react-router'
+
+import { CurrentTime } from './_blocks/CurrentTime'
+import { Navigation } from './_blocks/Navigation'
+import { Blog } from './pages/Blog'
+import { DaysFromJune13 } from './pages/DaysFromJune13'
+import { Home } from './pages/Home'
+import { NoMatch } from './pages/NoMatch'
+import { PredictionBook } from './pages/PredictionBook'
+import { TapPrivacyPolicy } from './pages/TapTap'
 
 const projectLinks = [
 	{
@@ -37,11 +46,11 @@ const socialLinks = [
     }
 ]
 
-export class Main extends React.Component {
+export class Main extends React.PureComponent {
 
 	static propTypes = {
-		children: React.PropTypes.node
-	}
+		children: PropTypes.node
+    }
 
 	render() {
 		return (
@@ -52,7 +61,14 @@ export class Main extends React.Component {
 				</div>
 
 				<div className='root__content'>
-					{this.props.children}
+					<Switch>
+						<Route path='/' exact component={Home} />
+						<Route path='/blog' component={Blog} />
+						<Route path='/prediction-book' component={PredictionBook} />
+						<Route path='/days-from-june-13' component={DaysFromJune13} />
+						<Route path='/privacy-policy-tap' component={TapPrivacyPolicy} />
+						<Route path='*' component={NoMatch} />
+					</Switch>
 				</div>
 
 				<div className='root__footer'>

@@ -1,15 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router'
+import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
-export class Navigation extends React.Component {
+export class Navigation extends React.PureComponent {
 
 	static propTypes = {
-		links: React.PropTypes.arrayOf(React.PropTypes.shape({
-			to: React.PropTypes.string,
-			title: React.PropTypes.string
+		links: PropTypes.arrayOf(PropTypes.shape({
+			to: PropTypes.string,
+			title: PropTypes.string
 		})),
-		external: React.PropTypes.bool
-	}
+		external: PropTypes.bool
+    }
 
 	render() {
 		return (

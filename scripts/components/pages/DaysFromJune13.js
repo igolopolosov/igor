@@ -1,7 +1,7 @@
 import React from 'react'
 import moment from 'moment'
 
-export class DaysFromJune13 extends React.Component {
+export class DaysFromJune13 extends React.PureComponent {
 
 	constructor(props) {
 		super(props)

@@ -1,15 +1,16 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { withRouter } from 'react-router'
 
 
-class PagerContainer extends React.Component {
+class PagerContainer extends React.PureComponent {
 
 	static propTypes = {
-		pages: React.PropTypes.arrayOf(React.PropTypes.number),
-		current: React.PropTypes.number,
-		onChange: React.PropTypes.func,
-		router: React.PropTypes.any,
-		location: React.PropTypes.any
+		pages: PropTypes.arrayOf(PropTypes.number),
+		current: PropTypes.number,
+		onChange: PropTypes.func,
+		router: PropTypes.any,
+		location: PropTypes.any
 	}
 
 	constructor(props) {
