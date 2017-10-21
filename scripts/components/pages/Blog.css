@@ -1,0 +1,10 @@
+@value padding, sizeM, borderRadius from "../../../styles/size.css";
+@value white, primary from "../../../styles/color.css";
+
+.tag {
+    color: white;
+    background: primary;
+    border-radius: borderRadius;
+    padding: padding;
+    margin-right: sizeM;
+}
