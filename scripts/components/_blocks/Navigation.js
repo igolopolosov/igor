@@ -17,15 +17,19 @@ export class Navigation extends React.PureComponent {
 			<div className='navigation'>
 				{(this.props.links || []).map(link =>
 					this.props.external
-					? 	<a className='navigation__link'
+					? 	<a
+							className='navigation__link'
 							target='_blank'
-							key={link.to} href={link.to}>
+							key={link.to}
+							href={link.to}
+						>
 							-{link.title}-
 						</a>
-					:	<Link className='navigation__link'
-							onlyActiveOnIndex
-							activeClassName='navigation__link--active'
-							key={link.to} to={link.to}>
+					:	<Link
+							className='navigation__link'
+							key={link.to}
+							to={link.to}
+						>
 							-{link.title}-
 						</Link>
 				)}
