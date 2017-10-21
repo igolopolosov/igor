@@ -1,0 +1,19 @@
+@value sizeS, padding, borderRadius from "../../../styles/size.css";
+@value white, primary, primaryDark from "../../../styles/color.css";
+
+.item {
+    margin-right: sizeS;
+    padding: padding;
+
+    border-radius: borderRadius;
+}
+
+.item:hover {
+    color: white;
+    background-color: primaryDark;
+}
+
+.itemActive {
+    color: white;
+    background: primary;
+}

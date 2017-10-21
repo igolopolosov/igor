@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router'
+import styles from './Pager.css'
 
 
 class PagerContainer extends React.PureComponent {
@@ -11,10 +12,6 @@ class PagerContainer extends React.PureComponent {
 		onChange: PropTypes.func,
 		router: PropTypes.any,
 		location: PropTypes.any
-	}
-
-	constructor(props) {
-		super(props)
 	}
 
 	/**
@@ -34,11 +31,13 @@ class PagerContainer extends React.PureComponent {
 
 	render() {
 		return (
-			<div className='pager'>
+			<div>
 				{(this.props.pages || []).map(page =>
-					<a key={page}
+					<a
+						key={page}
 						onClick={this.onPageChange.bind(this, page)}
-						className={`pager__item ${this.props.current === page && 'pager__item--active'}`}>
+						className={`${styles.item} ${this.props.current === page && styles.itemActive}`}
+					>
 						{page}
 					</a>
 				)}

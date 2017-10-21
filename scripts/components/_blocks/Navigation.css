@@ -1,0 +1,5 @@
+@value sizeM from "../../../styles/size.css";
+
+.container > * {
+    margin-right: sizeM;
+}

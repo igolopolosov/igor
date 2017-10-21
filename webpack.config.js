@@ -47,10 +47,6 @@ module.exports = {
 				loader: ['react-hot-loader/webpack', 'babel-loader'],
 				include: path.join(__dirname, 'scripts')
 			},
-			{
-				test: /\.styl$/,
-				loader: 'style-loader!css-loader!stylus-loader?resolve url'
-			},
             {
                 test: /\.css$/,
                 loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]_[local]__[hash:base64:6]!postcss-loader'

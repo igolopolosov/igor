@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
+import styles from './Navigation.css'
 
 export class Navigation extends React.PureComponent {
 
@@ -14,11 +15,10 @@ export class Navigation extends React.PureComponent {
 
 	render() {
 		return (
-			<div className='navigation'>
+			<div className={styles.container}>
 				{(this.props.links || []).map(link =>
 					this.props.external
 					? 	<a
-							className='navigation__link'
 							target='_blank'
 							key={link.to}
 							href={link.to}
@@ -26,7 +26,6 @@ export class Navigation extends React.PureComponent {
 							-{link.title}-
 						</a>
 					:	<Link
-							className='navigation__link'
 							key={link.to}
 							to={link.to}
 						>
