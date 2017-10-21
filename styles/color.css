@@ -2,5 +2,6 @@
 @value black: #333;
 
 @value primary: #37a;
+@value primaryB15: color(primary shade(20%));
 @value secondary: #3a7;
 @value tertiary: #a33;

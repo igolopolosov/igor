@@ -1,5 +1,6 @@
 module.exports = {
-    plugins: {
-        'postcss-modules-values': {}
-    }
+    plugins: [
+        require('postcss-modules-values'),
+        require('postcss-color-function'),
+    ]
 }
