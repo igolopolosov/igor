@@ -9,7 +9,7 @@ import { DaysFromJune13 } from './pages/DaysFromJune13'
 import { Home } from './pages/Home'
 import { NoMatch } from './pages/NoMatch'
 import { PredictionBook } from './pages/PredictionBook'
-import { TapPrivacyPolicy } from './pages/TapTap'
+import { PrivacyPolicyTap } from './pages/PrivacyPolicyTap'
 
 
 export class Main extends React.PureComponent {
@@ -29,7 +29,7 @@ export class Main extends React.PureComponent {
 						<Route path='/blog' component={Blog} />
 						<Route path='/prediction-book' component={PredictionBook} />
 						<Route path='/days-from-june-13' component={DaysFromJune13} />
-						<Route path='/privacy-policy-tap' component={TapPrivacyPolicy} />
+						<Route path='/privacy-policy-tap' component={PrivacyPolicyTap} />
 						<Route path='*' component={NoMatch} />
 					</Switch>
 				</div>
