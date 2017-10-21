@@ -1,9 +1,7 @@
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
 import { connect } from 'react-redux'
-
-const selectPages = (amount) => ({ type: 'SELECT_PAGES', amount })
-const selectLines = (amount) => ({ type: 'SELECT_LINES', amount })
+import { selectLines, selectPages } from '../../reducers/prediction'
 
 @connect(
 	(state) => ({ ...state.prediction }),
