@@ -1,4 +1,4 @@
-@value black, primary, primaryB15 from "./color.css";
+@value black, primary, primaryDark from "./color.css";
 
 html {
     font-size: 20px;
@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-    color: primaryB15;
+    color: primaryDark;
 }
 
 /* small desktop */

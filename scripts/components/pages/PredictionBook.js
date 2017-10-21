@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { connect } from 'react-redux'
+import buttonStyles from '../../../styles/bricks/button.css'
 import { selectLines, selectPages } from '../../reducers/prediction'
 
 @connect(
@@ -72,7 +73,7 @@ export class PredictionBook extends React.PureComponent {
 					<input value={lines} onChange={(e) => selectLines(e.target.value)}  type='number' />
 				</p>
 				<p>
-					<button className='btn-primary' onClick={this.generateRandomLine.bind(this)}>
+					<button className={buttonStyles.btnPrimary} onClick={this.generateRandomLine.bind(this)}>
 						{`Make Magic!`}
 					</button>
 				</p>

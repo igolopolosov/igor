@@ -1,0 +1,7 @@
+@value sizeXS, sizeS, sizeM from '../size.css';
+
+input {
+	padding: sizeS sizeM;
+	border-radius: sizeXS;
+	border: 1px solid gray;
+}

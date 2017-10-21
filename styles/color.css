@@ -1,7 +1,13 @@
 @value white: #fff;
+@value white: #fff;
 @value black: #333;
 
 @value primary: #37a;
-@value primaryB15: color(primary shade(20%));
+@value primaryDark: color(primary shade(20%));
+@value primaryLight: color(primary tint(20%));
+
 @value secondary: #3a7;
+@value secondaryDark: color(secondary shade(20%));
+@value secondaryLight: color(secondary tint(20%));
+
 @value tertiary: #a33;
