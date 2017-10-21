@@ -1,3 +1,6 @@
+@value sizeM, sizeXS from "../../styles/size.css";
+@value secondary from "../../styles/color.css";
+
 .container {
     display: flex;
     flex-direction: column;
@@ -6,13 +9,18 @@
 }
 
 .header > * {
-    margin-top: 1rem;
+    margin-top: sizeM;
 }
 
 .content {
-    padding: 1rem;
+    padding: sizeM;
 }
 
 .footer > * {
-    margin-bottom: 1rem;
+    margin-bottom: sizeM;
+}
+
+.socialNav {
+    padding: sizeM;
+    border: sizeXS solid secondary;
 }
