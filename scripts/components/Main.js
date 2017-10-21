@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router'
 
 import { Footer } from './Footer'
 import { Header } from './Header'
+import styles from './Main.css'
 import { Blog } from './pages/Blog'
 import { DaysFromJune13 } from './pages/DaysFromJune13'
 import { Home } from './pages/Home'
@@ -20,10 +21,10 @@ export class Main extends React.PureComponent {
 
 	render() {
 		return (
-			<div className='root'>
+			<div className={styles.container}>
 				<Header />
 
-				<div className='root__content'>
+				<div className={styles.content}>
 					<Switch>
 						<Route path='/' exact component={Home} />
 						<Route path='/blog' component={Blog} />

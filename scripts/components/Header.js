@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navigation } from './_blocks/Navigation'
+import styles from './Main.css'
 
 const projectLinks = [
     {
@@ -22,7 +23,7 @@ const projectLinks = [
 
 export const Header = () => {
     return (
-        <div className='root__header'>
+        <div className={styles.header}>
             <Navigation links={projectLinks} />
         </div>
     )

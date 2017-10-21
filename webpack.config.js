@@ -1,7 +1,7 @@
-const webpack = require('webpack'),
-	path = require('path'),
-	HtmlWebpackPlugin = require('html-webpack-plugin'),
-	ExtractTextPlugin = require('extract-text-webpack-plugin')
+const webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 	entry: [
@@ -53,7 +53,7 @@ module.exports = {
 			},
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]_[local]__[hash:base64:6]'
+                loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]_[local]__[hash:base64:6]!postcss-loader'
             }
 		]
 	}

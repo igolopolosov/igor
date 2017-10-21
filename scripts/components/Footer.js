@@ -2,6 +2,7 @@ import moment from 'moment'
 import React from 'react'
 import { CurrentTime } from './_blocks/CurrentTime'
 import { Navigation } from './_blocks/Navigation'
+import styles from './Main.css'
 
 const socialLinks = [
     {
@@ -24,7 +25,7 @@ const socialLinks = [
 
 export const Footer = () => {
     return (
-        <div className='root__footer'>
+        <div className={styles.footer}>
             <div className='social-nav'>
                 <Navigation links={socialLinks} external />
             </div>
