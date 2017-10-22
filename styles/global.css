@@ -9,7 +9,7 @@ html, body, #entry-point {
 body {
     margin: 0;
     color: fgLightAccent;
-    background: #060719;
+    background: bgPrimary;
 }
 
 body, button, input, textarea {
@@ -27,24 +27,31 @@ a:hover {
     text-decoration: underline;
 }
 
+/* large desktop */
+@media all and (min-width: 1400px) {
+    body, button, input, textarea {
+        font-size: 25px;
+    }
+}
+
 /* small desktop */
-@media all and (max-width: 1200px) {
-    body {
+@media all and (max-width: 1400px) {
+    body, button, input, textarea {
         font-size: 20px;
     }
 }
 
 /* tablet */
 @media all and (max-width: 1024px) {
-    body {
-        font-size: 25px;
+    body, button, input, textarea {
+        font-size: 30px;
     }
 }
 
 /* mobile phone */
 @media all and (max-width: 768px) {
-    body {
-        font-size: 30px;
+    body, button, input, textarea {
+        font-size: 40px;
     }
 }
 

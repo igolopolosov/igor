@@ -1,5 +1,5 @@
 @value sizeM, sizeXS from "../../styles/size.css";
-@value secondary from "../../styles/color.css";
+@value secondary, bgHeader from "../../styles/color.css";
 
 .container {
     height: 100%;
@@ -12,8 +12,12 @@
     background-size: cover;
 }
 
-.header > * {
-    margin-top: sizeM;
+.header {
+    width: 100%;
+    padding: sizeM;
+    box-sizing: border-box;
+
+    background-color: bgHeader;
 }
 
 .content {
