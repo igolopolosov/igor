@@ -9,6 +9,7 @@ export class Chat extends React.PureComponent {
 
         this.state = {
             isOpen: false,
+            sender: '',
             message: ''
         }
     }
@@ -28,18 +29,29 @@ export class Chat extends React.PureComponent {
     }
 
     renderChat = () => {
+        const {sender, message} = this.state;
+
         return (
             <div className={styles.chatContainer}>
                 <h2>Hire Me!</h2>
+
                 <p>Write below why I would like to work with you:</p>
                 <textarea
                     placeholder='Tell me what you want'
                     rows={3}
                     className={styles.message}
                     onChange={this.changeMessage}
-                    value={this.state.message}
+                    value={message}
                 />
-                <Button primary onClick={this.send}>Send!</Button>
+
+                <p>Add any your contact. email, phone, skype, etc.</p>
+                <input
+                    placeholder='best_hr@best_company.com'
+                    onChange={this.changeSender}
+                    value={sender}
+                />
+
+                <Button primary onClick={this.send} disabled={!(sender && message)}>Send!</Button>
             </div>
         )
     }
@@ -56,8 +68,19 @@ export class Chat extends React.PureComponent {
         })
     }
 
+    changeSender = (e) => {
+        this.setState({
+            sender: e.target.value
+        })
+    }
+
     send = () =>{
-        sendMessage('Hiring Message using my site', this.state.message);
+        const {sender, message} = this.state;
+        sendMessage(`Hiring Message from ${sender}`, message);
+        this.setState({
+            sender: '',
+            message: ''
+        })
         this.toggle();
     }
 }
