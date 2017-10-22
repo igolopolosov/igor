@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f77929e-3f48-4e74-baa0-70c3ab8a95c6" name="Default" comment="">
+    <list default="true" id="0f77929e-3f48-4e74-baa0-70c3ab8a95c6" name="Default" comment="[feature] fix pager styles">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/_blocks/Pager.css" afterPath="$PROJECT_DIR$/scripts/components/_blocks/Pager.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/_blocks/Pager.js" afterPath="$PROJECT_DIR$/scripts/components/_blocks/Pager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/widgets/Chat.js" afterPath="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pager.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Pager.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -57,13 +56,23 @@
       <file leaf-file-name="Pager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="720">
               <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
                 <marker date="1508698663848" expanded="true" signature="776:915" ph="..." />
                 <marker date="1508698663848" expanded="true" signature="830:915" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chat.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,10 +161,10 @@
         <option value="$PROJECT_DIR$/scripts/components/pages/Home.js" />
         <option value="$PROJECT_DIR$/styles/color.css" />
         <option value="$PROJECT_DIR$/scripts/components/widgets/Chat.css" />
-        <option value="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
         <option value="$PROJECT_DIR$/scripts/components/pages/Blog.js" />
         <option value="$PROJECT_DIR$/scripts/components/_blocks/Pager.js" />
         <option value="$PROJECT_DIR$/scripts/components/_blocks/Pager.css" />
+        <option value="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
       </list>
     </option>
   </component>
@@ -651,11 +660,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508698582220</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="[feature] fix pager styles">
+      <created>1508698717242</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1508698717242</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48012000" />
+    <option name="totallyTimeSpent" value="48932000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -745,7 +761,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="[feature] add postcss plugin" />
     <MESSAGE value="[feature] add variables for css modules" />
     <MESSAGE value="[feature] use common.css and add color-function plugin" />
     <MESSAGE value="[feature] global styles for button, input and other" />
@@ -770,7 +785,8 @@
     <MESSAGE value="[feature] x mark for Hire Me" />
     <MESSAGE value="[feature] Force open Hire Me Dialog" />
     <MESSAGE value="[feature] repair pager" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feature] repair pager" />
+    <MESSAGE value="[feature] fix pager styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] fix pager styles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1075,10 +1091,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.js">
+    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="53" column="70" lean-forward="true" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1103,7 +1119,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
+        <state relative-caret-position="720">
           <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
@@ -1113,10 +1129,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.css">
+    <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding />
         </state>
       </provider>
