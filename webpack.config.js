@@ -38,14 +38,13 @@ module.exports = {
 		new ExtractTextPlugin('style.[hash].css'),
 		new HtmlWebpackPlugin({
 			template: 'index.ejs',
-			inject: 'body',
-            favicon: 'assets/favicon.ico'
+			inject: 'body'
 		})
 	],
 	module: {
 		loaders: [
             {
-                test: /\.ico$/,
+                test: /\.png/,
                 loader: 'file-loader?name=[name].[ext]'
             },
 			{

@@ -30,8 +30,7 @@ config.plugins = [
     }),
     new HtmlWebpackPlugin({
         template: 'index.ejs',
-        inject: 'body',
-        favicon: 'assets/favicon.ico'
+        inject: 'body'
     })
 ];
 
