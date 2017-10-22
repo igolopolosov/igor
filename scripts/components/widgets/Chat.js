@@ -12,6 +12,12 @@ export class Chat extends React.PureComponent {
         }
     }
 
+    toggle = () => {
+        this.setState({
+            isOpen: !this.state.isOpen
+        })
+    }
+
     render() {
         const {isOpen} = this.state
 
@@ -20,7 +26,7 @@ export class Chat extends React.PureComponent {
                 {
                     isOpen
                         ? this.renderChat()
-                        : <Button tertiary>Hire Me</Button>
+                        : <Button tertiary onClick={this.toggle}>Hire Me</Button>
                 }
             </div>
         )
@@ -31,7 +37,7 @@ export class Chat extends React.PureComponent {
             <div className={styles.chatContainer}>
                 <div>Tell me what you want:</div>
                 <textarea rows={3} className={styles.message} />
-                <Button primary>Send!</Button>
+                <Button primary onClick={this.toggle}>Send!</Button>
             </div>
         )
     }
