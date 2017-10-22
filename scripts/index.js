@@ -1,4 +1,4 @@
 import { configureApp } from './configureHotLoader'
-import './styles'
+import './assets'
 
 configureApp()

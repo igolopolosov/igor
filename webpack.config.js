@@ -38,11 +38,16 @@ module.exports = {
 		new ExtractTextPlugin('style.[hash].css'),
 		new HtmlWebpackPlugin({
 			template: 'index.ejs',
-			inject: 'body'
+			inject: 'body',
+            favicon: 'assets/favicon.ico'
 		})
 	],
 	module: {
 		loaders: [
+            {
+                test: /\.ico$/,
+                loader: 'file-loader?name=[name].[ext]'
+            },
 			{
 				test: /\.jsx?$/,
 				loader: ['react-hot-loader/webpack', 'babel-loader'],
