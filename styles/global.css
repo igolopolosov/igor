@@ -1,15 +1,20 @@
 @value fgLightAccent, bgPrimary from "./color.css";
 
-html {
+:global {
+
+html, body, #entry-point {
     height: 100%;
 }
 
 body {
-    font-size: 20px;
-    font-family: "Lucida Console", Monaco, monospace;
+    margin: 0;
     color: fgLightAccent;
-    background: url("../assets/banner.jpg") no-repeat center center;
-    background-size: cover;
+    background: #060719;
+}
+
+body, button, input, textarea {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
 }
 
 a {
@@ -41,4 +46,6 @@ a:hover {
     body {
         font-size: 40px;
     }
+}
+
 }
