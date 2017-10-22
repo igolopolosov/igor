@@ -6,6 +6,7 @@
     padding: padding;
 
     border-radius: borderRadius;
+    cursor: pointer;
 }
 
 .item:hover {

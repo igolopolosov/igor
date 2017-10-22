@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0f77929e-3f48-4e74-baa0-70c3ab8a95c6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/_blocks/Pager.css" afterPath="$PROJECT_DIR$/scripts/components/_blocks/Pager.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/_blocks/Pager.js" afterPath="$PROJECT_DIR$/scripts/components/_blocks/Pager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/pages/Blog.js" afterPath="$PROJECT_DIR$/scripts/components/pages/Blog.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pager.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Pager.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="180">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,8 +45,8 @@
       <file leaf-file-name="Blog.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/components/pages/Blog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="324">
+              <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -54,15 +54,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pager.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Pager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="261">
+              <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-                <marker date="1508698554663" expanded="true" signature="776:912" ph="..." />
-                <marker date="1508698554663" expanded="true" signature="827:912" ph="..." />
+                <marker date="1508698663848" expanded="true" signature="776:915" ph="..." />
+                <marker date="1508698663848" expanded="true" signature="830:915" ph="..." />
               </folding>
             </state>
           </provider>
@@ -143,7 +143,6 @@
         <option value="$PROJECT_DIR$/scripts/components/_blocks/Button.js" />
         <option value="$PROJECT_DIR$/scripts/components/_blocks/CurrentTime.js" />
         <option value="$PROJECT_DIR$/scripts/components/pages/Blog.css" />
-        <option value="$PROJECT_DIR$/scripts/components/_blocks/Pager.css" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/index.ejs" />
         <option value="$PROJECT_DIR$/scripts/index.js" />
@@ -156,6 +155,7 @@
         <option value="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
         <option value="$PROJECT_DIR$/scripts/components/pages/Blog.js" />
         <option value="$PROJECT_DIR$/scripts/components/_blocks/Pager.js" />
+        <option value="$PROJECT_DIR$/scripts/components/_blocks/Pager.css" />
       </list>
     </option>
   </component>
@@ -644,11 +644,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508696945531</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="[feature] repair pager">
+      <created>1508698582220</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1508698582220</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47876000" />
+    <option name="totallyTimeSpent" value="48012000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -738,7 +745,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="[feature] use css-modules" />
     <MESSAGE value="[feature] add postcss plugin" />
     <MESSAGE value="[feature] add variables for css modules" />
     <MESSAGE value="[feature] use common.css and add color-function plugin" />
@@ -763,7 +769,8 @@
     <MESSAGE value="[feature] add contact field to chat" />
     <MESSAGE value="[feature] x mark for Hire Me" />
     <MESSAGE value="[feature] Force open Hire Me Dialog" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feature] Force open Hire Me Dialog" />
+    <MESSAGE value="[feature] repair pager" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] repair pager" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1076,14 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/components/pages/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1094,8 +1093,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/components/pages/Blog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="324">
+          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
@@ -1104,13 +1103,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="261">
+          <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-            <marker date="1508698554663" expanded="true" signature="776:912" ph="..." />
-            <marker date="1508698554663" expanded="true" signature="827:912" ph="..." />
+            <marker date="1508698663848" expanded="true" signature="776:915" ph="..." />
+            <marker date="1508698663848" expanded="true" signature="830:915" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

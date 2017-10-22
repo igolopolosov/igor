@@ -35,13 +35,13 @@ class PagerContainer extends React.PureComponent {
 		return (
 			<div>
 				{(this.props.pages || []).map(page =>
-					<a
+					<span
 						key={page}
 						onClick={this.onPageChange.bind(this, page)}
 						className={`${styles.item} ${this.props.current === page && styles.itemActive}`}
 					>
 						{page}
-					</a>
+					</span>
 				)}
 			</div>
 		)
