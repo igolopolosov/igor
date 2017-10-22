@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styles from './Button.css';
+import styles from './Button.css'
 
 export const Button = props => {
     const {primary, secondary, tertiary, children, ...rest} = props;
