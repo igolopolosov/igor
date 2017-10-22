@@ -37,14 +37,14 @@ a:hover {
 /* tablet */
 @media all and (max-width: 1024px) {
     body {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
 /* mobile phone */
 @media all and (max-width: 768px) {
     body {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
