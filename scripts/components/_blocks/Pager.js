@@ -3,15 +3,20 @@ import PropTypes from 'prop-types'
 import { withRouter } from 'react-router'
 import styles from './Pager.css'
 
+const PAGE_SEPARATOR = 'page='
+export function extractPage(search) {
+	return search.split(PAGE_SEPARATOR)[1]
+}
 
 class PagerContainer extends React.PureComponent {
 
 	static propTypes = {
+		pathName: PropTypes.string,
 		pages: PropTypes.arrayOf(PropTypes.number),
 		current: PropTypes.number,
 		onChange: PropTypes.func,
-		router: PropTypes.any,
-		location: PropTypes.any
+        history: PropTypes.object,
+		location: PropTypes.object
 	}
 
 	/**
@@ -19,14 +24,11 @@ class PagerContainer extends React.PureComponent {
 	 * @param {number} page
 	 */
 	onPageChange(page) {
-		this.props.router.push({
-			...this.props.location,
-			query: { page: page }
-		})
+		const {onChange, history, pathName} = this.props
 
-		if (this.props.onChange) {
-			this.props.onChange(page)
-		}
+		history.push(`${pathName}?${PAGE_SEPARATOR}${page}`)
+
+        onChange(page)
 	}
 
 	render() {

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0f77929e-3f48-4e74-baa0-70c3ab8a95c6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/widgets/Chat.js" afterPath="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/_blocks/Pager.js" afterPath="$PROJECT_DIR$/scripts/components/_blocks/Pager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/pages/Blog.js" afterPath="$PROJECT_DIR$/scripts/components/pages/Blog.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,42 +32,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chat.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.js">
+      <file leaf-file-name="Pager.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="53" column="70" lean-forward="true" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+            <state relative-caret-position="288">
+              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chat.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.css">
+      <file leaf-file-name="Blog.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/components/pages/Blog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="360">
+              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/global.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="color.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/color.css">
+      <file leaf-file-name="Pager.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+                <marker date="1508698554663" expanded="true" signature="776:912" ph="..." />
+                <marker date="1508698554663" expanded="true" signature="827:912" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,12 +118,10 @@
         <option value="$PROJECT_DIR$/styles/bricks/index.styl" />
         <option value="$PROJECT_DIR$/styles/bricks/button.styl" />
         <option value="$PROJECT_DIR$/styles/index.styl" />
-        <option value="$PROJECT_DIR$/scripts/components/pages/Blog.js" />
         <option value="$PROJECT_DIR$/styles/layout/nav.styl" />
         <option value="$PROJECT_DIR$/styles/layout/index.styl" />
         <option value="$PROJECT_DIR$/scripts/components/_blocks/Navigation.css" />
         <option value="$PROJECT_DIR$/scripts/components/_blocks/Navigation.js" />
-        <option value="$PROJECT_DIR$/scripts/components/_blocks/Pager.js" />
         <option value="$PROJECT_DIR$/scripts/configureHotLoader.js" />
         <option value="$PROJECT_DIR$/scripts/components/Main.js" />
         <option value="$PROJECT_DIR$/scripts/components/Footer.js" />
@@ -159,6 +154,8 @@
         <option value="$PROJECT_DIR$/styles/color.css" />
         <option value="$PROJECT_DIR$/scripts/components/widgets/Chat.css" />
         <option value="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
+        <option value="$PROJECT_DIR$/scripts/components/pages/Blog.js" />
+        <option value="$PROJECT_DIR$/scripts/components/_blocks/Pager.js" />
       </list>
     </option>
   </component>
@@ -640,11 +637,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508696638248</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="[feature] Force open Hire Me Dialog">
+      <created>1508696945531</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1508696945531</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46236000" />
+    <option name="totallyTimeSpent" value="47876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -734,7 +738,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="[refactor] refactoring" />
     <MESSAGE value="[feature] use css-modules" />
     <MESSAGE value="[feature] add postcss plugin" />
     <MESSAGE value="[feature] add variables for css modules" />
@@ -759,7 +762,8 @@
     <MESSAGE value="[content] improve texts" />
     <MESSAGE value="[feature] add contact field to chat" />
     <MESSAGE value="[feature] x mark for Hire Me" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feature] x mark for Hire Me" />
+    <MESSAGE value="[feature] Force open Hire Me Dialog" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] Force open Hire Me Dialog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -775,14 +779,6 @@
     <entry file="file://$PROJECT_DIR$/styles/bricks/index.styl" />
     <entry file="file://$PROJECT_DIR$/styles/layout/blog.styl" />
     <entry file="file://$PROJECT_DIR$/styles/layout/nav.styl" />
-    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Navigation.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -793,26 +789,6 @@
     <entry file="file://$PROJECT_DIR$/styles/layout/index.styl" />
     <entry file="file://$PROJECT_DIR$/styles/layout/pager.styl" />
     <entry file="file://$PROJECT_DIR$/styles/index.styl" />
-    <entry file="file://$PROJECT_DIR$/scripts/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/pages/Blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="57" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#27#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/bricks/input&amp;textArea.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -833,14 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="14" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,6 +888,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -967,16 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/CurrentTime.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/yandex.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -989,14 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1075,14 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/pages/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/global.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1099,11 +1042,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/CurrentTime.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="53" column="70" lean-forward="true" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/pages/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/pages/Blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1508698554663" expanded="true" signature="776:912" ph="..." />
+            <marker date="1508698554663" expanded="true" signature="827:912" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
