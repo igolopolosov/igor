@@ -1,0 +1,10 @@
+@value sizeXS, sizeS, sizeM from '../size.css';
+@value stroke from '../color.css';
+
+input, textarea {
+	box-sizing: border-box;
+	padding: sizeS sizeM;
+
+	border-radius: sizeXS;
+	border: 1px solid stroke;
+}

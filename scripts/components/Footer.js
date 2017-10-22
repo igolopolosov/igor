@@ -31,7 +31,8 @@ export const Footer = () => {
             </div>
             <div>
                 <small>
-                    {`Igor Golopolosov, 2016-${moment().year()}. igolopolosov@gmail.com`}
+                    {`Igor Golopolosov, 2016-${moment().year()}.`}
+                    <b>igolopolosov@gmail.com</b>
                 </small>
             </div>
             <CurrentTime />

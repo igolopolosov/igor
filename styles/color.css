@@ -1,5 +1,5 @@
 @value white: #fff;
-@value white: #fff;
+@value stroke: #ccc;
 @value black: #333;
 
 @value primary: #37a;
@@ -10,4 +10,4 @@
 @value secondaryDark: color(secondary shade(20%));
 @value secondaryLight: color(secondary tint(20%));
 
-@value tertiary: #a33;
+@value tertiary: #e65;

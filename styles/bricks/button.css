@@ -1,4 +1,4 @@
-@value sizeXS, sizeS, sizeM, sizeL from '../size.css';
+@value sizeXS, sizeS, sizeM from '../size.css';
 @value white, primaryLight, primary, secondaryLight, secondary from '../color.css';
 
 button {
@@ -11,7 +11,7 @@ button {
 	color: white;
 	border-radius: sizeXS;
 	border: none;
-	font-size: sizeL;
+	font-size: sizeM;
 }
 
 .btnPrimary{

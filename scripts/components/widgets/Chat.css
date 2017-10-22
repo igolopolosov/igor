@@ -1,0 +1,22 @@
+@value sizeS, sizeM, sizeXL from "../../../styles/size.css";
+@value white, tertiary from "../../../styles/color.css";
+
+.container {
+    position: fixed;
+    right: sizeXL;
+    bottom: sizeM;
+
+    padding: sizeS;
+
+    color: white;
+    background-color: tertiary;
+}
+
+.container > * {
+    width: 100%;
+    margin-bottom: sizeS;
+}
+
+.message {
+    resize: none;
+}

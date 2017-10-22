@@ -11,6 +11,7 @@ import { Home } from './pages/Home'
 import { NoMatch } from './pages/NoMatch'
 import { PredictionBook } from './pages/PredictionBook'
 import { PrivacyPolicyTap } from './pages/PrivacyPolicyTap'
+import { Chat } from './widgets/Chat'
 
 
 export class Main extends React.PureComponent {
@@ -36,6 +37,10 @@ export class Main extends React.PureComponent {
 				</div>
 
 				<Footer />
+
+				<div className='widgets'>
+					<Chat />
+				</div>
 			</div>
 		)
 	}
