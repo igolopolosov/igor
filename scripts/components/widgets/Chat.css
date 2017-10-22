@@ -1,15 +1,18 @@
-@value sizeS, sizeM, sizeXL from "../../../styles/size.css";
+@value sizeS, sizeM, sizeXL, borderRadius from "../../../styles/size.css";
 @value white, tertiary from "../../../styles/color.css";
 
-.container {
+.fixedContainer {
     position: fixed;
     right: sizeXL;
     bottom: sizeM;
+}
 
+.chatContainer {
     padding: sizeS;
 
     color: white;
     background-color: tertiary;
+    border-radius: borderRadius;
 }
 
 .container > * {

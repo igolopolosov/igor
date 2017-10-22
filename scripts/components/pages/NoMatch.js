@@ -1,5 +1,5 @@
 import React from 'react'
 
 export const NoMatch  = () => (
-	<h1>{'like 404 page'}</h1>
+	<h1>{'404'}</h1>
 )

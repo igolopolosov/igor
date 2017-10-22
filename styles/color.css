@@ -11,3 +11,5 @@
 @value secondaryLight: color(secondary tint(20%));
 
 @value tertiary: #e65;
+@value tertiaryDark: color(tertiary shade(20%));
+@value tertiaryLight: color(tertiary tint(20%));

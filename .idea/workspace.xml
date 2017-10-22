@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f77929e-3f48-4e74-baa0-70c3ab8a95c6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/components/widgets/Chat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/components/_blocks/Button.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/Footer.js" afterPath="$PROJECT_DIR$/scripts/components/Footer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/Main.js" afterPath="$PROJECT_DIR$/scripts/components/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/postcss.config.js" afterPath="$PROJECT_DIR$/postcss.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/pages/NoMatch.js" afterPath="$PROJECT_DIR$/scripts/components/pages/NoMatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/pages/PredictionBook.js" afterPath="$PROJECT_DIR$/scripts/components/pages/PredictionBook.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/widgets/Chat.css" afterPath="$PROJECT_DIR$/scripts/components/widgets/Chat.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/widgets/Chat.js" afterPath="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/styles.js" afterPath="$PROJECT_DIR$/scripts/styles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/bricks/button.css" afterPath="$PROJECT_DIR$/styles/bricks/button.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/color.css" afterPath="$PROJECT_DIR$/styles/color.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/styles/bricks/input.css" afterPath="$PROJECT_DIR$/styles/bricks/input&amp;textArea.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/styles/bricks/button.css" afterPath="$PROJECT_DIR$/scripts/components/_blocks/Button.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,73 +31,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Footer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/components/Footer.js">
+      <file leaf-file-name="Button.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Button.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+            <state relative-caret-position="252">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chat.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Chat.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/components/Main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chat.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="color.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/color.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input&amp;textArea.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/bricks/input&amp;textArea.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="button.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/styles/bricks/button.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -114,7 +65,6 @@
       <find>~</find>
       <find>moment</find>
       <find>@</find>
-      <find>^</find>
       <find>onlyAC</find>
       <find>cSecondary</find>
       <find>input</find>
@@ -122,6 +72,8 @@
       <find>primaryB15</find>
       <find>sizeL</find>
       <find>stylus</find>
+      <find>button.css</find>
+      <find>^</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,10 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/components/privacyPolicy/Tap.js" />
-        <option value="$PROJECT_DIR$/scripts/reducers/index.js" />
-        <option value="$PROJECT_DIR$/.eslintrc" />
-        <option value="$PROJECT_DIR$/scripts/components/_blocks/CurrentTime.js" />
         <option value="$PROJECT_DIR$/scripts/configureApp.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/scripts/components/pages/DaysFromJune13.js" />
@@ -153,14 +101,11 @@
         <option value="$PROJECT_DIR$/styles/vars/sizes.styl" />
         <option value="$PROJECT_DIR$/scripts/components/Main.css" />
         <option value="$PROJECT_DIR$/styles/common/index.styl" />
-        <option value="$PROJECT_DIR$/postcss.config.js" />
         <option value="$PROJECT_DIR$/styles/common.css" />
         <option value="$PROJECT_DIR$/scripts/index.js" />
         <option value="$PROJECT_DIR$/styles/bricks/index.styl" />
         <option value="$PROJECT_DIR$/styles/bricks/button.styl" />
         <option value="$PROJECT_DIR$/styles/index.styl" />
-        <option value="$PROJECT_DIR$/scripts/styles.js" />
-        <option value="$PROJECT_DIR$/scripts/components/pages/PredictionBook.js" />
         <option value="$PROJECT_DIR$/styles/global.css" />
         <option value="$PROJECT_DIR$/scripts/components/pages/Blog.css" />
         <option value="$PROJECT_DIR$/scripts/components/pages/Blog.js" />
@@ -170,18 +115,25 @@
         <option value="$PROJECT_DIR$/scripts/components/_blocks/Navigation.js" />
         <option value="$PROJECT_DIR$/scripts/components/_blocks/Pager.js" />
         <option value="$PROJECT_DIR$/scripts/components/_blocks/Pager.css" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/scripts/configureHotLoader.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/scripts/components/Main.js" />
         <option value="$PROJECT_DIR$/scripts/components/Footer.js" />
-        <option value="$PROJECT_DIR$/styles/color.css" />
         <option value="$PROJECT_DIR$/styles/bricks/input.css" />
-        <option value="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
-        <option value="$PROJECT_DIR$/scripts/components/widgets/Chat.css" />
         <option value="$PROJECT_DIR$/styles/bricks/input&amp;textArea.css" />
         <option value="$PROJECT_DIR$/styles/bricks/button.css" />
+        <option value="$PROJECT_DIR$/scripts/components/pages/button.css" />
+        <option value="$PROJECT_DIR$/scripts/styles.js" />
+        <option value="$PROJECT_DIR$/scripts/components/pages/NoMatch.js" />
+        <option value="$PROJECT_DIR$/scripts/components/widgets/Chat.css" />
+        <option value="$PROJECT_DIR$/scripts/components/_blocks/Button.js" />
+        <option value="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
+        <option value="$PROJECT_DIR$/scripts/components/pages/PredictionBook.js" />
+        <option value="$PROJECT_DIR$/postcss.config.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/scripts/components/_blocks/Button.css" />
+        <option value="$PROJECT_DIR$/styles/color.css" />
       </list>
     </option>
   </component>
@@ -248,6 +200,13 @@
               <item name="my-personal-page" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="_blocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-personal-page" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-personal-page" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -292,20 +251,20 @@
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Space\GitHub\my-personal-page\scripts\components\_blocks" />
+      <recent name="D:\Space\GitHub\my-personal-page\scripts\components\pages" />
+      <recent name="D:\Space\GitHub\my-personal-page\scripts\components\privacyPolicies" />
+      <recent name="D:\Space\GitHub\my-personal-page\scripts\components" />
+      <recent name="D:\Space\GitHub\my-personal-page\scripts\components\privacyPolicies\taptapGooglePlay" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Space\GitHub\my-personal-page\styles" />
       <recent name="D:\Space\GitHub\my-personal-page\styles\layout" />
-      <recent name="D:\Space\GitHub\my-personal-page\scripts\components\privacyPolicies\taptapGooglePlay" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Space\GitHub\my-personal-page\scripts\components\pages" />
-      <recent name="D:\Space\GitHub\my-personal-page\scripts\components\_blocks" />
-      <recent name="D:\Space\GitHub\my-personal-page\scripts\components\privacyPolicies" />
-      <recent name="D:\Space\GitHub\my-personal-page\scripts\components" />
       <recent name="D:\Space\GitHub\my-personal-page\scripts\components\privacyPolicies\taptapGooglePlay" />
     </key>
   </component>
@@ -431,7 +390,7 @@
       <workItem from="1505851699711" duration="343000" />
       <workItem from="1507657768571" duration="5559000" />
       <workItem from="1508600963599" duration="12333000" />
-      <workItem from="1508661444214" duration="2436000" />
+      <workItem from="1508661444214" duration="4841000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] add privacy policy for tap tap application for google play">
       <created>1497991804666</created>
@@ -552,11 +511,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508617286501</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="[feature] chat message. add mockup">
+      <created>1508666733542</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1508666733542</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25510000" />
+    <option name="totallyTimeSpent" value="27915000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -659,7 +625,8 @@
     <MESSAGE value="[feature] global styles for button, input and other" />
     <MESSAGE value="[feature] css for blog" />
     <MESSAGE value="[feature] remove stylus, use css-modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feature] remove stylus, use css-modules" />
+    <MESSAGE value="[feature] chat message. add mockup" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] chat message. add mockup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -668,28 +635,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/pages/DaysFromJune13.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" column="46" lean-forward="false" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/configureStore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -716,6 +661,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -750,27 +696,10 @@
     <entry file="file://$PROJECT_DIR$/styles/vars/sizes.styl" />
     <entry file="file://$PROJECT_DIR$/styles/common/index.styl" />
     <entry file="file://$PROJECT_DIR$/styles/bricks/index.styl" />
-    <entry file="file://$PROJECT_DIR$/postcss.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/global.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/pages/PredictionBook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#34#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,24 +739,6 @@
     <entry file="file://$PROJECT_DIR$/styles/layout/index.styl" />
     <entry file="file://$PROJECT_DIR$/styles/layout/pager.styl" />
     <entry file="file://$PROJECT_DIR$/styles/index.styl" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="44" column="29" lean-forward="false" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -840,14 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
           <caret line="48" column="14" lean-forward="false" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/styles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="35" lean-forward="true" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -907,7 +810,7 @@
         <state relative-caret-position="198">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -925,7 +828,7 @@
         <state relative-caret-position="-108">
           <caret line="57" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -938,40 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styles/color.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/bricks/input&amp;textArea.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -980,18 +849,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.css">
+    <entry file="file://$PROJECT_DIR$/scripts/components/Footer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="324">
+          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/bricks/button.css">
+    <entry file="file://$PROJECT_DIR$/scripts/components/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="54">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/styles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="44" lean-forward="false" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#29#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/pages/NoMatch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Pager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="8" selection-start-column="11" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/pages/PredictionBook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="75" column="80" lean-forward="false" selection-start-line="75" selection-start-column="80" selection-end-line="75" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#34#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/color.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postcss.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/_blocks/Button.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
           <folding />
         </state>
       </provider>
