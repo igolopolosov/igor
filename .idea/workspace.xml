@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0f77929e-3f48-4e74-baa0-70c3ab8a95c6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/global.css" afterPath="$PROJECT_DIR$/styles/global.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="global.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/global.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -47,6 +47,18 @@
             <state relative-caret-position="540">
               <caret line="35" column="60" lean-forward="false" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="69" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,6 +89,7 @@
       <find>fgLightAccent</find>
       <find>white</find>
       <find>black</find>
+      <find>igolopolosov@gmail.com</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,7 +135,6 @@
         <option value="$PROJECT_DIR$/keys.js" />
         <option value="$PROJECT_DIR$/scripts/components/widgets/sendMessage.js" />
         <option value="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
-        <option value="$PROJECT_DIR$/scripts/index.js" />
         <option value="$PROJECT_DIR$/webpack.config.production.js" />
         <option value="$PROJECT_DIR$/scripts/assets.js" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -137,6 +149,7 @@
         <option value="$PROJECT_DIR$/index.ejs" />
         <option value="$PROJECT_DIR$/scripts/components/Main.css" />
         <option value="$PROJECT_DIR$/styles/global.css" />
+        <option value="$PROJECT_DIR$/scripts/index.js" />
       </list>
     </option>
   </component>
@@ -555,11 +568,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508684615234</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="[feature] adjust style &amp; fonts">
+      <created>1508693391704</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1508693391704</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42700000" />
+    <option name="totallyTimeSpent" value="42959000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -672,7 +692,8 @@
     <MESSAGE value="[feature] new version" />
     <MESSAGE value="[feature] new color scheme" />
     <MESSAGE value="[feature] rebranding" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feature] rebranding" />
+    <MESSAGE value="[feature] adjust style &amp; fonts" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] adjust style &amp; fonts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -872,7 +893,7 @@
         <state relative-caret-position="54">
           <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -937,16 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/postcss.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1000,6 +1011,16 @@
         <state relative-caret-position="306">
           <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
