@@ -1,4 +1,5 @@
 @value fgLightAccent, bgPrimary from "./color.css";
+@value sizeXS from "./size.css";
 
 :global {
 
@@ -21,10 +22,12 @@ a {
     color: fgLightAccent;
     text-decoration: none;
     cursor: pointer;
+    padding-bottom: sizeXS;
+    border-bottom: sizeXS solid transparent;
 }
 
 a:hover {
-    text-decoration: underline;
+    border-bottom: sizeXS solid fgLightAccent;
 }
 
 /* large desktop */
