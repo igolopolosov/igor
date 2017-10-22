@@ -12,6 +12,13 @@ export class Chat extends React.PureComponent {
             sender: '',
             message: ''
         }
+
+        // Force open Hire Me dialog
+        setTimeout(() => {
+            if (!this.state.isOpen) {
+                this.toggle()
+            }
+        }, 5000)
     }
 
     render() {
