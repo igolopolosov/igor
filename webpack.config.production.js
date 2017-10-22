@@ -20,7 +20,8 @@ config.plugins = [
     new webpack.DefinePlugin({
         'process.env': {
             'NODE_ENV': JSON.stringify('production')
-        }
+        },
+        PRODUCTION: JSON.stringify(true)
     }),
     new webpack.optimize.UglifyJsPlugin({
         compress: {

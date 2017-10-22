@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f77929e-3f48-4e74-baa0-70c3ab8a95c6" name="Default" comment="[update] 0.0.5">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/components/widgets/sendMessage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="0f77929e-3f48-4e74-baa0-70c3ab8a95c6" name="Default" comment="[feature] add message sending">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.ejs" afterPath="$PROJECT_DIR$/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/widgets/Chat.js" afterPath="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/components/widgets/sendMessage.js" afterPath="$PROJECT_DIR$/scripts/components/widgets/sendMessage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.production.js" afterPath="$PROJECT_DIR$/webpack.config.production.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
@@ -36,18 +37,18 @@
       <file leaf-file-name="sendMessage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/components/widgets/sendMessage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            <state relative-caret-position="18">
+              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chat.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Chat.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="52" />
+            <state relative-caret-position="180">
+              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -113,7 +114,6 @@
         <option value="$PROJECT_DIR$/scripts/components/pages/TapTap.js" />
         <option value="$PROJECT_DIR$/scripts/components/pages/PrivacyPolicyTap.css" />
         <option value="$PROJECT_DIR$/scripts/components/pages/PrivacyPolicyTap.js" />
-        <option value="$PROJECT_DIR$/webpack.config.production.js" />
         <option value="$PROJECT_DIR$/scripts/components/App.css" />
         <option value="$PROJECT_DIR$/scripts/components/App.js" />
         <option value="$PROJECT_DIR$/scripts/components/Header.js" />
@@ -135,7 +135,6 @@
         <option value="$PROJECT_DIR$/scripts/components/_blocks/Navigation.js" />
         <option value="$PROJECT_DIR$/scripts/components/_blocks/Pager.js" />
         <option value="$PROJECT_DIR$/scripts/components/_blocks/Pager.css" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/scripts/configureHotLoader.js" />
         <option value="$PROJECT_DIR$/scripts/components/Main.js" />
         <option value="$PROJECT_DIR$/scripts/components/Footer.js" />
@@ -155,9 +154,11 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/scripts/components/widgets/messageSending.js" />
         <option value="$PROJECT_DIR$/keys.js" />
+        <option value="$PROJECT_DIR$/index.ejs" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/webpack.config.production.js" />
         <option value="$PROJECT_DIR$/scripts/components/widgets/sendMessage.js" />
         <option value="$PROJECT_DIR$/scripts/components/widgets/Chat.js" />
-        <option value="$PROJECT_DIR$/index.ejs" />
       </list>
     </option>
   </component>
@@ -378,7 +379,7 @@
       <workItem from="1505851699711" duration="343000" />
       <workItem from="1507657768571" duration="5559000" />
       <workItem from="1508600963599" duration="12333000" />
-      <workItem from="1508661444214" duration="8623000" />
+      <workItem from="1508661444214" duration="9644000" />
     </task>
     <task id="LOCAL-00001" summary="[feature] add privacy policy for tap tap application for google play">
       <created>1497991804666</created>
@@ -520,11 +521,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508669502111</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="[feature] add message sending">
+      <created>1508675122298</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1508675122298</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31697000" />
+    <option name="totallyTimeSpent" value="32718000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -630,7 +638,8 @@
     <MESSAGE value="[feature] chat message. add mockup" />
     <MESSAGE value="[feature] chat message. improve styles" />
     <MESSAGE value="[update] 0.0.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update] 0.0.5" />
+    <MESSAGE value="[feature] add message sending" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feature] add message sending" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -670,13 +679,6 @@
           <folding>
             <element signature="e#0#25#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.production.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -733,14 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="48" column="14" lean-forward="false" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -909,14 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-414">
-          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -941,6 +927,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/keys.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -949,29 +943,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.js">
+    <entry file="file://$PROJECT_DIR$/webpack.config.production.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="39" column="41" lean-forward="true" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="414">
+          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="35" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/components/widgets/sendMessage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="18">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.ejs">
+    <entry file="file://$PROJECT_DIR$/scripts/components/widgets/Chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
