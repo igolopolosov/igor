@@ -19,7 +19,7 @@ export class CurrentTime extends React.PureComponent {
 		return (
 			<div>
 				<small>
-					{`unix: ${this.state.time} human: ${moment.unix(this.state.time).format('LLLL')}`}
+					{`unix: ${this.state.time}, human: ${moment.unix(this.state.time).format('LLLL')}`}
 				</small>
 			</div>
 		)

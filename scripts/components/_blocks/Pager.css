@@ -1,5 +1,5 @@
 @value sizeS, padding, borderRadius from "../../../styles/size.css";
-@value white, primary, primaryDark from "../../../styles/color.css";
+@value fgLightAccent, primary, primaryDark from "../../../styles/color.css";
 
 .item {
     margin-right: sizeS;
@@ -9,11 +9,11 @@
 }
 
 .item:hover {
-    color: white;
+    color: fgLightAccent;
     background-color: primaryDark;
 }
 
 .itemActive {
-    color: white;
+    color: fgLightAccent;
     background: primary;
 }

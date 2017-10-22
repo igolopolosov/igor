@@ -1,5 +1,5 @@
 @value sizeS, sizeM, sizeXL, borderRadius from "../../../styles/size.css";
-@value white, tertiary from "../../../styles/color.css";
+@value fgLightAccent, tertiary from "../../../styles/color.css";
 
 .fixedContainer {
     position: fixed;
@@ -10,7 +10,7 @@
 .chatContainer {
     padding: sizeS;
 
-    color: white;
+    color: fgLightAccent;
     background-color: tertiary;
     border-radius: borderRadius;
 }
