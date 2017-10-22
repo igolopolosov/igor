@@ -8,7 +8,7 @@
 }
 
 .chatContainer {
-    padding: sizeS;
+    padding: sizeM;
 
     color: fgLightAccent;
     background-color: tertiary;
@@ -17,6 +17,7 @@
 
 .chatContainer > * {
     width: 100%;
+    margin-top: 0;
     margin-bottom: sizeS;
 }
 

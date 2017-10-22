@@ -21,7 +21,7 @@ export class Chat extends React.PureComponent {
                 {
                     isOpen
                         ? this.renderChat()
-                        : <Button tertiary onClick={this.toggle}>Hire Me</Button>
+                        : <Button tertiary onClick={this.toggle}>Hire Me!</Button>
                 }
             </div>
         )
@@ -30,8 +30,10 @@ export class Chat extends React.PureComponent {
     renderChat = () => {
         return (
             <div className={styles.chatContainer}>
-                <div>Tell me what you want:</div>
+                <h2>Hire Me!</h2>
+                <p>Write below why I would like to work with you:</p>
                 <textarea
+                    placeholder='Tell me what you want'
                     rows={3}
                     className={styles.message}
                     onChange={this.changeMessage}
@@ -55,7 +57,7 @@ export class Chat extends React.PureComponent {
     }
 
     send = () =>{
-        sendMessage('Message from', this.state.message);
+        sendMessage('Hiring Message using my site', this.state.message);
         this.toggle();
     }
 }
