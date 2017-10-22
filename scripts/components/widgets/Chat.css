@@ -1,4 +1,4 @@
-@value sizeS, sizeM, sizeXL, borderRadius from "../../../styles/size.css";
+@value sizeXS, sizeS, sizeM, sizeXL, borderRadius from "../../../styles/size.css";
 @value fgLightAccent, tertiary from "../../../styles/color.css";
 
 .fixedContainer {
@@ -8,6 +8,7 @@
 }
 
 .chatContainer {
+    position: relative;
     padding: sizeM;
 
     color: fgLightAccent;
@@ -19,6 +20,18 @@
     width: 100%;
     margin-top: 0;
     margin-bottom: sizeS;
+}
+
+.closeMark {
+    position: absolute;
+    top: sizeXS;
+    right: sizeS;
+
+    margin: 0;
+    width: auto;
+
+    cursor: pointer;
+    opacity: 0.9;
 }
 
 .message {

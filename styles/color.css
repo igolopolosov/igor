@@ -2,7 +2,7 @@
 @value fgDarkAccent: #333;
 
 @value bgPrimary: #060719;
-@value bgHeader: rgba(47, 25, 33, 0.39);
+@value bgHeader: rgba(47, 25, 33, 0.4);
 
 @value primary: rgba(92, 146, 187, 0.77);
 @value primaryDark: color(primary shade(20%));
