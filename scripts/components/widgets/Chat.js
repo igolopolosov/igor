@@ -3,36 +3,48 @@ import styles from './Chat.css'
 import { Button } from '../_blocks/Button'
 import { sendMessage } from './sendMessage'
 
+const CHAT_TIMEOUT = 5 * 1000
+const CHAT_STATES = {
+    NONE: 'NONE',
+    OPENED: 'OPENED',
+    SUCCESS: 'SUCCESS',
+}
+
 export class Chat extends React.PureComponent {
     constructor(props) {
         super(props)
 
         this.state = {
-            isOpen: false,
+            state: CHAT_STATES.NONE,
             sender: '',
-            message: ''
+            message: '',
         }
 
         // Force open Hire Me dialog
         if (PRODUCTION) {
             setTimeout(() => {
-                if (!this.state.isOpen) {
-                    this.toggle()
-                }
-            }, 3 * 1000)
+                this.toggle(CHAT_STATES.OPENED)
+            }, CHAT_TIMEOUT)
         }
     }
 
     render() {
-        const {isOpen} = this.state
+        const {state} = this.state
 
         return (
             <div className={styles.fixedContainer}>
-                {
-                    isOpen
-                        ? this.renderChat()
-                        : <Button tertiary onClick={this.toggle}>Hire Me!</Button>
-                }
+                {state === CHAT_STATES.NONE && <Button tertiary onClick={() => this.toggle(CHAT_STATES.OPENED)}>Hire Me!</Button>}
+                {state === CHAT_STATES.OPENED && this.renderChat()}
+                {state === CHAT_STATES.SUCCESS && this.renderSuccess()}
+            </div>
+        )
+    }
+
+    renderSuccess = () => {
+        return (
+            <div className={styles.chatContainer}>
+                <p>Thank you, you are successfully sent email for me!</p>
+                <small>Kind regards, Igor Golopolosov</small>
             </div>
         )
     }
@@ -42,6 +54,7 @@ export class Chat extends React.PureComponent {
 
         return (
             <div className={styles.chatContainer}>
+                <div className={styles.closeMark} onClick={() => this.toggle(CHAT_STATES.NONE)}>✖</div>
                 <h2>Hire Me!</h2>
 
                 <p>Write below why I would like to work with you:</p>
@@ -65,9 +78,9 @@ export class Chat extends React.PureComponent {
         )
     }
 
-    toggle = () => {
+    toggle = (state) => {
         this.setState({
-            isOpen: !this.state.isOpen
+            state
         })
     }
 
@@ -90,6 +103,14 @@ export class Chat extends React.PureComponent {
             sender: '',
             message: ''
         })
-        this.toggle();
+        this.showSuccess();
+    }
+
+    showSuccess = () =>{
+        this.toggle(CHAT_STATES.SUCCESS)
+
+        setTimeout(() => {
+            this.toggle(CHAT_STATES.NONE)
+        }, CHAT_TIMEOUT)
     }
 }
