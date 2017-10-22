@@ -3,15 +3,15 @@
 
 @value bgPrimary: #142e61;
 
-@value primary: #37a;
+@value primary: rgba(92, 146, 187, 0.77);
 @value primaryDark: color(primary shade(20%));
 @value primaryLight: color(primary tint(20%));
 
-@value secondary: #3a7;
+@value secondary: rgba(255, 201, 27, 0.51);
 @value secondaryDark: color(secondary shade(20%));
 @value secondaryLight: color(secondary tint(20%));
 
-@value tertiary: #e65;
+@value tertiary: rgba(255, 83, 83, 0.59);
 @value tertiaryDark: color(tertiary shade(20%));
 @value tertiaryLight: color(tertiary tint(20%));
 

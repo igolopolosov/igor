@@ -44,7 +44,7 @@ module.exports = {
 	module: {
 		loaders: [
             {
-                test: /\.png/,
+                test: /\.(png|jpg)/,
                 loader: 'file-loader?name=[name].[ext]'
             },
 			{
