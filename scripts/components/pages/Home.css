@@ -1,0 +1,10 @@
+.avatar {
+    height: 20rem;
+    width: 20rem;
+    margin: 0 auto;
+
+    background: url('../../../assets/avatar.jpg') bottom;
+    background-size: cover;
+
+    border-radius: 50%;
+}
