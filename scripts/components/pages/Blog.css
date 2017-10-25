@@ -8,3 +8,7 @@
     padding: padding;
     margin-right: sizeM;
 }
+
+.container {
+    margin-bottom: sizeM;
+}

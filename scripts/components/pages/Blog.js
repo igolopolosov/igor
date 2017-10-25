@@ -67,7 +67,7 @@ class BlogContainer extends React.PureComponent {
         const pages = [...Array(Math.ceil(posts.length / limit))].map((v, i) => i + 1)
 
 		return (
-			<div>
+			<div className={styles.container}>
 				{
 					(posts.filter(visiblePosts) || []).map(post =>
 						<div key={post.id}>

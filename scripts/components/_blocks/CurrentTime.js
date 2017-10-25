@@ -17,11 +17,9 @@ export class CurrentTime extends React.PureComponent {
 
 	render() {
 		return (
-			<div>
-				<small>
-					{`unix: ${this.state.time}, human: ${moment.unix(this.state.time).format('LLLL')}`}
-				</small>
-			</div>
+			<h3>
+                {`unix: ${this.state.time}, human: ${moment.unix(this.state.time).format('LLLL')}`}
+			</h3>
 		)
 	}
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import moment from 'moment'
+import { CurrentTime } from '../_blocks/CurrentTime'
 
 export class DaysFromJune13 extends React.PureComponent {
 
@@ -20,9 +21,10 @@ export class DaysFromJune13 extends React.PureComponent {
 
 	render() {
 		return (
-			<h1>{
-				`It took ${this.state.difference} days from June 13.`}
-			</h1>
+			<div>
+				<h1>{`It took ${this.state.difference} days from June 13.`}</h1>
+				<CurrentTime />
+			</div>
 		)
 	}
 
