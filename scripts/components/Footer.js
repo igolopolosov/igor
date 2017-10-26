@@ -9,7 +9,7 @@ const socialLinks = [
         title: 'StackOverflow'
     },
     {
-        to: 'https://github.com/usehotkey/usehotkey.github.io/blob/master/ResumeGolopolosov.pdf',
+        to: 'https://yadi.sk/d/QzyQ04br3HXrmU',
         title: 'CV'
     },
     {
