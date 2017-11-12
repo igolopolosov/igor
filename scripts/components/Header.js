@@ -12,13 +12,9 @@ const projectLinks = [
         title: 'Blog'
     },
     {
-        to: 'prediction-book',
-        title: 'Prediction Book'
+        to: 'playground',
+        title: 'Playground'
     },
-    {
-        to: 'days-from-june-13',
-        title: 'Days from June 13'
-    }
 ]
 
 export const Header = () => {

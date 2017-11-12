@@ -15,7 +15,7 @@ module.exports = {
 		publicPath: '/'
 	},
 	resolve: {
-		extensions: ['*', '.js', '.styl']
+		extensions: ['*', '.ts', '.tsx', '.js', '.styl']
 	},
 	devtool: 'eval',
 	devServer: {
@@ -52,6 +52,11 @@ module.exports = {
 				loader: ['react-hot-loader/webpack', 'babel-loader'],
 				include: path.join(__dirname, 'scripts')
 			},
+            {
+                test: /\.tsx?$/,
+                loader: ['react-hot-loader/webpack', 'ts-loader'],
+                include: path.join(__dirname, 'scripts')
+            },
             {
                 test: /\.css$/,
                 loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]_[local]__[hash:base64:6]!postcss-loader'

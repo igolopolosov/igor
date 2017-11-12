@@ -1,7 +1,17 @@
-*.log
-*.iml
+/* npm */
 node_modules/
+*.log
+
+/* idea */
+*.iml
+.idea/workspace.xml
 .idea/
+
+/* vscode */
 .vscode/
+
+/* build */
 dist/
+
+/* security keys */
 keys.js
