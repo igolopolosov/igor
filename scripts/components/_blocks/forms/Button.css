@@ -1,7 +1,7 @@
-@value sizeXS, sizeS, sizeM from '../../../styles/size.css';
-@value fgLightAccent, primaryLight, primary, primaryDark from '../../../styles/color.css';
-@value secondaryLight, secondary, secondaryDark from '../../../styles/color.css';
-@value tertiaryLight, tertiary, tertiaryDark from '../../../styles/color.css';
+@value sizeXS, sizeS, sizeM from '../../../../styles/size.css';
+@value fgLightAccent, primaryLight, primary, primaryDark from '../../../../styles/color.css';
+@value secondaryLight, secondary, secondaryDark from '../../../../styles/color.css';
+@value tertiaryLight, tertiary, tertiaryDark from '../../../../styles/color.css';
 
 .btnPrimary,
 .btnSecondary,

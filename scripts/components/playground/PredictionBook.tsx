@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import { AnyAction } from 'redux';
 import { generateRandomInt } from '../../helpers/math';
 import { setLines, setPages } from '../../reducers/prediction';
-import { Button } from '../_blocks/Button';
-import { NumberInput } from '../_blocks/NumberInput';
+import { Button } from '../_blocks/forms/Button';
+import { NumberInput } from '../_blocks/forms/NumberInput';
 
 namespace PredictionBookNS {
     export interface OwnProps {}
