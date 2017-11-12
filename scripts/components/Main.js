@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types'
 import React from 'react'
 import { Route, Switch } from 'react-router'
 
 import { Footer } from './Footer'
 import { Header } from './Header'
 import styles from './Main.css'
+import { NAVIGATION_LINKS } from './navigation'
 import { Blog } from './pages/Blog'
 import { Home } from './pages/Home'
 import { NoMatch } from './pages/NoMatch'
@@ -14,11 +14,6 @@ import { Chat } from './widgets/Chat'
 
 
 export class Main extends React.PureComponent {
-
-	static propTypes = {
-		children: PropTypes.node
-    }
-
 	render() {
 		return (
 			<div className={styles.container}>
@@ -26,10 +21,10 @@ export class Main extends React.PureComponent {
 
 				<div className={styles.content}>
 					<Switch>
-						<Route path='/' exact component={Home} />
-						<Route path='/blog' component={Blog} />
-						<Route path='/playground' component={Playground} />
-						<Route path='/privacy-policy-tap' component={PrivacyPolicyTap} />
+						<Route path={NAVIGATION_LINKS.home.to} exact component={Home} />
+						<Route path={NAVIGATION_LINKS.blog.to} component={Blog} />
+						<Route path={NAVIGATION_LINKS.playground.to} component={Playground} />
+						<Route path={NAVIGATION_LINKS.privacyPolicyTap.to} component={PrivacyPolicyTap} />
 						<Route path='*' component={NoMatch} />
 					</Switch>
 				</div>
