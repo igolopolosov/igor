@@ -2,13 +2,13 @@ import * as moment from 'moment';
 import * as React from 'react';
 import { CurrentTime } from '../_blocks/CurrentTime';
 
-export class DaysFromJune13 extends React.PureComponent<any, {difference: string}> {
+export class DaysFromJune13 extends React.PureComponent<{}, {difference: string}> {
 
     public state = {
         difference: '???'
     };
 
-    constructor(props: any) {
+    constructor(props: {}) {
         super(props);
 
         this.calculateDifference();

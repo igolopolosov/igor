@@ -25,7 +25,7 @@ namespace PredictionBookNS {
     }
 }
 
-class PredictionBookComponent extends React.Component<PredictionBookNS.Props, PredictionBookNS.State> {
+class PredictionBookComponent extends React.PureComponent<PredictionBookNS.Props, PredictionBookNS.State> {
 
     public state: PredictionBookNS.State;
 
@@ -42,7 +42,7 @@ class PredictionBookComponent extends React.Component<PredictionBookNS.Props, Pr
 
         return (
             <div>
-                <h1> {`Prediction Book`} </h1>
+                <h1>{`Prediction Book`}</h1>
                 <p>{`Choose some book and enter next information.`}</p>
                 <p>
                     <label>{`Number of pages in a book: `}</label>
@@ -53,7 +53,7 @@ class PredictionBookComponent extends React.Component<PredictionBookNS.Props, Pr
                     <input value={lines} onChange={(e: any) => selectLines(e.target.value)} type='number'/>
                 </p>
                 <p>
-                    <Button onClick={() => this.generateRandomLine()} primary>
+                    <Button onClick={this.generateRandomLine} primary>
                         {`Make Magic!`}
                     </Button>
                 </p>
@@ -67,7 +67,7 @@ class PredictionBookComponent extends React.Component<PredictionBookNS.Props, Pr
     /**
      * Compose prediction place
      */
-    private generateRandomLine(): void {
+    private generateRandomLine = (): void => {
         const {pages, lines} = this.props;
         let answer = '';
 
