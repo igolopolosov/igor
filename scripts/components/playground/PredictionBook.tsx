@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import { AnyAction } from 'redux';
 import { generateRandomInt } from '../../helpers/math';
 import { setLines, setPages } from '../../reducers/prediction';
 import { Button } from '../_blocks/Button';
-import { AnyAction } from 'redux';
+import { NumberInput } from '../_blocks/NumberInput';
 
 namespace PredictionBookNS {
     export interface OwnProps {}
@@ -46,11 +47,11 @@ class PredictionBookComponent extends React.PureComponent<PredictionBookNS.Props
                 <p>{`Choose some book and enter next information.`}</p>
                 <p>
                     <label>{`Number of pages in a book: `}</label>
-                    <input value={pages} onChange={(e: any) => selectPages(e.target.value)} type='number'/>
+                    <NumberInput value={pages} onChange={selectPages} />
                 </p>
                 <p>
                     <label>{`Number of lines on a page: `}</label>
-                    <input value={lines} onChange={(e: any) => selectLines(e.target.value)} type='number'/>
+                    <NumberInput value={lines} onChange={selectLines} />
                 </p>
                 <p>
                     <Button onClick={this.generateRandomLine} primary>
