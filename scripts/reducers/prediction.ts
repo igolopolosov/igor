@@ -1,13 +1,14 @@
 import { AnyAction } from 'redux';
+import { getActionCreator } from '../helpers/redux';
 
-export const setPages = (amount: number): AnyAction => ({type: 'SET_PAGES', amount});
-export const setLines = (amount: number): AnyAction => ({type: 'SET_LINES', amount});
+export const setPages = getActionCreator('SET_PAGES');
+export const setLines = getActionCreator('SET_LINES');
 
 export const prediction = (state = {pages: '', lines: ''}, action: AnyAction) => {
     switch (action.type) {
-        case 'SET_PAGES':
+        case setPages.type:
             return {...state, pages: action.amount};
-        case 'SET_LINES':
+        case setLines.type:
             return {...state, lines: action.amount};
         default:
             return state;

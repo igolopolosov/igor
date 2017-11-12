@@ -1,24 +1,35 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import { generateRandomInt } from '../../helpers/math';
 import { setLines, setPages } from '../../reducers/prediction';
 import { Button } from '../_blocks/Button';
+import { AnyAction } from 'redux';
 
-interface Props {
-    pages: number;
-    lines: number;
-    selectPages: any;
-    selectLines: any;
+namespace PredictionBookNS {
+    export interface OwnProps {}
+
+    export interface StateProps {
+        pages: number;
+        lines: number;
+    }
+
+    export interface DispatchProps {
+        selectPages: (amount: number) => AnyAction;
+        selectLines: (amount: number) => AnyAction;
+    }
+
+    export type Props = OwnProps & StateProps & DispatchProps;
+
+    export interface State {
+        answer: string;
+    }
 }
 
-interface State {
-    answer: string;
-}
+class PredictionBookComponent extends React.Component<PredictionBookNS.Props, PredictionBookNS.State> {
 
-class PredictionBookComponent extends React.Component<any, State> {
+    public state: PredictionBookNS.State;
 
-    public state: State;
-
-    constructor(props: Props) {
+    constructor(props: PredictionBookNS.Props) {
         super(props);
 
         this.state = {
@@ -42,7 +53,7 @@ class PredictionBookComponent extends React.Component<any, State> {
                     <input value={lines} onChange={(e: any) => selectLines(e.target.value)} type='number'/>
                 </p>
                 <p>
-                    <Button onClick={this.generateRandomLine.bind(this)} primary>
+                    <Button onClick={() => this.generateRandomLine()} primary>
                         {`Make Magic!`}
                     </Button>
                 </p>
@@ -54,28 +65,20 @@ class PredictionBookComponent extends React.Component<any, State> {
     }
 
     /**
-     * Generate random integer number
-     * @param {number} max
+     * Compose prediction place
      */
-    private generateRandomInt(max: number): number {
-        return Math.round(Math.random() * (max - 1)) + 1;
-    }
-
-    /**
-     * Compose predicition place
-     */
-    private generateRandomLine() {
-        let answer = '';
+    private generateRandomLine(): void {
         const {pages, lines} = this.props;
+        let answer = '';
 
         if (pages < 1 || lines < 1) {
             answer = `Enter above positive number of pages and lines less than ${Number.MAX_VALUE}.`;
         } else {
             answer = `
                 Prediction for you is placed on
-                page ${this.generateRandomInt(pages)},  on
-                line ${this.generateRandomInt(lines)}
-                from ${this.generateRandomInt(2) === 2 ? 'top' : 'bottom'}.
+                page ${generateRandomInt(1, pages)},  on
+                line ${generateRandomInt(1, lines)}
+                from ${generateRandomInt(1, 2) === 2 ? 'top' : 'bottom'}.
             `;
         }
 
@@ -84,9 +87,13 @@ class PredictionBookComponent extends React.Component<any, State> {
 }
 
 
-export const PredictionBook = connect((state) => ({...state.prediction}),
-    {
-        selectPages: setPages,
-        selectLines: setLines
-    })
-(PredictionBookComponent);
+export const PredictionBook =
+    connect<PredictionBookNS.StateProps, PredictionBookNS.DispatchProps, PredictionBookNS.OwnProps>
+    (
+        (state) => ({...state.prediction}),
+        {
+            selectPages: setPages,
+            selectLines: setLines
+        }
+    )
+    (PredictionBookComponent);
