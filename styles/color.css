@@ -16,4 +16,8 @@
 @value tertiaryDark: color(tertiary shade(20%));
 @value tertiaryLight: color(tertiary tint(20%));
 
+@value neutral: rgba(210, 210, 210, 0.5);
+@value neutralDark: color(neutral shade(20%));
+@value neutralLight: color(neutral tint(20%));
+
 @value stroke: #ccc;
