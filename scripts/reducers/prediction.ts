@@ -7,9 +7,9 @@ export const setLines = getActionCreator<number>('SET_LINES');
 export const prediction = (state = {pages: '', lines: ''}, action: AnyAction) => {
     switch (action.type) {
         case setPages.type:
-            return {...state, pages: action.amount};
+            return {...state, pages: action.payload};
         case setLines.type:
-            return {...state, lines: action.amount};
+            return {...state, lines: action.payload};
         default:
             return state;
     }

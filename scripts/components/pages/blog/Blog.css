@@ -1,5 +1,5 @@
-@value padding, sizeM, borderRadius from "../../../styles/size.css";
-@value fgLightAccent, primary from "../../../styles/color.css";
+@value padding, sizeM, borderRadius from "../../../../styles/size.css";
+@value fgLightAccent, primary from "../../../../styles/color.css";
 
 .tag {
     color: fgLightAccent;
