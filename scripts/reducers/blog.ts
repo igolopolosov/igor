@@ -5,8 +5,8 @@ export interface BlogPost {
     id: number;
     title: string;
     time: number;
-    tag: string;
     text: string;
+    tag?: string;
 }
 
 export const setBlogPosts = getActionCreator<BlogPost[]>('SET_BLOG_POSTS');
