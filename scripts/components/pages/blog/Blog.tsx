@@ -2,13 +2,35 @@ import * as moment from 'moment';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
-import { NAVIGATION_LINKS } from '../../navigation';
+import { BlogPost } from '../../../reducers/blog';
 import { extractPage, Pager } from '../../_blocks/Pager';
+import { NAVIGATION_LINKS } from '../../navigation';
 import { loadBlog } from './loadBlog';
 
 const styles = require('./Blog.css');
 
-class BlogContainer extends React.PureComponent<any, any> {
+namespace BlogContainerNS {
+    interface OwnProps {
+        location: any;
+    }
+
+    interface StateProps {
+        posts: BlogPost[];
+    }
+
+    interface DispatchProps {
+        loadBlog: () => void;
+    }
+
+    export type Props = StateProps & DispatchProps & OwnProps;
+
+    export interface State {
+        limit: number;
+        page: number;
+    }
+}
+
+class BlogContainer extends React.PureComponent<BlogContainerNS.Props, BlogContainerNS.State> {
 
     constructor(props) {
         super(props);
