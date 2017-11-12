@@ -1,10 +1,11 @@
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
 import { withRouter } from 'react-router'
 import styles from './Pager.css'
 
 const PAGE_SEPARATOR = 'page='
-export function extractPage(search) {
+
+function extractPage(search) {
 	return search.split(PAGE_SEPARATOR)[1]
 }
 
@@ -12,11 +13,18 @@ class PagerContainer extends React.PureComponent {
 
 	static propTypes = {
 		pathName: PropTypes.string,
-		pages: PropTypes.arrayOf(PropTypes.number),
-		current: PropTypes.number,
-		onChange: PropTypes.func,
+		items: PropTypes.arrayOf(PropTypes.any),
         history: PropTypes.object,
 		location: PropTypes.object
+	}
+
+	constructor(props) {
+		super(props);
+
+        this.state = {
+            limit: 2,
+            page: parseInt(extractPage(this.props.location.search), 10) || 1
+        };
 	}
 
 	/**
@@ -24,23 +32,31 @@ class PagerContainer extends React.PureComponent {
 	 * @param {number} page
 	 */
 	onPageChange(page) {
-		const {onChange, history, pathName} = this.props
+		const {history, pathName} = this.props
 
 		history.push(`${pathName}?${PAGE_SEPARATOR}${page}`)
 
-        onChange(page)
+        this.setState({page});
 	}
 
 	render() {
+        const {limit, page} = this.state;
+		const {items, renderItem} = this.props;
+
+        const visiblePosts = (_, i) => i >= (page - 1) * limit && i < page * limit;
+        const pages = [...Array(Math.ceil(items.length / limit))].map((_, i) => i + 1);
+
 		return (
 			<div>
-				{(this.props.pages || []).map(page =>
+				{items.filter(visiblePosts).map(renderItem)}
+
+				{(pages || []).map(pageItem =>
 					<span
-						key={page}
-						onClick={this.onPageChange.bind(this, page)}
-						className={`${styles.item} ${this.props.current === page && styles.itemActive}`}
+						key={pageItem}
+						onClick={this.onPageChange.bind(this, pageItem)}
+						className={`${styles.item} ${page === pageItem && styles.itemActive}`}
 					>
-						{page}
+						{pageItem}
 					</span>
 				)}
 			</div>
