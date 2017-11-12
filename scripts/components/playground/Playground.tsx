@@ -14,6 +14,10 @@ export function Playground() {
             <Pane label="Days from June 13">
                 <DaysFromJune13 />
             </Pane>
+
+            <Pane label="Circle Canon">
+                {'Soon...'}
+            </Pane>
         </Tabs>
     );
 }
