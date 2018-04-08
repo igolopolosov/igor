@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './PrivacyPolicyTap.css'
 
+/* eslint-disable max-len */
+
 export const PrivacyPolicyTap = () => (
 	<div className={styles.container}>
 		<h2>Privacy Policy</h2>
