@@ -4,7 +4,7 @@ export const sendMessage = PRODUCTION
     ? sendMessageInternal
     : console.log;
 
-export function sendMessageInternal(subject, text) {
+function sendMessageInternal(subject, text) {
     const request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState == 4 && request.status == 200) {

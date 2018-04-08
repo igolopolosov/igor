@@ -16,10 +16,10 @@ const socialLinks = [
         to: 'https://github.com/usehotkey',
         title: 'GitHub'
     },
-    // {
-    //     to: 'https://soundcloud.com/hotkeymusic',
-    //     title: 'SoundCloud'
-    // },
+    {
+        to: 'https://soundcloud.com/hotkeymusic',
+        title: 'SoundCloud'
+    },
 ]
 
 export const Footer = () => {

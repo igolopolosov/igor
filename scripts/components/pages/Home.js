@@ -6,7 +6,7 @@ export const Home = () => (
 		<h2>Hello, World! It's my laboratory.</h2>
 		<div className={styles.avatar} />
 		<p>
-			My name is <b>Igor Golopolosov</b> and I'm Fronted Developer at the <a target='_blank' href='https://www.spotware.com/'>Spotware</a>
+			<b>Igor Golopolosov.</b> Senior Software Enginner at <a target='_blank' href='https://www.comparethemarket.com'>CTM</a>
 		</p>
 		<h3>Here you'll find my projects:</h3>
 	</div>

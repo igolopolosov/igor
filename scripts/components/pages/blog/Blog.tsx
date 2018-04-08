@@ -54,11 +54,15 @@ class BlogContainer extends React.PureComponent<BlogContainerNS.Props> {
 
         return (
             <div className={styles.container}>
-                <Pager
-                    pathName={NAVIGATION_LINKS.blog.to}
-                    items={posts}
-                    renderItem={this.renderItem}
-                />
+                {
+                    posts && posts.length > 0
+                        ? <Pager
+                            pathName={NAVIGATION_LINKS.blog.to}
+                            items={posts}
+                            renderItem={this.renderItem}
+                        />
+                        : <h1>Loading...</h1>
+                }
             </div>
         );
     }
