@@ -1,8 +1,14 @@
-import { configureApp } from './configureHotLoader'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { App } from './components/App'
+
 import './assets'
 
-console.log('=============================================================================')
-console.log('= Hello, Dear friend! Feel free to write me email to igolopolosov@gmail.com =')
-console.log('=============================================================================')
+console.log('=====================================================================')
+console.log('= Hi mate! Feel free to write me an email to igolopolosov@gmail.com =')
+console.log('=====================================================================')
 
-configureApp()
+ReactDOM.render(
+    <App />,
+    document.getElementById('entry-point')
+)

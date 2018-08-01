@@ -1,12 +1,12 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
+	mode: 'development',
 	entry: [
       'babel-polyfill',
-      'react-hot-loader/patch',
       './scripts/index'
    ],
 	output: {
@@ -35,26 +35,29 @@ module.exports = {
 			},
             PRODUCTION: JSON.stringify(false)
 		}),
-		new ExtractTextPlugin('style.[hash].css'),
+		new MiniCssExtractPlugin({
+			filename: "[name].css",
+			chunkFilename: "[id].css"
+		}),
 		new HtmlWebpackPlugin({
 			template: 'index.ejs',
 			inject: 'body'
 		})
 	],
 	module: {
-		loaders: [
+		rules: [
             {
                 test: /\.(png|jpg)/,
                 loader: 'file-loader?name=[name].[ext]'
             },
 			{
 				test: /\.jsx?$/,
-				loader: ['react-hot-loader/webpack', 'babel-loader'],
+				loader: ['babel-loader'],
 				include: path.join(__dirname, 'scripts')
 			},
             {
                 test: /\.tsx?$/,
-                loader: ['react-hot-loader/webpack', 'ts-loader'],
+                loader: ['ts-loader'],
                 include: path.join(__dirname, 'scripts')
             },
             {

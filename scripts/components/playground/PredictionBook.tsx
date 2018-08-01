@@ -91,7 +91,7 @@ class PredictionBookComponent extends React.PureComponent<PredictionBookNS.Props
 export const PredictionBook =
     connect<PredictionBookNS.StateProps, PredictionBookNS.DispatchProps, PredictionBookNS.OwnProps>
     (
-        (state) => ({...state.prediction}),
+        (state: any) => ({...state.prediction}),
         {
             selectPages: setPages,
             selectLines: setLines

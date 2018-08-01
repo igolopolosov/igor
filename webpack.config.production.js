@@ -1,9 +1,10 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const config = require('./webpack.config');
 
+config.mode = "production";
 config.entry = [
     'babel-polyfill',
     './scripts/index'
@@ -16,7 +17,10 @@ config.output = {
 config.devtool = 'source-map';
 config.plugins = [
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new ExtractTextPlugin('style.[hash].css'),
+    new MiniCssExtractPlugin({
+        filename: "[name].css",
+        chunkFilename: "[id].css"
+    }),,
     new webpack.DefinePlugin({
         'process.env': {
             'NODE_ENV': JSON.stringify('production')

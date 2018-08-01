@@ -70,7 +70,7 @@ class BlogContainer extends React.PureComponent<BlogContainerNS.Props> {
 
 const BlogWithRouter = withRouter(BlogContainer);
 export const Blog = connect(
-    store => ({...store.blog}),
+    (state: any) => ({...state.blog}),
     {
         loadBlog
     }
