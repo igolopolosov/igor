@@ -11,6 +11,10 @@ export const NAVIGATION_LINKS = {
         to: '/playground',
         title: 'Playground'
     },
+    music: {
+        to: '/music',
+        title: 'Music'
+    },
     privacyPolicyTap: {
         to: '/privacy-policy-tap',
         title: 'Playground'

@@ -10,6 +10,7 @@ import { Home } from './pages/Home'
 import { NoMatch } from './pages/NoMatch'
 import { PrivacyPolicyTap } from './pages/PrivacyPolicyTap'
 import { Playground } from './playground/Playground'
+import { Music } from './music/Music';
 
 
 export class Main extends React.PureComponent {
@@ -23,6 +24,7 @@ export class Main extends React.PureComponent {
 						<Route path={NAVIGATION_LINKS.home.to} exact component={Home} />
 						<Route path={NAVIGATION_LINKS.blog.to} component={Blog} />
 						<Route path={NAVIGATION_LINKS.playground.to} component={Playground} />
+						<Route path={NAVIGATION_LINKS.music.to} component={Music} />
 
 						<Route path={NAVIGATION_LINKS.privacyPolicyTap.to} component={PrivacyPolicyTap} />
 						

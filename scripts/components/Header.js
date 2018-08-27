@@ -7,6 +7,7 @@ const projectLinks = [
     NAVIGATION_LINKS.home,
     NAVIGATION_LINKS.blog,
     NAVIGATION_LINKS.playground,
+    NAVIGATION_LINKS.music,
 ]
 
 export const Header = () => {
