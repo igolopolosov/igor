@@ -1,0 +1,43 @@
+@value bgPrimary from "../../../../styles/color.css";
+
+.album {
+    position: relative;
+    margin: 1px;
+
+    height: 300px;
+    width: 300px;
+
+    background: bgPrimary;
+}
+
+.coverUrl {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    opacity: 0.2;
+}
+
+.info {
+    position: relative;
+    z-index: 1;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+    
+    &:hover {
+        border-bottom: none;
+    }
+
+    & * {
+        flex: 1;
+    }
+}
