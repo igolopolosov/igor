@@ -1,6 +1,6 @@
 import * as moment from 'moment';
 import * as React from 'react';
-import { CurrentTime } from '../_blocks/CurrentTime';
+import { CurrentTime } from '../../_blocks/CurrentTime';
 
 export class DaysFromJune13 extends React.PureComponent<{}, {difference: string}> {
 

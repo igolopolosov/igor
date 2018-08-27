@@ -6,11 +6,11 @@ import { Header } from './Header'
 import styles from './Main.css'
 import { NAVIGATION_LINKS } from './navigation'
 import { Blog } from './pages/blog/Blog'
-import { Home } from './pages/Home'
+import { Home } from './pages/home/Home'
 import { NoMatch } from './pages/NoMatch'
-import { PrivacyPolicyTap } from './pages/PrivacyPolicyTap'
-import { Playground } from './playground/Playground'
-import { Music } from './music/Music';
+import { PrivacyPolicyTap } from './pages/privacy-policy-tap/PrivacyPolicyTap'
+import { Playground } from './pages/playground/Playground'
+import { Music } from './pages/music/Music';
 
 
 export class Main extends React.PureComponent {

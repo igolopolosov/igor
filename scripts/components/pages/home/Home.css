@@ -3,7 +3,7 @@
     width: 16rem;
     margin: 0 auto;
 
-    background: url('../../../assets/avatar.jpg') bottom;
+    background: url('../../../../assets/avatar.jpg') bottom;
     background-size: cover;
 
     border-radius: 50%;
