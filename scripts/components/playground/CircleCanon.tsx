@@ -6,12 +6,15 @@ const styles = require('./drawPanel.css');
 export class CircleCanon extends React.PureComponent<{}, {}> {
 
     private panelRef: React.RefObject<any>;
+    private circleTimerId: any;
 
     constructor(props) {
         super(props);
         this.panelRef = React.createRef();
+    }
 
-        setInterval(() => {
+    componentDidMount() {
+        this.circleTimerId = setInterval(() => {
             const panel = this.panelRef.current;
             const panelRect = panel.getBoundingClientRect();
 
@@ -20,6 +23,10 @@ export class CircleCanon extends React.PureComponent<{}, {}> {
 
             fireCircles(this.panelRef.current, {clientX: x, clientY: y} as any);
         }, 1000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.circleTimerId);
     }
 
     public render() {
@@ -34,5 +41,4 @@ export class CircleCanon extends React.PureComponent<{}, {}> {
             </div>
         );
     }
-
 }
