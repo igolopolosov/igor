@@ -1,4 +1,5 @@
-@value bgPrimary from "../../../../styles/color.css";
+@value bgPrimary from "../../../../styles/color.css"
+{}
 
 .album {
     position: relative;
@@ -22,9 +23,6 @@
 }
 
 .info {
-    position: relative;
-    z-index: 1;
-
     height: 100%;
     width: 100%;
 
@@ -40,4 +38,10 @@
     & * {
         flex: 1;
     }
+}
+
+.info,
+.iframe {
+    position: relative;
+    z-index: 1;
 }
