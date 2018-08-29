@@ -1,5 +1,6 @@
 import React from 'react'
-import {Album, albums} from './Album.js'
+import { Album } from './Album.js'
+import { albums } from './albums.js'
 import styles from './music.css'
 
 export const Music = () => (
