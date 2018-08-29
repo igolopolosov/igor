@@ -57,9 +57,9 @@ export class Album extends React.Component {
 					target="_blank"
 					href={link}
 				>
-					<h4>{band}</h4>
-					<h5>{album}</h5>
-					<h6>{date}</h6>
+					<h5>{band}</h5>
+					<h4>{album}</h4>
+					<h6>{date.slice(-4)}</h6>
 				</a>
 				<iframe
 					{...iframeSettings}
