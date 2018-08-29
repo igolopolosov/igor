@@ -1,7 +1,47 @@
 import React from 'react'
 import styles from './album.css'
 
-export const albums = [
+export const albums = [	
+	{
+		band: 'Бублики',
+		album: 'Гаррисон | Батл',
+		date: '2016',
+		link: 'https://soundcloud.com/hotkeymusic/sets/bubliki-garrison-batl',
+		soundloud: '265226497',
+		coverUrl: 'https://i1.sndcdn.com/artworks-000186968347-b5ne0k-t500x500.jpg',
+		tracks: [
+			'Батл',
+			'Гаррисон',
+			'Проба',
+		]
+	},
+	{
+		band: 'Из Пэ',
+		album: 'Гореть и Верить',
+		date: '2015',
+		link: 'https://soundcloud.com/hotkeymusic/sets/izp-to-burn-and-hope',
+		soundloud: '184792551',
+		coverUrl: 'https://i1.sndcdn.com/artworks-000142867603-k7z17o-t500x500.jpg',
+		tracks: [
+			'01 - Маленький Принц',
+			'02 - Парад',
+			'03 - Децибелы',
+			'04 - Run, Baby, Run!',
+			'05 - Мотылёк',
+		]
+	},
+	{
+		band: 'Чай с мёдом',
+		album: 'Новогодние Надежды / Убежав на Закат',
+		date: '2015',
+		link: 'https://soundcloud.com/hotkeymusic/sets/chai-nadezhdy-ubezhav',
+		soundloud: '260868318',
+		coverUrl: 'https://i1.sndcdn.com/artworks-000186691319-7tfiqx-t500x500.jpg',
+		tracks: [
+			'Убежав на Закат',
+			'Новогодние Надежды'
+		]
+	},
 	{
 		band: 'сиг?',
 		album: 'обогнавшие скорость!',
