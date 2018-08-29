@@ -3,6 +3,30 @@ import styles from './album.css'
 
 export const albums = [	
 	{
+		band: '14th of May, Saturday',
+		album: 'Killing Spree',
+		date: '2018',
+		link: 'https://soundcloud.com/hotkeymusic/sets/14th-of-may-saturday-killing',
+		soundloud: '592466907',
+		coverUrl: 'https://i1.sndcdn.com/artworks-000395151423-wzmk3g-t500x500.jpg',
+		tracks: [
+			'Killing Spree',
+		],
+		info: `Move fast`
+	},
+	{
+		band: '14th of May, Saturday',
+		album: 'Night Stalker',
+		date: '2018',
+		link: 'https://soundcloud.com/hotkeymusic/sets/14th-of-may-saturday-night',
+		soundloud: '592463973',
+		coverUrl: 'https://i1.sndcdn.com/artworks-000386732148-akdas0-t500x500.jpg',
+		tracks: [
+			'Night Stalker',
+		],
+		info: `Techo darkness`
+	},
+	{
 		band: 'Бублики',
 		album: 'Гаррисон | Батл',
 		date: '2016',
