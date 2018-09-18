@@ -8,18 +8,22 @@ const socialLinks = [
         to: 'https://stackoverflow.com/story/usehotkey',
         title: 'StackOverflow'
     },
+    // {
+    //     to: 'https://yadi.sk/d/QzyQ04br3HXrmU',
+    //     title: 'CV'
+    // },
     {
-        to: 'https://yadi.sk/d/QzyQ04br3HXrmU',
-        title: 'CV'
+        to: 'https://www.linkedin.com/in/igor-golopolosov-98382012a/',
+        title: 'LinkedIn'
     },
     {
         to: 'https://github.com/usehotkey',
         title: 'GitHub'
     },
-    {
-        to: 'https://soundcloud.com/hotkeymusic',
-        title: 'SoundCloud'
-    },
+    // {
+    //     to: 'https://soundcloud.com/hotkeymusic',
+    //     title: 'SoundCloud'
+    // },
 ]
 
 export const Footer = () => {
