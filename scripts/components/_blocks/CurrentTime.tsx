@@ -1,11 +1,11 @@
-import * as moment from 'moment';
+import { getTime, format } from 'date-fns';
 import * as React from 'react';
 
 const SECOND = 1000;
 
 namespace CurrentTimeNS {
     export interface State {
-        time: number;
+        date: Date;
     }
 }
 
@@ -17,16 +17,18 @@ export class CurrentTime extends React.PureComponent<{}, CurrentTimeNS.State> {
         super(props);
 
         this.state = {
-            time: +moment() / SECOND
+            date: new Date()
         };
 
-        setInterval(() => this.setState({time: +moment() / SECOND}), 5 * SECOND);
+        setInterval(() => this.setState({date: new Date()}), 5 * SECOND);
     }
 
     public render() {
+        const { date } = this.state;
+
         return (
             <h3>
-                {`unix: ${this.state.time}, human: ${moment.unix(this.state.time).format('LLLL')}`}
+                {`unix: ${getTime(date)}, human: ${format(date, 'Do MMMM YYYY, HH:mm A')}`}
             </h3>
         );
     }

@@ -1,4 +1,4 @@
-import moment from 'moment'
+import { format } from 'date-fns';
 import React from 'react'
 import { Navigation } from './_blocks/Navigation'
 import styles from './Main.css'
@@ -34,7 +34,7 @@ export const Footer = () => {
             </div>
             <div>
                 <small>
-                    {`Igor Golopolosov, 2016-${moment().year()}. `}
+                    {`Igor Golopolosov, 2016-${format(new Date(), 'YYYY')}. `}
                     <b>igolopolosov@gmail.com</b>
                 </small>
             </div>
