@@ -14,6 +14,10 @@
     padding: sizeS;
 
     border-radius: 0 0 sizeS sizeS;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .tabHeaderItem {
@@ -22,10 +26,6 @@
 
     &:hover {
          background: neutral;
-    }
-
-    &:last-child {
-        margin-right: 0;
     }
 }
 
