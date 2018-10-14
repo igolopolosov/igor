@@ -32,14 +32,15 @@ class BlogContainer extends React.PureComponent<BlogContainerNS.Props> {
      * Render blog post
      */
     private renderItem = (post: BlogPost) => {
-        const date = format(parse(post.time), 'MMMM DD, YYYY');
+        const date = parse(post.time * 1000);
+        const formattedDate = format(date, 'MMMM DD, YYYY');
 
         return (
             <div key={post.id}>
                 <h2>{post.title}</h2>
                 <h3>
                     <span className={styles.tag}>{post.tag}</span>
-                    <span>{date}</span>
+                    <span>{formattedDate}</span>
                 </h3>
                 <p>{post.text}</p>
             </div>
