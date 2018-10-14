@@ -56,9 +56,15 @@ export class Album extends React.Component {
 					rel='noopener'
 					href={link}
 				>
-					<h5>{band}</h5>
-					<h4>{album}</h4>
-					<h6>{date.slice(-4)}</h6>
+					<div>
+						<span className={styles.label}>{band}</span>
+					</div>
+					<div>
+						<span className={styles.label}>{album}</span>
+					</div>
+					<div>
+						<span className={styles.label}>{date.slice(-4)}</span>
+					</div>
 				</a>
 				<iframe
 					{...iframeSettings}

@@ -1,5 +1,5 @@
 @value sizeM, sizeXS from "../../styles/size.css";
-@value secondary, bgHeader, bgPrimary from "../../styles/color.css";
+@value secondary, bgDark, bgPrimary from "../../styles/color.css";
 
 .container {
     min-height: 100%;
@@ -16,7 +16,7 @@
     padding: sizeM;
     box-sizing: border-box;
 
-    background-color: bgHeader;
+    background-color: bgDark;
 }
 
 .content {

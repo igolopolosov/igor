@@ -1,4 +1,4 @@
-@value bgPrimary from "../../../../styles/color.css"
+@value bgDark, tertiary from "../../../../styles/color.css"
 {}
 
 .album {
@@ -8,7 +8,7 @@
     height: 300px;
     width: 300px;
 
-    background: bgPrimary;
+    background: bgDark;
 }
 
 .coverUrl {
@@ -19,16 +19,17 @@
     height: 100%;
     width: 100%;
 
-    opacity: 0.2;
+    opacity: 0.75;
 }
 
 .info {
     height: 100%;
     width: 100%;
 
+    padding-top: 1rem;
+
     display: flex;
     flex-direction: column;
-
     cursor: pointer;
     
     &:hover {
@@ -38,6 +39,14 @@
     & * {
         flex: 1;
     }
+}
+
+.label {
+    padding: 0.2rem 0.4rem;
+
+    background: tertiary;
+
+    line-height: 1.4rem;
 }
 
 .info,
