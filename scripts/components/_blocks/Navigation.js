@@ -30,7 +30,7 @@ export class Navigation extends React.PureComponent {
 							key={link.to}
 							to={link.to}
 						>
-							-{link.title}-
+							{`-${link.title}-`}
 						</Link>
 				)}
 			</div>
