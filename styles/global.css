@@ -54,7 +54,7 @@ a:hover {
 /* mobile phone */
 @media all and (max-width: 768px) {
     body, button, input, textarea {
-        font-size: 30px;
+        font-size: 15px;
     }
 }
 
