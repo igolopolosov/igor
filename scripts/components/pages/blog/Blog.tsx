@@ -1,4 +1,4 @@
-import * as moment from 'moment';
+import { parse, format } from 'date-fns';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
@@ -32,12 +32,14 @@ class BlogContainer extends React.PureComponent<BlogContainerNS.Props> {
      * Render blog post
      */
     private renderItem = (post: BlogPost) => {
+        const date = format(parse(post.time), 'MMMM DD, YYYY');
+
         return (
             <div key={post.id}>
                 <h2>{post.title}</h2>
                 <h3>
                     <span className={styles.tag}>{post.tag}</span>
-                    <span>{moment.unix(post.time).format('LL')}</span>
+                    <span>{date}</span>
                 </h3>
                 <p>{post.text}</p>
             </div>

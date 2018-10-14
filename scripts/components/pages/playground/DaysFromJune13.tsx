@@ -1,4 +1,4 @@
-import * as moment from 'moment';
+import { getDayOfYear, getYear, differenceInCalendarDays } from 'date-fns';
 import * as React from 'react';
 import { CurrentTime } from '../../_blocks/CurrentTime';
 
@@ -25,14 +25,17 @@ export class DaysFromJune13 extends React.PureComponent<{}, {difference: string}
 
     private calculateDifference() {
         const JUNE_13_DAY = 164;
-        const cm = moment();
-        const cy = cm.year();
-        const june13 = moment('1994-06-13').year(
-            cm.dayOfYear() >= JUNE_13_DAY ? cy : cy - 1
+
+        const now = new Date();
+        const thisYear = getYear(now);
+        const june13 = new Date(
+            getDayOfYear(now) >= JUNE_13_DAY ? thisYear : thisYear - 1,
+            5,
+            13
         );
 
         this.state = {
-            difference: cm.diff(june13, 'days').toString()
+            difference: differenceInCalendarDays(now, june13).toString()
         };
     }
 
