@@ -20,6 +20,7 @@ export class Navigation extends React.PureComponent {
 					this.props.external
 					? 	<a
 							target='_blank'
+							rel='noopener'
 							key={link.to}
 							href={link.to}
 						>

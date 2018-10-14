@@ -38,9 +38,7 @@ export class Album extends React.Component {
 			date,
 			link,
 			soundloud,
-			coverUrl,
-			rating,
-			tracks
+			coverUrl
 		} = this.props
 		const { isPlayerDisplayed } = this.state
 
@@ -54,7 +52,8 @@ export class Album extends React.Component {
 				<a
 					className={styles.info}
 					style={{ display: isPlayerDisplayed && 'none' }}
-					target="_blank"
+					target='_blank'
+					rel='noopener'
 					href={link}
 				>
 					<h5>{band}</h5>
