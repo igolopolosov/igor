@@ -2,7 +2,10 @@
 @value primaryLight, tertiaryLight, neutral, neutralLight from '../../../../styles/color.css';
 
 .tabHeader {
-    padding: sizeS;
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: sizeS;
 }
 
 .tabHeaderItemSelected,
@@ -19,6 +22,10 @@
 
     &:hover {
          background: neutral;
+    }
+
+    &:last-child {
+        margin-right: 0;
     }
 }
 
