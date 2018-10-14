@@ -1,15 +1,14 @@
 @value sizeM, sizeXS from "../../styles/size.css";
-@value secondary, bgHeader from "../../styles/color.css";
+@value secondary, bgHeader, bgPrimary from "../../styles/color.css";
 
 .container {
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
-    background: url("../../assets/banner.jpg") no-repeat center center;
-    background-size: cover;
+    background: bgPrimary;
 }
 
 .header {
