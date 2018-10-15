@@ -1,10 +1,13 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { AnyAction } from 'redux';
+
 import { generateRandomInt } from '../../../helpers/math';
 import { setLines, setPages } from '../../../reducers/prediction';
 import { Button } from '../../_blocks/forms/Button';
 import { NumberInput } from '../../_blocks/forms/NumberInput';
+
+const styles = require('./PredictionBook.css');
 
 namespace PredictionBookNS {
     export interface OwnProps {}
@@ -40,6 +43,7 @@ class PredictionBookComponent extends React.PureComponent<PredictionBookNS.Props
 
     public render() {
         const {pages, lines, selectPages, selectLines} = this.props;
+        const {answer} = this.state;
 
         return (
             <div>
@@ -53,13 +57,13 @@ class PredictionBookComponent extends React.PureComponent<PredictionBookNS.Props
                     <label>{`Number of lines on a page: `}</label>
                     <NumberInput value={lines} onChange={selectLines} />
                 </p>
+                <p className={styles.answer}>
+                    {answer ? answer : 'Reveal the answer!'}
+                </p>
                 <p>
                     <Button onClick={this.generateRandomLine} primary>
                         {`Make Magic!`}
                     </Button>
-                </p>
-                <p>
-                    {this.state.answer}
                 </p>
             </div>
         );

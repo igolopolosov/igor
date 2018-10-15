@@ -1,0 +1,10 @@
+@value sizeM, sizeXS from "../../../../styles/size.css";
+@value tertiary from "../../../../styles/color.css";
+
+.answer {
+    padding: sizeXS sizeM;
+
+    border-radius: sizeXS;
+
+    background: tertiary;
+}
