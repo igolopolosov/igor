@@ -18,7 +18,7 @@ export class Navigation extends React.PureComponent {
 		external: PropTypes.bool
 	}
 	
-	renderLink(link) {
+	renderLink = (link) => {
 		const title = `-${link.title}-`;
 
 		return (
@@ -44,7 +44,7 @@ export class Navigation extends React.PureComponent {
 		return (
 			<div className={styles.container}>
 				{
-					(this.props.links || []).map(link => this.renderLink(link))
+					(this.props.links || []).map(this.renderLink)
 				}
 			</div>
 		)

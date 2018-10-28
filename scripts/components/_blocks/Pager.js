@@ -43,6 +43,18 @@ class PagerContainer extends React.PureComponent {
         this.setState({page});
 	}
 
+	renderPageItem = (pageItem) => {
+		return (
+			<span
+				key={pageItem}
+				onClick={this.onPageChange.bind(this, pageItem)}
+				className={`${styles.item} ${page === pageItem && styles.itemActive}`}
+			>
+				{pageItem}
+			</span>
+		)
+	}
+
 	render() {
         const {limit, page} = this.state;
 		const {items, renderItem} = this.props;
@@ -53,16 +65,7 @@ class PagerContainer extends React.PureComponent {
 		return (
 			<div>
 				{items.filter(visiblePosts).map(renderItem)}
-
-				{(pages || []).map(pageItem =>
-					<span
-						key={pageItem}
-						onClick={this.onPageChange.bind(this, pageItem)}
-						className={`${styles.item} ${page === pageItem && styles.itemActive}`}
-					>
-						{pageItem}
-					</span>
-				)}
+				{(pages || []).map(this.renderPageItem)}
 			</div>
 		)
 	}
