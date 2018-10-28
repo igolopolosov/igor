@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 
 import { BlogPost } from '../../../reducers/blog';
-import { Pager } from '../../_blocks/Pager';
+import { Pager } from '../../blocks/Pager';
 import { NAVIGATION_LINKS } from '../../../consts/navigation';
 import { loadBlog } from './loadBlog';
 

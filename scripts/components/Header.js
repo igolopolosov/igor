@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navigation } from './_blocks/Navigation'
+import { Navigation } from './blocks/Navigation'
 import { NAVIGATION_LINKS } from '../consts/navigation'
 import styles from './Main.css'
 

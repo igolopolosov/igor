@@ -1,6 +1,6 @@
 import { getDayOfYear, getYear, differenceInCalendarDays, getTime, format } from 'date-fns';
 import * as React from 'react';
-import { CurrentTime } from '../../_blocks/CurrentTime';
+import { CurrentTime } from '../../blocks/CurrentTime';
 
 export class DaysFromJune13 extends React.PureComponent {
 

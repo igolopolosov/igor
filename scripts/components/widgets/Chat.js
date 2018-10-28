@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Chat.css'
-import { Button } from '../_blocks/forms/Button'
+import { Button } from '../blocks/forms/Button'
 import { sendMessage } from './sendMessage'
 
 const CHAT_TIMEOUT = 5 * 1000

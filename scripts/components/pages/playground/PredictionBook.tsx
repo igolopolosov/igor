@@ -4,8 +4,8 @@ import { AnyAction } from 'redux';
 
 import { generateRandomInt } from '../../../helpers/math';
 import { setLines, setPages } from '../../../reducers/prediction';
-import { Button } from '../../_blocks/Button';
-import { NumberInput } from '../../_blocks/NumberInput';
+import { Button } from '../../blocks/Button';
+import { NumberInput } from '../../blocks/NumberInput';
 
 const styles = require('./PredictionBook.css');
 

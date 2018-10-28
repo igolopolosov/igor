@@ -1,6 +1,6 @@
 import { format } from 'date-fns';
 import React from 'react'
-import { Navigation } from './_blocks/Navigation'
+import { Navigation } from './blocks/Navigation'
 import styles from './Main.css'
 
 const socialLinks = [
