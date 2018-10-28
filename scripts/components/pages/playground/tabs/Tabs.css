@@ -1,5 +1,5 @@
-@value sizeS, sizeM from '../../../../styles/size.css';
-@value primaryLight, tertiaryLight, neutral, neutralLight from '../../../../styles/color.css';
+@value sizeS, sizeM from '../../../../../styles/size.css';
+@value primaryLight, tertiaryLight, neutral, neutralLight from '../../../../../styles/color.css';
 
 .tabHeader {
     display: flex;
@@ -25,11 +25,14 @@
     cursor: pointer;
 
     &:hover {
-         background: neutral;
+        background: neutral;
     }
 }
 
 .tabHeaderItemSelected {
     background: tertiaryLight;
-    cursor: default;
+
+    &:hover {
+        background: tertiaryLight;
+    }
 }

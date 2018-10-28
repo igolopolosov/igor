@@ -46,7 +46,7 @@ class PredictionBookComponent extends React.PureComponent<PredictionBookNS.Props
         const {answer} = this.state;
 
         return (
-            <div>
+            <>
                 <h1>{`Prediction Book`}</h1>
                 <p>{`Choose some book and enter next information.`}</p>
                 <p>
@@ -65,7 +65,7 @@ class PredictionBookComponent extends React.PureComponent<PredictionBookNS.Props
                         {`Make Magic!`}
                     </Button>
                 </p>
-            </div>
+            </>
         );
     }
 

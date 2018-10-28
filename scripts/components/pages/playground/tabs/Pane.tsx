@@ -1,5 +1,6 @@
 export interface PaneProps {
     label: string;
+    url: string;
     children: any;
 }
 

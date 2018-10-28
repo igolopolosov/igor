@@ -31,14 +31,14 @@ export class CircleCanon extends React.PureComponent<{}, {}> {
 
     public render() {
         return (
-            <div>
+            <>
                 <h3>Click below to see the magic!</h3>
                 <svg
                     ref={this.panelRef}
                     className={styles.main}
                     onClick={(event) => fireCircles(this.panelRef.current as any, event as any)}
                 />
-            </div>
+            </>
         );
     }
 }
