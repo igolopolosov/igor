@@ -44,6 +44,8 @@ class PagerContainer extends React.PureComponent {
 	}
 
 	renderPageItem = (pageItem) => {
+		const {page} = this.state;
+
 		return (
 			<span
 				key={pageItem}
