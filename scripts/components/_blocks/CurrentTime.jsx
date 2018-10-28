@@ -3,15 +3,12 @@ import * as React from 'react';
 
 const SECOND = 1000;
 
-namespace CurrentTimeNS {
-    export interface State {
-        date: Date;
-    }
-}
+/**
+ * Displays current time in unix and human readable formats
+ */
+export class CurrentTime extends React.PureComponent {
 
-export class CurrentTime extends React.PureComponent<{}, CurrentTimeNS.State> {
-
-    public state: CurrentTimeNS.State;
+    state;
 
     constructor(props) {
         super(props);
@@ -23,7 +20,7 @@ export class CurrentTime extends React.PureComponent<{}, CurrentTimeNS.State> {
         setInterval(() => this.setState({date: new Date()}), 5 * SECOND);
     }
 
-    public render() {
+    render() {
         const { date } = this.state;
 
         return (

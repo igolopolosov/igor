@@ -9,6 +9,9 @@ function extractPage(search) {
 	return search.split(PAGE_SEPARATOR)[1]
 }
 
+/**
+ * Used to control pages for list of items
+ */
 class PagerContainer extends React.PureComponent {
 
 	static propTypes = {

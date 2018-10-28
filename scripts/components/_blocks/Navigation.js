@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import styles from './Navigation.css'
 
+/**
+ * Main navigation component
+ * Can show internal and external links
+ */
 export class Navigation extends React.PureComponent {
 
 	static propTypes = {
