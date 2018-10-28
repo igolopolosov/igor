@@ -15,7 +15,7 @@ module.exports = {
 		publicPath: '/'
 	},
 	resolve: {
-		extensions: ['*', '.ts', '.tsx', '.js', '.styl']
+		extensions: ['*', '.ts', '.tsx', '.js', '.jsx', '.styl']
 	},
 	devtool: 'eval',
 	devServer: {

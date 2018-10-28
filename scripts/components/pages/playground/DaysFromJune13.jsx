@@ -2,28 +2,28 @@ import { getDayOfYear, getYear, differenceInCalendarDays } from 'date-fns';
 import * as React from 'react';
 import { CurrentTime } from '../../_blocks/CurrentTime';
 
-export class DaysFromJune13 extends React.PureComponent<{}, {difference: string}> {
+export class DaysFromJune13 extends React.PureComponent {
 
-    public state = {
+    state = {
         difference: '???'
     };
 
-    constructor(props: {}) {
+    constructor(props) {
         super(props);
 
         this.calculateDifference();
     }
 
-    public render() {
+    render() {
         return (
-            <>
+            <div>
                 <h1>{`It took ${this.state.difference} days from June 13.`}</h1>
                 <CurrentTime />
-            </>
+            </div>
         );
     }
 
-    private calculateDifference() {
+    calculateDifference() {
         const JUNE_13_DAY = 164;
 
         const now = new Date();
