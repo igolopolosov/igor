@@ -1,0 +1,43 @@
+.main {
+    position: relative;
+    height: 0;
+}
+
+.js,
+.go {
+    position: absolute;
+    display: flex;
+    padding: 10px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 10%;
+
+    font-weight: bold;
+}
+
+.js {
+    top: 2rem;
+    right: 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    transform: rotate(-15deg); 
+
+    background: yellow;
+    color: #333;
+}
+
+.go {
+    top: 2rem;
+    left: 0;
+
+    justify-content: center;
+    align-items: center;
+
+    transform: rotate(15deg); 
+
+    background: lightskyblue;
+    color: #fff;
+}
