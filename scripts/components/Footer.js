@@ -28,7 +28,7 @@ const socialLinks = [
 
 export const Footer = () => {
     return (
-        <div className={styles.footer}>
+        <footer className={styles.footer}>
             <div className={styles.socialNav}>
                 <Navigation links={socialLinks} external />
             </div>
@@ -38,6 +38,6 @@ export const Footer = () => {
                     <b>igolopolosov@gmail.com</b>
                 </small>
             </div>
-        </div>
+        </footer>
     )
 }

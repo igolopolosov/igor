@@ -12,8 +12,8 @@ const projectLinks = [
 
 export const Header = () => {
     return (
-        <div className={styles.header}>
+        <header className={styles.header}>
             <Navigation links={projectLinks} />
-        </div>
+        </header>
     )
 }

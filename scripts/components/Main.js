@@ -19,7 +19,7 @@ export class Main extends React.PureComponent {
 			<div className={styles.container}>
 				<Header />
 
-				<div className={styles.content}>
+				<main className={styles.content}>
 					<Switch>
 						<Route path={NAVIGATION_LINKS.home.to} exact component={Home} />
 						<Route path={NAVIGATION_LINKS.blog.to} component={Blog} />
@@ -37,7 +37,7 @@ export class Main extends React.PureComponent {
 						
 						<Route path='*' component={NoMatch} />
 					</Switch>
-				</div>
+				</main>
 
 				<Footer />
 			</div>
