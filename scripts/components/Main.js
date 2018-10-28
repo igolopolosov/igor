@@ -24,7 +24,11 @@ export class Main extends React.PureComponent {
 						<Route path={NAVIGATION_LINKS.home.to} exact component={Home} />
 						<Route path={NAVIGATION_LINKS.blog.to} component={Blog} />
 
-						<Redirect exact from={NAVIGATION_LINKS.playground.to} to={NAVIGATION_LINKS.playground.to + "/circle-canon"} />
+						<Redirect
+							exact
+							from={NAVIGATION_LINKS.playground.to}
+							to={NAVIGATION_LINKS.playground.circleCanon.to}
+						/>
 						<Route path={NAVIGATION_LINKS.playground.to} component={Playground} />
 						
 						<Route path={NAVIGATION_LINKS.music.to} component={Music} />

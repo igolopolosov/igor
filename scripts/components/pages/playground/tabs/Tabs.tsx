@@ -24,7 +24,7 @@ export class Tabs extends React.PureComponent<TabsNS.Props, {}> {
                 activeClassName={styles.tabHeaderItemSelected}
                 className={styles.tabHeaderItem}
                 key={item.props.url}
-                to={"/playground/" + item.props.url}
+                to={item.props.url}
             >
                 {item.props.label}
             </NavLink>
