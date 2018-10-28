@@ -1,4 +1,4 @@
-import { getDayOfYear, getYear, differenceInCalendarDays } from 'date-fns';
+import { getDayOfYear, getYear, differenceInCalendarDays, getTime, format } from 'date-fns';
 import * as React from 'react';
 import { CurrentTime } from '../../_blocks/CurrentTime';
 
@@ -18,7 +18,14 @@ export class DaysFromJune13 extends React.PureComponent {
         return (
             <div>
                 <h1>{`It took ${this.state.difference} days from June 13.`}</h1>
-                <CurrentTime />
+                
+                <CurrentTime>
+                    {({ date }) => (
+                        <h3>
+                            {`unix: ${getTime(date)}, human: ${format(date, 'Do MMMM YYYY, HH:mm A')}`}
+                        </h3>
+                    )}
+                </CurrentTime>
             </div>
         );
     }

@@ -1,4 +1,3 @@
-import { getTime, format } from 'date-fns';
 import * as React from 'react';
 
 const SECOND = 1000;
@@ -23,11 +22,7 @@ export class CurrentTime extends React.PureComponent {
     render() {
         const { date } = this.state;
 
-        return (
-            <h3>
-                {`unix: ${getTime(date)}, human: ${format(date, 'Do MMMM YYYY, HH:mm A')}`}
-            </h3>
-        );
+        return this.props.children({ date });
     }
 
 }
