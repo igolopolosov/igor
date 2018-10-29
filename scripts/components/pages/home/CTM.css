@@ -1,0 +1,10 @@
+@value sizeXS, sizeS, sizeXL from "../../../../styles/size.css"
+{}
+
+.companyLogo {
+    margin-right: sizeXS;
+    transform: translateY(sizeS);
+
+    width: sizeXL;
+    height: sizeXL;
+}
