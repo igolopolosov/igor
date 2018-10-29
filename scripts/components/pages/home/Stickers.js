@@ -9,5 +9,11 @@ export const Stickers = () => (
 		<div className={styles.go}>
 			<span>GO</span>
 		</div>
+		<div className={styles.csharp}>
+			<span>C#</span>
+		</div>
+		<div className={styles.ts}>
+			<span>TS</span>
+		</div>
 	</div>
 )
