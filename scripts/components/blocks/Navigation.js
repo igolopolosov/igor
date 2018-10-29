@@ -19,8 +19,6 @@ export class Navigation extends React.PureComponent {
 	}
 	
 	renderLink = (link) => {
-		const title = `-${link.title}-`;
-
 		return (
 			this.props.external
 				? 	<a
@@ -29,13 +27,13 @@ export class Navigation extends React.PureComponent {
 						key={link.to}
 						href={link.to}
 					>
-						{title}
+						{`-${link.title}-`}
 					</a>
 				:	<Link
 						key={link.to}
 						to={link.to}
 					>
-						{title}
+						{link.title}
 					</Link>
 		)
 	}

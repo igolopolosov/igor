@@ -1,36 +1,36 @@
 export const NAVIGATION_LINKS = {
     home: {
         to: '/',
-        title: 'Home'
+        title: '🏡Home'
     },
     blog: {
         to: '/blog',
-        title: 'Blog'
+        title: '📕Blog'
     },
 
     playground: {
         to: '/playground',
-        title: 'Playground', 
+        title: '🎃Playground', 
         circleCanon: {
             to: '/playground/circle-canon',
-            title: 'Circle Canon',
+            title: '🌋Circle Canon',
         },
         predictionBook: {
             to: '/playground/prediction-book',
-            title: 'Prediction Book'
+            title: '🔮Prediction Book'
         },
         daysFromJune13: {
             to: '/playground/days-from-june-13',
-            title: 'Days from June 13',
+            title: '📆Days from June 13',
         },
     },
 
     music: {
         to: '/music',
-        title: 'Music'
+        title: '🎵Music'
     },
     privacyPolicyTap: {
         to: '/privacy-policy-tap',
-        title: 'Playground'
+        title: 'Privacy Policy for Tap! Tap!'
     },
 };

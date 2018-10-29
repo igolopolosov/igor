@@ -34,7 +34,7 @@ export const Footer = () => {
             </div>
             <div>
                 <small>
-                    {`Igor Golopolosov, 2016-${format(new Date(), 'YYYY')}. `}
+                    {`Igor Golopolosov, 2016-${format(new Date(), 'YYYY')} ♥️`}
                     <b>igolopolosov@gmail.com</b>
                 </small>
             </div>
