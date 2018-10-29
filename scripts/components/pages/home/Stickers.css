@@ -1,3 +1,6 @@
+@value sizeS, sizeXL, sizeXXL from "../../../../styles/size.css"
+{}
+
 .main {
     position: relative;
     height: 0;
@@ -9,10 +12,10 @@
 .ts {
     position: absolute;
     display: flex;
-    padding: 0.5rem;
+    padding: sizeS;
 
-    width: 3rem;
-    height: 3rem;
+    width: sizeXXL;
+    height: sizeXXL;
 
     border-radius: 10%;
 
@@ -23,7 +26,7 @@
 }
 
 .js {
-    top: 2rem;
+    top: sizeXL;
     right: 0;
     justify-content: flex-end;
     align-items: flex-end;
@@ -35,7 +38,7 @@
 }
 
 .go {
-    top: 2rem;
+    top: sizeXL;
     left: 0;
 
     justify-content: center;

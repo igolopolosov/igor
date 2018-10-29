@@ -3,6 +3,7 @@
 @value sizeM: 1rem;
 @value sizeL: 1.5rem;
 @value sizeXL: 2rem;
+@value sizeXXL: 3rem;
 
 @value borderRadius: sizeS sizeXS;
 @value padding: sizeXS sizeS;
