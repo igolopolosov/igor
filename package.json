@@ -1,11 +1,11 @@
 {
-  "name": "my-personal-page",
+  "name": "igor",
   "main": "index.js",
   "version": "0.2.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/usehotkey/my-personal-page"
+    "url": "https://github.com/usehotkey/igor"
   },
   "scripts": {
     "start": "webpack-dev-server",
