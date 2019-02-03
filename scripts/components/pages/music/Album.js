@@ -3,17 +3,17 @@ import styles from './album.css'
 
 
 const iframeSettings = {
-	width: "100%",
-	height: "300",
-	scrolling: "no",
-	frameBorder: "no",
-	allow: "autoplay"
+	width: '100%',
+	height: '300',
+	scrolling: 'no',
+	frameBorder: 'no',
+	allow: 'autoplay'
 }
 
 function getSouncloudIframeSrc(id) {
-	const sc0 = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/"
-	const sc1 = "&color=%23ff5500&auto_play=false&hide_related=false"
-	const sc2 = "&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+	const sc0 = 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/'
+	const sc1 = '&color=%23ff5500&auto_play=false&hide_related=false'
+	const sc2 = '&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
 
 	return `${sc0}${id}${sc1}${sc2}`
 }

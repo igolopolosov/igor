@@ -9,7 +9,7 @@ export const CTM = () => (
 	>
 		<img
 			className={styles.companyLogo}
-			src="http://cdn.comparethemarket.com/market/assets/logos/favicon.ico"
+			src='http://cdn.comparethemarket.com/market/assets/logos/favicon.ico'
 		/>
 		<b>compare</b>the<b>market</b>
 	</a>
