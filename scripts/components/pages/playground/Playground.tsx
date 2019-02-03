@@ -7,28 +7,39 @@ import { Tabs } from './tabs/Tabs';
 import { DaysFromJune13 } from './DaysFromJune13';
 import { PredictionBook } from './PredictionBook';
 import { CircleCanon } from './CircleCanon';
+import { WordReminder } from './WordReminder';
 
 const {
-    playground: {
-        circleCanon,
-        predictionBook,
-        daysFromJune13
-    }
-} = NAVIGATION_LINKS;
+    circleCanon,
+    predictionBook,
+    daysFromJune13,
+    wordReminder
+} = NAVIGATION_LINKS.playground;
+
+const tabs = [
+    [circleCanon, CircleCanon],
+    [predictionBook, PredictionBook],
+    [daysFromJune13, DaysFromJune13],
+    [wordReminder, WordReminder],
+]
 
 export function Playground() {
     return (
         <>
             <Tabs>
-                <Pane label={circleCanon.title} url={circleCanon.to} />
-                <Pane label={predictionBook.title} url={predictionBook.to} />
-                <Pane label={daysFromJune13.title} url={daysFromJune13.to} />                
+                {tabs.map(
+                    ([link]) => (
+                        <Pane key={link.title} label={link.title} url={link.to} />
+                    )
+                )}             
             </Tabs>
 
             <Switch>
-                <Route path={circleCanon.to} component={CircleCanon} />
-                <Route path={predictionBook.to} component={PredictionBook} />
-                <Route path={daysFromJune13.to} component={DaysFromJune13} />
+                {tabs.map(
+                    ([link, component]) => (
+                        <Route key={link.title} path={link.to} component={component} />
+                    )
+                )}
             </Switch>
         </>        
     );

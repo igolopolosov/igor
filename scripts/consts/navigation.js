@@ -23,6 +23,10 @@ export const NAVIGATION_LINKS = {
             to: '/playground/days-from-june-13',
             title: '📆Days from June 13',
         },
+        wordReminder: {
+            to: '/playground/word-reminder',
+            title: '🚨Word Reminder',
+        },
     },
 
     music: {
