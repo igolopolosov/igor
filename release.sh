@@ -4,7 +4,7 @@ rm bundle*
 rm index.html
 
 echo "⭐️ Build started"
-cd ../my-personal-page
+cd ../igor
 npm run build
 
 echo "⭐️ Commit changes"
