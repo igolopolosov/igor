@@ -1,23 +1,49 @@
-import React from 'react'
+import * as React from 'react'
 import { Route, Redirect, Switch } from 'react-router'
 
 import { Footer } from './Footer'
 import { Header } from './Header'
-import styles from './Main.css'
 import { NAVIGATION_LINKS } from '../consts/navigation'
 import { Blog } from './pages/blog/Blog'
 import { Home } from './pages/home/Home'
 import { NoMatch } from './pages/NoMatch'
 import { PrivacyPolicyTap } from './pages/privacy-policy-tap/PrivacyPolicyTap'
 import { Playground } from './pages/playground/Playground'
-import { Music } from './pages/music/Music';
+import { Music } from './pages/music/Music'
 
+const styles = require('./Main.css')
 
-export class Main extends React.PureComponent {
+interface MainState {
+	isFullScreen: boolean
+}
+
+export class Main extends React.PureComponent<{}, MainState> {
+
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			isFullScreen: false
+		}
+	}
+
+	toggleFullScreen = () => {
+		this.setState(state => ({
+			isFullScreen: !state.isFullScreen
+		}))
+	}
+
 	render() {
+		const { isFullScreen } = this.state
+		const notFullScreen = !isFullScreen;
+
 		return (
 			<div className={styles.container}>
-				<Header />
+				{notFullScreen && <Header />}
+
+				<div className={styles.fullScreen} onClick={this.toggleFullScreen}>
+					{isFullScreen ? '+' : '='}
+				</div>
 
 				<main className={styles.content}>
 					<Switch>
@@ -39,7 +65,7 @@ export class Main extends React.PureComponent {
 					</Switch>
 				</main>
 
-				<Footer />
+				{notFullScreen && <Footer />}
 			</div>
 		)
 	}

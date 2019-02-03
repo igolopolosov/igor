@@ -1,5 +1,5 @@
-@value sizeM, sizeXS from "../../styles/size.css";
-@value secondary, bgDark, bgPrimary from "../../styles/color.css";
+@value sizeXXL, sizeM, sizeXS from "../../styles/size.css";
+@value tertiary, tertiaryDark, bgDark, bgPrimary from "../../styles/color.css";
 
 .container {
     min-height: 100%;
@@ -9,6 +9,26 @@
     text-align: center;
 
     background: bgPrimary;
+}
+
+.fullScreen {
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    height: sizeXXL;
+    width: sizeXXL;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    cursor: pointer;
+    background: tertiary;
+
+    &:hover {
+        background: tertiaryDark;
+    }
 }
 
 .header {
