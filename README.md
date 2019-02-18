@@ -1,4 +1,4 @@
-# igor
+# igor 🔥
 
 Hi Mate, welcome to my home page. Please pop to [MY PERSONAL PAGE](https://usehotkey.github.io/#/) and spend exciting time there! 😁
 
