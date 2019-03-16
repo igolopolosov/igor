@@ -1,4 +1,5 @@
-@value sizeS, sizeXL, sizeXXL from "../../../../styles/size.css"
+@value sizeXS, sizeS, sizeXL, sizeXXL from "../../../../styles/size.css";
+@value fgMediumAccent from "../../../../styles/color.css";
 {}
 
 .main {
@@ -22,7 +23,7 @@
     font-size: 1.2rem;
     font-weight: bold;
 
-    cursor: default;
+    border-bottom: sizeXS solid fgMediumAccent;
 }
 
 .js {
