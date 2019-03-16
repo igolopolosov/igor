@@ -14,6 +14,6 @@ export const Home = () => (
 			{' Senior Software Enginner at '}
 			<CTM />
 		</div>
-		<h3>Find out more details about me:</h3>
+		<h3>Find out more details about me on:</h3>
 	</div>
 )

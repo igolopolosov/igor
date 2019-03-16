@@ -27,7 +27,7 @@ export class Navigation extends React.PureComponent {
 						key={link.to}
 						href={link.to}
 					>
-						{`-${link.title}-`}
+						{`- ${link.title} -`}
 					</a>
 				:	<Link
 						key={link.to}
