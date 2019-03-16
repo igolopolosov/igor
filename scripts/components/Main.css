@@ -1,4 +1,5 @@
-@value sizeXXL, sizeM, sizeXS from "../../styles/size.css";
+@value sizeXXXL, sizeM, sizeXS from "../../styles/size.css";
+@value phoneMedia from "../../styles/media.css";
 @value tertiary, tertiaryDark, bgDark, bgPrimary from "../../styles/color.css";
 
 .container {
@@ -12,27 +13,35 @@
 }
 
 .fullScreen {
-    position: fixed;
-    right: 0;
-    top: 0;
+    display: none;
+}
 
-    height: sizeXXL;
-    width: sizeXXL;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    cursor: pointer;
-    background: tertiary;
-
-    &:hover {
-        background: tertiaryDark;
+@media screen and (min-width: phoneMedia) {
+    .fullScreen {
+        position: fixed;
+        right: 0;
+        top: 0;
+    
+        height: sizeXXXL;
+        width: sizeXXXL;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        cursor: pointer;
+        background: tertiary;
+    
+        &:hover {
+            background: tertiaryDark;
+        }
     }
 }
 
 .header {
     width: 100%;
+    min-height: sizeXXXL;
+    
     padding: sizeM;
     box-sizing: border-box;
 
