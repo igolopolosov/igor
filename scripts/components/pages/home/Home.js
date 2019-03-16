@@ -5,7 +5,7 @@ import { Stickers } from './Stickers'
 import { CTM } from './CTM'
 
 export const Home = () => (
-	<div>
+	<React.Fragment>
 		<h2>Hello, World! It's my laboratory.</h2>
 		<Stickers />
 		<div className={styles.avatar} />
@@ -15,5 +15,5 @@ export const Home = () => (
 			<CTM />
 		</div>
 		<h3>Find out more details about me on:</h3>
-	</div>
+	</React.Fragment>
 )

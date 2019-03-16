@@ -16,7 +16,7 @@ export class DaysFromJune13 extends React.PureComponent {
 
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <h1>{`It took ${this.state.difference} days from June 13.`}</h1>
                 
                 <CurrentTime>
@@ -26,7 +26,7 @@ export class DaysFromJune13 extends React.PureComponent {
                         </h3>
                     )}
                 </CurrentTime>
-            </div>
+            </React.Fragment>
         );
     }
 

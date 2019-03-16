@@ -55,7 +55,7 @@ export class WordReminder extends React.PureComponent<{}, WordReminderState> {
         const { store } = this.state;
 
         return (
-            <div>
+            <>
                 <h3>Add words to reminder</h3>
                 
                 <p>
@@ -75,7 +75,7 @@ export class WordReminder extends React.PureComponent<{}, WordReminderState> {
                         return <div key={Math.random()} dangerouslySetInnerHTML={{ __html: html }} />
                     })}
                 </p>
-            </div>
+            </>
         );
     }
 
