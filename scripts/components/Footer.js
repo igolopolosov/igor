@@ -32,12 +32,10 @@ export const Footer = () => {
             <div className={styles.socialNav}>
                 <Navigation links={socialLinks} external />
             </div>
-            <div>
-                <small>
-                    {`Igor Golopolosov, 2016-${format(new Date(), 'YYYY')} ♥️`}
-                    <b>igolopolosov@gmail.com</b>
-                </small>
-            </div>
+            <small>
+                {`Igor Golopolosov, ${format(new Date(), 'YYYY')} ♥️`}
+                <b>igolopolosov@gmail.com</b>
+            </small>
         </footer>
     )
 }
