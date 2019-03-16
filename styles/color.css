@@ -8,7 +8,7 @@
 @value primaryDark: color(primary shade(20%));
 @value primaryLight: color(primary tint(20%));
 
-@value secondary: rgba(255, 201, 27, 0.50);
+@value secondary: rgba(255, 201, 0, 0.50);
 @value secondaryDark: color(secondary shade(20%));
 @value secondaryLight: color(secondary tint(20%));
 
