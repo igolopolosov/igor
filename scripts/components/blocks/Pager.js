@@ -26,7 +26,7 @@ class PagerContainer extends React.PureComponent {
 		super(props);
 
         this.state = {
-            limit: 2,
+            limit: props.limit,
             page: parseInt(extractPage(this.props.location.search), 10) || 1
         };
 	}
@@ -62,12 +62,13 @@ class PagerContainer extends React.PureComponent {
 		const {items, renderItem} = this.props;
 
         const visiblePosts = (_, i) => i >= (page - 1) * limit && i < page * limit;
-        const pages = [...Array(Math.ceil(items.length / limit))].map((_, i) => i + 1);
+		const pages = [...Array(Math.ceil(items.length / limit))].map((_, i) => i + 1);
+		const visiblePages = pages.length > 1 ? pages : [];
 
 		return (
 			<React.Fragment>
 				{items.filter(visiblePosts).map(renderItem)}
-				{(pages || []).map(this.renderPageItem)}
+				{visiblePages.map(this.renderPageItem)}
 			</React.Fragment>
 		)
 	}

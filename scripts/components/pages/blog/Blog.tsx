@@ -29,21 +29,17 @@ namespace BlogContainerNS {
 class BlogContainer extends React.PureComponent<BlogContainerNS.Props> {
 
     /**
-     * Render blog post
+     * Render title of blog
      */
     private renderItem = (post: BlogPost) => {
         const date = parse(post.time * 1000);
         const formattedDate = format(date, 'MMMM DD, YYYY');
 
         return (
-            <div key={post.id}>
-                <h2>{post.title}</h2>
-                <h3>
-                    <span className={styles.tag}>{post.tag}</span>
-                    <span>{formattedDate}</span>
-                </h3>
-                <p>{post.text}</p>
-            </div>
+            <a key={post.id} className={styles.post}>
+                <span className={styles.title}>{post.title}</span>
+                <span>{formattedDate}</span>
+            </a>
         );
     };
 
@@ -61,6 +57,7 @@ class BlogContainer extends React.PureComponent<BlogContainerNS.Props> {
                 {
                     posts && posts.length > 0
                         ? <Pager
+                            limit={5}
                             pathName={NAVIGATION_LINKS.blog.to}
                             items={posts}
                             renderItem={this.renderItem}
