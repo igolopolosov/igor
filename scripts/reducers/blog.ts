@@ -2,9 +2,9 @@ import { AnyAction } from 'redux';
 import { getActionCreator } from '../helpers/redux';
 
 export interface BlogPost {
-    id: number;
+    id: string;
     title: string;
-    time: number;
+    time: string;
     text: string;
     tag?: string;
 }

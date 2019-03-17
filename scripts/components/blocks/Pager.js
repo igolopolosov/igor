@@ -59,7 +59,7 @@ class PagerContainer extends React.PureComponent {
 
 	render() {
         const {limit, page} = this.state;
-		const {items, renderItem} = this.props;
+		const {items, Item} = this.props;
 
         const visiblePosts = (_, i) => i >= (page - 1) * limit && i < page * limit;
 		const pages = [...Array(Math.ceil(items.length / limit))].map((_, i) => i + 1);
@@ -67,7 +67,7 @@ class PagerContainer extends React.PureComponent {
 
 		return (
 			<React.Fragment>
-				{items.filter(visiblePosts).map(renderItem)}
+				{items.filter(visiblePosts).map((props, index) => <Item key={index} {...props}/>)}
 				{visiblePages.map(this.renderPageItem)}
 			</React.Fragment>
 		)

@@ -5,6 +5,7 @@ import { withRouter } from 'react-router';
 
 import { BlogPost } from '../../../reducers/blog';
 import { Pager } from '../../blocks/Pager';
+import { Button } from '../../blocks/Button';
 import { NAVIGATION_LINKS } from '../../../consts/navigation';
 import { loadBlog } from './loadBlog';
 
@@ -24,25 +25,45 @@ namespace BlogContainerNS {
     }
 
     export type Props = StateProps & DispatchProps & OwnProps;
+
+    export interface State {
+        currentPostId?: number | string;
+    }
 }
 
-class BlogContainer extends React.PureComponent<BlogContainerNS.Props> {
+const Post = (post: BlogPost) => {
+    const date = parse(parseInt(post.time, 10) * 1000);
+    const formattedDate = format(date, 'MMMM DD, YYYY');
 
-    /**
-     * Render title of blog
-     */
-    private renderItem = (post: BlogPost) => {
-        const date = parse(post.time * 1000);
-        const formattedDate = format(date, 'MMMM DD, YYYY');
+    const [on, toggle] = (React as any).useState(false);
+    const switchToggle = () => toggle(!on);
 
-        return (
-            <a key={post.id} className={styles.post}>
+    return (
+        <div className={styles.post}>
+            <a className={styles.postHeader} onClick={switchToggle}>
                 <span className={styles.title}>{post.title}</span>
                 <span>{formattedDate}</span>
             </a>
-        );
-    };
 
+            {
+                on && (
+                    <div className={styles.postView}>
+                        <h3>{post.title}</h3>
+                        <h5><span className={styles.tag}>{post.tag}</span></h5>
+                        <h4>{formattedDate}</h4>
+                        <p>{post.text}</p>
+                        <Button onClick={switchToggle} secondary>
+                            Close
+                        </Button>
+                    </div>
+                )
+            }
+        </div>
+    );
+}
+
+class BlogContainer extends React.PureComponent<BlogContainerNS.Props, BlogContainerNS.State> {
+    
     constructor(props) {
         super(props);
 
@@ -51,6 +72,7 @@ class BlogContainer extends React.PureComponent<BlogContainerNS.Props> {
 
     public render() {
         const {posts} = this.props;
+        console.log()
 
         return (
             <div className={styles.container}>
@@ -60,7 +82,7 @@ class BlogContainer extends React.PureComponent<BlogContainerNS.Props> {
                             limit={5}
                             pathName={NAVIGATION_LINKS.blog.to}
                             items={posts}
-                            renderItem={this.renderItem}
+                            Item={Post}
                         />
                         : <h1>Loading...</h1>
                 }

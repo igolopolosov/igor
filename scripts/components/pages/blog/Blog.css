@@ -1,7 +1,11 @@
 @value padding, sizeM, sizeXXL, borderRadius from "../../../../styles/size.css";
-@value bgPrimary, secondary from "../../../../styles/color.css";
+@value bgPrimary, secondary, tertiary from "../../../../styles/color.css";
 
 .post {
+    flex: 1;
+}
+
+.postHeader {
     display: flex;
     justify-content: space-between;
     margin: sizeM 0;
@@ -15,11 +19,23 @@
     padding: padding;
 
     color: bgPrimary;
-    background: secondary;
+    background: tertiary;
     border-radius: borderRadius;
 }
 
 .container {
-    margin-top: sizeXXL;
-    margin-bottom: sizeXXL;
+    padding: sizeXXL sizeM;
+}
+
+.postView {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: sizeXXL sizeM;
+
+    background: bgPrimary;
 }
