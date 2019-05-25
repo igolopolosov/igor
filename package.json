@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/usehotkey/igor"
+    "url": "https://github.com/igolopolosov/igor"
   },
   "scripts": {
     "start": "webpack-dev-server",
