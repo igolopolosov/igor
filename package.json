@@ -12,7 +12,9 @@
     "build": "webpack --progress --colors --config webpack.config.production.js",
     "release": "sh release.sh",
     "test": "jest -c jest.config.json",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "babel-polyfill": "6.26.0",
@@ -26,7 +28,8 @@
     "react-router-dom": "4.3.1",
     "redux": "4.0.0",
     "redux-logger": "3.0.6",
-    "redux-promise": "0.6.0"
+    "redux-promise": "0.6.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@types/jest": "23.3.6",
@@ -59,5 +62,6 @@
     "webpack": "4.20.2",
     "webpack-cli": "3.1.2",
     "webpack-dev-server": "3.1.11"
-  }
+  },
+  "snyk": true
 }
