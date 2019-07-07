@@ -1,5 +1,5 @@
 echo "⭐️ Clean old files"
-cd ../usehotkey.github.io
+cd ../igolopolosov.github.io
 rm bundle*
 rm index.html
 
@@ -8,7 +8,7 @@ cd ../igor
 npm run build
 
 echo "⭐️ Commit changes"
-cd ../usehotkey.github.io
+cd ../igolopolosov.github.io
 git add .
 git commit -m "Do release"
 

@@ -1,8 +1,8 @@
 # igor 🔥
 
-Hi Mate, welcome to my home page. Please pop to [MY PERSONAL PAGE](https://usehotkey.github.io/#/) and spend exciting time there! 😁
+Hi Mate, welcome to my home page. Please pop to [MY PERSONAL PAGE](https://igolopolosov.github.io/#/) and spend exciting time there! 😁
 
-I highly recommend to visit [playgorund section to find some awesome projects🚀](https://usehotkey.github.io/#/playground/circle-canon)
+I highly recommend to visit [playgorund section to find some awesome projects🚀](https://igolopolosov.github.io/#/playground/circle-canon)
 
 And actually, **Hello, World!** 🌎
 

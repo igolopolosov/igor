@@ -17,7 +17,7 @@ const socialLinks = [
         title: 'LinkedIn'
     },
     {
-        to: 'https://github.com/usehotkey',
+        to: 'https://github.com/igolopolosov',
         title: 'GitHub'
     },
     // {

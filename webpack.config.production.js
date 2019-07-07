@@ -10,7 +10,7 @@ config.entry = [
     './scripts/index'
 ];
 config.output = {
-    path: path.join(__dirname, '../usehotkey.github.io'),
+    path: path.join(__dirname, '../igolopolosov.github.io'),
 	filename: 'bundle.[hash].js',
 	publicPath: '/'
 };
