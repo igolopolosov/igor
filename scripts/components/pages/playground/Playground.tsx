@@ -31,7 +31,7 @@ export function Playground() {
                     ([link]) => (
                         <Pane key={link.title} label={link.title} url={link.to} />
                     )
-                )}             
+                )}
             </Tabs>
 
             <Switch>
@@ -41,6 +41,6 @@ export function Playground() {
                     )
                 )}
             </Switch>
-        </>        
+        </>
     );
 }

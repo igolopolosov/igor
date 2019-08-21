@@ -1,7 +1,7 @@
 export interface PaneProps {
     label: string;
     url: string;
-    children: any;
+    children?: any;
 }
 
 export function Pane(props: PaneProps) {

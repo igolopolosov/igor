@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack --progress --colors --config webpack.config.production.js",
+    "build": "webpack --colors --config webpack.config.production.js",
     "release": "sh release.sh",
     "test": "jest -c jest.config.json",
     "lint": "eslint ."
