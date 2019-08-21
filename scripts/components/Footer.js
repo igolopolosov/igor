@@ -33,7 +33,7 @@ export const Footer = () => {
                 <Navigation links={socialLinks} external />
             </div>
             <small>
-                {`Igor Golopolosov, ${format(new Date(), 'YYYY')} ♥️`}
+                {`Igor Golopolosov, ${format(new Date(), 'yyyy')} ♥️`}
                 <b>igolopolosov@gmail.com</b>
             </small>
         </footer>

@@ -22,7 +22,7 @@ export class DaysFromJune13 extends React.PureComponent {
                 <CurrentTime>
                     {({ date }) => (
                         <h3>
-                            {`unix: ${getTime(date)}, human: ${format(date, 'Do MMMM YYYY, HH:mm A')}`}
+                            {`unix: ${getTime(date)}, human: ${format(date, 'do MMMM yyyy, HH:mm')}`}
                         </h3>
                     )}
                 </CurrentTime>

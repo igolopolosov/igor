@@ -1,4 +1,4 @@
-import { parse, format } from 'date-fns';
+import { fromUnixTime, format } from 'date-fns';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
@@ -32,8 +32,9 @@ namespace BlogContainerNS {
 }
 
 const Post = (post: BlogPost) => {
-    const date = parse(parseInt(post.time, 10) * 1000);
-    const formattedDate = format(date, 'MMMM DD, YYYY');
+    const milliseconds = parseInt(post.time, 10);
+    const date = fromUnixTime(milliseconds);
+    const formattedDate = format(date, 'MMMM dd, yyyy');
 
     const [on, toggle] = (React as any).useState(false);
     const switchToggle = () => toggle(!on);
