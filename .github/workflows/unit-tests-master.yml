@@ -1,4 +1,4 @@
-name: Unit Tests Master
+name: Test & Release Master
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
     - master
 
 jobs:
-  build:
+  unit-tests:
     runs-on: ubuntu-latest
 
     strategy:
@@ -23,3 +23,26 @@ jobs:
       run: |
         npm install
         npm test
+
+  release:
+    needs: unit-tests
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, build
+      run: |
+        npm install
+        npm run build
+    - name: Release Github Pages
+      uses: igolopolosov/github-action-release-github-pages@master
+      env:
+        GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
