@@ -25,3 +25,8 @@ jobs:
         npm install
         npm run build --if-present
         npm test
+
+    - uses: actions/upload-artifact@master
+      with:
+        name: application-build
+        path: ./dist

@@ -1,3 +1,5 @@
+name: Release To GitHub Pages
+
 on: [push]
 
 jobs:

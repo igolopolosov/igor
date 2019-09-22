@@ -6,6 +6,7 @@ rm index.html
 echo "⭐️ Build started"
 cd ../igor
 npm run build
+cp -R ./dist ../igolopolosov.github.io
 
 echo "⭐️ Commit changes"
 cd ../igolopolosov.github.io
