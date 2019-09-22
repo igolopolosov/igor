@@ -1,4 +1,4 @@
-name: Unit Tests Master
+name: Build Master
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [10.x]
 
     steps:
     - uses: actions/checkout@v1
@@ -19,7 +19,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install and test
+    - name: npm install, build
       run: |
         npm install
-        npm test
+        npm run build
+
+    # - uses: actions/upload-artifact@master
+    #   with:
+    #     name: application-build
+    #     path: ./dist
