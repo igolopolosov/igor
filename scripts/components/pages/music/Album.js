@@ -35,7 +35,6 @@ export class Album extends React.Component {
 		const {
 			band,
 			album,
-			date,
 			link,
 			soundloud,
 			coverUrl
@@ -43,35 +42,29 @@ export class Album extends React.Component {
 		const { isPlayerDisplayed } = this.state
 
 		return (
-			<div
-				className={styles.album}
-				onMouseEnter={() => this.onHover(true)}
-				onMouseLeave={() => this.onHover(false)}
-			>
-				<img src={coverUrl} className={styles.coverUrl} />
-				<a
-					className={styles.info}
-					style={{ display: isPlayerDisplayed && 'none' }}
-					target='_blank'
-					rel='noopener'
-					href={link}
+			<div className={styles.container}>
+				<div
+					className={styles.preview}
+					onMouseEnter={() => this.onHover(true)}
+					onMouseLeave={() => this.onHover(false)}
 				>
-					<div>
-						<span className={styles.label}>{band}</span>
-					</div>
-					<div>
-						<span className={styles.label}>{album}</span>
-					</div>
-					<div>
-						<span className={styles.label}>{date.slice(-4)}</span>
-					</div>
-				</a>
-				<iframe
-					{...iframeSettings}
-					className={styles.iframe}
-					style={{ display: !isPlayerDisplayed && 'none' }}
-					src={getSouncloudIframeSrc(soundloud)}
-				/>
+					<img src={coverUrl} className={styles.coverUrl} />
+					<a
+						className={styles.info}
+						style={{ display: isPlayerDisplayed && 'none' }}
+						target='_blank'
+						rel='noopener'
+						href={link}
+					/>
+					<iframe
+						{...iframeSettings}
+						className={styles.iframe}
+						style={{ display: !isPlayerDisplayed && 'none' }}
+						src={getSouncloudIframeSrc(soundloud)}
+					/>
+				</div>
+				<div className={styles.album}>{album}</div>
+				<div className={styles.band}>{band}</div>
 			</div>
 		)
 	}

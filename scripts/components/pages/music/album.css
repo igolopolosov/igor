@@ -1,12 +1,18 @@
-@value bgDark, tertiary from "../../../../styles/color.css"
-{}
+@value bgDark, tertiary from "../../../../styles/color.css";
+@value sizeXS, sizeS, sizeM from "../../../../styles/size.css";
 
-.album {
+@value square: 300px;
+
+.container {
+    margin-bottom: sizeS;
+}
+
+.preview {
     position: relative;
     margin: 1px;
 
-    height: 300px;
-    width: 300px;
+    height: square;
+    width: square;
 
     background: bgDark;
 }
@@ -41,16 +47,25 @@
     }
 }
 
-.label {
-    padding: 0.2rem 0.4rem;
+.band,
+.album {
+    padding: sizeXS sizeS;
 
-    background: tertiary;
+    width: calc(square - sizeS);
 
-    line-height: 1.4rem;
+    line-height: sizeM;
+    font-size: sizeM;
+    text-align: left;
+}
+
+.band {
+    opacity: 0.5;
 }
 
 .info,
 .iframe {
     position: relative;
     z-index: 1;
+    height: square;
+    width: square;
 }
