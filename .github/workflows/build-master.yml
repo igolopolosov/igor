@@ -23,9 +23,8 @@ jobs:
       run: |
         npm install
         npm run build
-        npm run release
+    - name: Release Github Pages
+      uses: igolopolosov/github-action-release-github-pages@master
+      env:
+        GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
 
-    # - uses: actions/upload-artifact@master
-    #   with:
-    #     name: application-build
-    #     path: ./dist
