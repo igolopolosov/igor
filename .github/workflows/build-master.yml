@@ -27,4 +27,3 @@ jobs:
       uses: igolopolosov/github-action-release-github-pages@master
       env:
         GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
-
