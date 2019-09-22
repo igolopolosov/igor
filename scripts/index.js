@@ -4,9 +4,9 @@ import { App } from './components/App'
 
 import './assets'
 
-console.log('=====================================================================')
-console.log('= Hi Mate! Feel free to write me an email to igolopolosov@gmail.com =')
-console.log('=====================================================================')
+console.log('==================================================================')
+console.log('= Hi Mate! Feel free to write an email to igolopolosov@gmail.com =')
+console.log('==================================================================')
 
 ReactDOM.render(
     <App />,
