@@ -20,6 +20,11 @@ const socialLinks = [
         to: 'https://github.com/igolopolosov',
         title: 'GitHub'
     },
+    {
+        to: 'https://twitter.com/usehotkey',
+        title: 'Twitter'
+    },
+    
     // {
     //     to: 'https://soundcloud.com/hotkeymusic',
     //     title: 'SoundCloud'
