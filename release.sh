@@ -1,11 +1,14 @@
+echo "⭐️ Clone igolopolosov.github.io"
+cd ../
+git clone https://github.com/igolopolosov/igolopolosov.github.io
+
 echo "⭐️ Clean old files"
-cd ../igolopolosov.github.io
+cd ./igolopolosov.github.io
 rm bundle*
 rm index.html
 
-echo "⭐️ Build started"
+echo "⭐️ Copying started"
 cd ../igor
-npm run build
 cp -R ./dist ../igolopolosov.github.io
 
 echo "⭐️ Commit changes"
