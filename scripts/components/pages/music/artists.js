@@ -6,7 +6,7 @@ const StackDo = [
 		band: 'Stack Do',
 		album: 'Stranger Things',
 		date: '8 September 2019',
-		link: 'https://soundcloud.com/hotkeymusic/stack-do-stranger-things',
+		link: 'https://soundcloud.com/hotkeymusic/sets/stack-do-stranger-things',
 		soundloud: '876388999',
 		coverUrl: 'https://i1.sndcdn.com/artworks-000594470427-fltsyp-t500x500.jpg',
 		tracks: [
@@ -21,6 +21,28 @@ const StackDo = [
 		],
 		info: `
 			The last survivors of this world watching the Moon...
+		`
+	},
+	{
+		band: 'Stack Do',
+		album: 'Dance Party Dance Dance',
+		date: '30 May 2019',
+		link: 'https://soundcloud.com/hotkeymusic/sets/stack-do-dance-party-dance',
+		soundloud: '876393892',
+		coverUrl: 'https://i1.sndcdn.com/artworks-000544686168-zgo7k4-t500x500.jpg',
+		tracks: [
+			'Dance Party Dance Dance',
+		],
+		tags: [
+			'Dance Pop',
+			'Dance',
+			'Ambient',
+			'EDM',
+		],
+		info: `
+			I feel good when I listen this,
+			I wanna move, I wanna go and fly somewhere,
+			Take a plain and follow your dream!
 		`
 	},
 ]
