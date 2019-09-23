@@ -1,5 +1,29 @@
-.main {
+@value sizeXS, sizeS, sizeM from "../../../../styles/size.css";
+@value neutral from "../../../../styles/color.css";
+
+.container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.artist {
+    margin: sizeM;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.artistName {
+    margin-bottom: sizeM;
+    padding: sizeS;
+    text-align: left;
+    border-bottom: sizeXS solid neutral;
+}
+
+.albums {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
 }

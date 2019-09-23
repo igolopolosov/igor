@@ -1,4 +1,7 @@
-export const albums = [	
+const FourteenthOfMaySaturday = [
+	{
+		band: '14th of May, Saturday',
+	},
 	{
 		band: '14th of May, Saturday',
 		album: 'Killing Spree',
@@ -36,6 +39,12 @@ export const albums = [
 		info: `
 			Techo darkness
 		`
+	}
+]
+
+const Randoms = [
+	{
+		band: 'Randoms',
 	},
 	{
 		band: 'Бублики',
@@ -172,6 +181,12 @@ export const albums = [
 			soundcloud.com/hotkeymusic/sets/nothing-personal-nothing-wasted
 		`
 	},
+]
+
+const TwoAM = [
+	{
+		band: '2 a.m.'
+	},
 	{
 		band: '2 a.m.',
 		album: 'Creator / Weekend',
@@ -213,4 +228,10 @@ export const albums = [
 			vk.com/club69046948
 		`
 	}
+]
+
+export const artists = [
+	FourteenthOfMaySaturday,
+	Randoms,
+	TwoAM
 ]
