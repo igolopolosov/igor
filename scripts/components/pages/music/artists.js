@@ -1,3 +1,30 @@
+const StackDo = [
+	{
+		band: 'Stack Do',
+	},
+	{
+		band: 'Stack Do',
+		album: 'Stranger Things',
+		date: '8 September 2019',
+		link: 'https://soundcloud.com/hotkeymusic/stack-do-stranger-things',
+		soundloud: '677826204',
+		coverUrl: 'https://i1.sndcdn.com/artworks-000594470427-fltsyp-t500x500.jpg',
+		tracks: [
+			'Stranger Things',
+		],
+		tags: [
+			'Dance',
+			'EDM',
+			'Synth',
+			'Indie',
+			'Instrumental'
+		],
+		info: `
+			The last survivors of this world watching the Moon...
+		`
+	},
+]
+
 const FourteenthOfMaySaturday = [
 	{
 		band: '14th of May, Saturday',
@@ -231,6 +258,7 @@ const TwoAM = [
 ]
 
 export const artists = [
+	StackDo,
 	FourteenthOfMaySaturday,
 	Randoms,
 	TwoAM
