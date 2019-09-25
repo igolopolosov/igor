@@ -20,7 +20,7 @@ module.exports = {
 	devtool: 'eval',
 	devServer: {
 		contentBase: '/',
-		port: process.env.PORT || 1488,
+		port: process.env.PORT || 1337,
 		host: process.env.IP || 'localhost',
 		historyApiFallback: true,
 		hot: true,
