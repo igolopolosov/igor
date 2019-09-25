@@ -45,6 +45,24 @@ const StackDo = [
 			Take a plain and follow your dream!
 		`
 	},
+	{
+		band: 'Stack Do',
+		album: 'Good Morning Galaxy',
+		date: '23 May 2019',
+		link: 'https://soundcloud.com/hotkeymusic/sets/good-morning-galaxy',
+		soundloud: '877541485',
+		coverUrl: 'https://i1.sndcdn.com/artworks-000541030359-4uucae-t500x500.jpg',
+		tracks: [
+			'Good Morning Galaxy',
+		],
+		tags: [
+			'8bit',
+			'Indie',
+		],
+		info: `
+			A long time ago in a galaxy far, far away....
+		`
+	},
 ]
 
 const FourteenthOfMaySaturday = [
