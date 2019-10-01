@@ -3,7 +3,7 @@ import { ReactElement } from 'react';
 import { NavLink } from 'react-router-dom'
 
 import { PaneProps } from './Pane';
-const styles = require('./Tabs.css');
+const styles = require('./Tabs.less');
 
 namespace TabsNS {
     export interface Props {
