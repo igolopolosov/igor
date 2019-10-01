@@ -9,7 +9,7 @@ import { Button } from '../../blocks/Button';
 import { NAVIGATION_LINKS } from '../../../consts/navigation';
 import { loadBlog } from './loadBlog';
 
-const styles = require('./Blog.css');
+const styles = require('./Blog.less');
 
 namespace BlogContainerNS {
     interface OwnProps {
