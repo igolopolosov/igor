@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Chat.css'
+import styles from './Chat.less'
 import { Button } from '../blocks/forms/Button'
 import { sendMessage } from './sendMessage'
 
