@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './album.css'
+import styles from './album.less'
 
 
 const iframeSettings = {

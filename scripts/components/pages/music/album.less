@@ -1,20 +1,20 @@
-@value bgDark, tertiary from "../../../../styles/color.css";
-@value sizeXS, sizeS, sizeM from "../../../../styles/size.css";
+@import "../../../../styles/color.less";
+@import "../../../../styles/size.less";
 
-@value square: 300px;
+@square: 300px;
 
 .container {
-    margin-bottom: sizeS;
+    margin-bottom: @sizeS;
 }
 
 .preview {
     position: relative;
     margin: 1px;
 
-    height: square;
-    width: square;
+    height: @square;
+    width: @square;
 
-    background: bgDark;
+    background: @bgDark;
 }
 
 .coverUrl {
@@ -47,12 +47,12 @@
 
 .band,
 .album {
-    padding: sizeXS sizeS;
+    padding: @sizeXS @sizeS;
 
-    width: calc(square - sizeS);
+    width: calc(@square - @sizeS);
 
-    line-height: sizeM;
-    font-size: sizeM;
+    line-height: @sizeM;
+    font-size: @sizeM;
     text-align: left;
 }
 
@@ -64,6 +64,6 @@
 .iframe {
     position: relative;
     z-index: 1;
-    height: square;
-    width: square;
+    height: @square;
+    width: @square;
 }
