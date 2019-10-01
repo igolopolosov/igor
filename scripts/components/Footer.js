@@ -1,7 +1,7 @@
 import { format } from 'date-fns';
 import React from 'react'
 import { Navigation } from './blocks/Navigation'
-import styles from './Main.css'
+import styles from './Main.less'
 
 const socialLinks = [
     {

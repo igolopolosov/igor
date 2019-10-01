@@ -1,0 +1,65 @@
+@import "../../styles/size.less";
+@import "../../styles/media.less";
+@import "../../styles/color.less";
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background: @bgPrimary;
+}
+
+.fullScreen {
+    display: none;
+}
+
+@media screen and (min-width: @phoneMedia) {
+    .fullScreen {
+        position: fixed;
+        right: 0;
+        top: 0;
+    
+        height: @sizeXXXL;
+        width: @sizeXXXL;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        cursor: pointer;
+        background: @tertiary;
+    
+        &:hover {
+            background: @tertiaryDark;
+        }
+    }
+}
+
+.header {
+    width: 100%;
+    min-height: @sizeXXXL;
+    
+    padding: @sizeM;
+    box-sizing: border-box;
+
+    background-color: @bgDark;
+}
+
+.content {
+}
+
+.footer {
+    margin-top: @sizeM;
+}
+
+.footer > * {
+    margin-bottom: @sizeM;
+}
+
+.socialNav {
+    padding: @sizeM;
+    border: @sizeXS solid @secondary;
+}
