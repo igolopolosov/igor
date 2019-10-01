@@ -18,5 +18,5 @@ And actually, **Hello, World!** 🌎
 - ✨ `Webpack`
 - 🎓 `ESLint`
 - 🔥 `React`
-- 💄 `PostCSS` and `CSS Modules`
+- 💄 `Less` and `CSS Modules`
 - 🃏 `Jest`
