@@ -1,0 +1,36 @@
+@import '../../../styles/size.less';
+@import '../../../styles/color.less';
+
+.btnPrimary,
+.btnSecondary,
+.btnTertiary {
+	cursor: pointer;
+	padding: @sizeS @sizeM;
+	color: @fgLightAccent;
+	border-radius: @sizeXS;
+	border: none;
+}
+
+.btnMixin(@c1, @c2, @c3) {
+	background-color: @c1;
+
+	&:hover {
+		 background-color: @c2;
+	 }
+
+	&:active {
+		 background-color: @c3;
+	 }
+}
+
+.btnPrimary {
+	.btnMixin(@primaryLight, @primary, @primaryDark);
+}
+
+.btnSecondary {
+	.btnMixin(@secondaryLight, @secondary, @secondaryDark);
+}
+
+.btnTertiary {
+	.btnMixin(@tertiaryLight, @tertiary, @tertiaryDark);
+}
