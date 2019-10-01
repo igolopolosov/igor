@@ -6,7 +6,7 @@ const config = require('./webpack.config');
 
 config.mode = 'production';
 config.entry = [
-    'babel-polyfill',
+    '@babel/polyfill',
     './scripts/index'
 ];
 config.output = {
