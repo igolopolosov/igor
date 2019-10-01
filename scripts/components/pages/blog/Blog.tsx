@@ -80,7 +80,7 @@ class BlogContainer extends React.PureComponent<BlogContainerNS.Props, BlogConta
                 {
                     posts && posts.length > 0
                         ? <Pager
-                            limit={5}
+                            limit={3}
                             pathName={NAVIGATION_LINKS.blog.to}
                             items={posts}
                             Item={Post}
