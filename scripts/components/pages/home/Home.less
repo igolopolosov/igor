@@ -1,6 +1,5 @@
-@value sizeXS, sizeM from "../../../../styles/size.css";
-@value neutralDark from "../../../../styles/color.css";
-{}
+@import "../../../../styles/size.less";
+@import "../../../../styles/color.less";
 
 .avatar {
     height: 16rem;
@@ -10,11 +9,11 @@
     background: url('../../../../assets/avatar.jpg') bottom;
     background-size: cover;
 
-    box-shadow: neutralDark 0 0 0 sizeXS;
+    box-shadow: @neutralDark 0 0 0 @sizeXS;
 
     border-radius: 50%;
 }
 
 .intro {
-    margin: sizeM 0;
+    margin: @sizeM 0;
 }

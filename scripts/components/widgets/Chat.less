@@ -1,0 +1,45 @@
+@import "../../../styles/size.less";
+@import "../../../styles/color.less";
+
+.fixedContainer {
+    position: fixed;
+    right: @sizeXL;
+    bottom: @sizeM;
+}
+
+.chatContainer {
+    position: relative;
+    padding: @sizeM;
+
+    color: @fgLightAccent;
+    background-color: @tertiary;
+    border-radius: @borderRadius;
+
+    & > * {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: @sizeS;
+    }
+}
+
+.closeMark {
+    position: absolute;
+    top: @sizeXS;
+    right: @sizeS;
+
+    margin: 0;
+    width: auto;
+
+    cursor: pointer;
+    opacity: 0.2;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+
+
+.message {
+    resize: none;
+}

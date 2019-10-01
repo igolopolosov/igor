@@ -11,7 +11,7 @@ import { PrivacyPolicyTap } from './pages/privacy-policy-tap/PrivacyPolicyTap'
 import { Playground } from './pages/playground/Playground'
 import { Music } from './pages/music/Music'
 
-const styles = require('./Main.css')
+const styles = require('./Main.less')
 
 interface MainState {
 	isFullScreen: boolean

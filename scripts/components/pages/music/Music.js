@@ -1,7 +1,7 @@
 import React from 'react'
 import { Album } from './Album.js'
 import { artists } from './artists'
-import styles from './music.css'
+import styles from './music.less'
 
 export const Music = () => (
 	<div className={styles.container}>

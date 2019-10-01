@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './PrivacyPolicyTap.css'
+import styles from './PrivacyPolicyTap.less'
 
 /* eslint-disable max-len */
 

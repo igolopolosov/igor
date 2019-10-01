@@ -1,8 +1,5 @@
-@value fgLightAccent, bgPrimary from "./color.css";
-@value sizeXS from "./size.css";
-
-:global {
-{}
+@import "./color.less";
+@import "./size.less";
 
 html, body, #entry-point {
     height: 100%;
@@ -11,7 +8,7 @@ html, body, #entry-point {
 
 body {
     margin: 0;
-    color: fgLightAccent;
+    color: @fgLightAccent;
 }
 
 body, button, input, textarea {
@@ -20,15 +17,15 @@ body, button, input, textarea {
 }
 
 a {
-    color: fgLightAccent;
+    color: @fgLightAccent;
     text-decoration: none;
     cursor: pointer;
-    padding-bottom: sizeXS;
-    border-bottom: sizeXS solid transparent;
+    padding-bottom: @sizeXS;
+    border-bottom: @sizeXS solid transparent;
 }
 
 a:hover {
-    border-bottom: sizeXS solid fgLightAccent;
+    border-bottom: @sizeXS solid @fgLightAccent;
 }
 
 /* large desktop */
@@ -57,6 +54,4 @@ a:hover {
     body, button, input, textarea {
         font-size: 15px;
     }
-}
-
 }

@@ -1,0 +1,20 @@
+@import "../../../styles/size.less";
+@import "../../../styles/color.less";
+
+.item {
+    margin-right: @sizeS;
+    padding: @padding;
+
+    border-radius: @borderRadius;
+    cursor: pointer;
+}
+
+.item:hover {
+    color: @bgPrimary;
+    background-color: @secondaryDark;
+}
+
+.itemActive {
+    color: @bgPrimary;
+    background: @secondary;
+}

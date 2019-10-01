@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { withRouter } from 'react-router'
-import styles from './Pager.css'
+import styles from './Pager.less'
 
 const PAGE_SEPARATOR = 'page='
 

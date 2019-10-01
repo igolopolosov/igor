@@ -1,0 +1,38 @@
+@import '../../../../../styles/size.less';
+@import '../../../../../styles/color.less';
+
+.tabHeader {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: @sizeS;
+}
+
+.tabHeaderItemSelected,
+.tabHeaderItem {
+    margin-right: @sizeM;
+    padding: @sizeS;
+
+    border-radius: 0 0 @sizeS @sizeS;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.tabHeaderItem {
+    background: @neutralLight;
+    cursor: pointer;
+
+    &:hover {
+        background: @neutral;
+    }
+}
+
+.tabHeaderItemSelected {
+    background: @tertiaryLight;
+
+    &:hover {
+        background: @tertiaryLight;
+    }
+}

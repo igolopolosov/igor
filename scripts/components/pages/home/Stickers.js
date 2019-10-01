@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Stickers.css'
+import styles from './Stickers.less'
 
 const langs = [
 	['JS', styles.js, 'https://nodejs.org/'],

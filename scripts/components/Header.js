@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navigation } from './blocks/Navigation'
 import { NAVIGATION_LINKS } from '../consts/navigation'
-import styles from './Main.css'
+import styles from './Main.less'
 
 const projectLinks = [
     NAVIGATION_LINKS.home,
