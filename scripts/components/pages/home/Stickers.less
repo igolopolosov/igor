@@ -1,6 +1,5 @@
-@value sizeXS, sizeS, sizeXL, sizeXXL from "../../../../styles/size.css";
-@value fgMediumAccent from "../../../../styles/color.css";
-{}
+@import "../../../../styles/size.less";
+@import "../../../../styles/color.less";
 
 .main {
     position: relative;
@@ -13,21 +12,21 @@
 .ts {
     position: absolute;
     display: flex;
-    padding: sizeS;
+    padding: @sizeS;
 
-    width: sizeXXL;
-    height: sizeXXL;
+    width: @sizeXXL;
+    height: @sizeXXL;
 
     border-radius: 10%;
 
     font-size: 1.2rem;
     font-weight: bold;
 
-    border-bottom: sizeXS solid fgMediumAccent;
+    border-bottom: @sizeXS solid @fgMediumAccent;
 }
 
 .js {
-    top: sizeXL;
+    top: @sizeXL;
     right: 0;
     justify-content: flex-end;
     align-items: flex-end;
@@ -39,7 +38,7 @@
 }
 
 .go {
-    top: sizeXL;
+    top: @sizeXL;
     left: 0;
 
     justify-content: center;

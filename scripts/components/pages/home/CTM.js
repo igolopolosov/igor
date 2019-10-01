@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './CTM.css'
+import styles from './CTM.less'
 
 export const CTM = () => (
 	<a

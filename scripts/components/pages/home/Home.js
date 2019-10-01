@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Home.css'
+import styles from './Home.less'
 
 import { Stickers } from './Stickers'
 import { CTM } from './CTM'
