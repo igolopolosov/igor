@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Chat.less'
-import { Button } from '../blocks/forms/Button'
+import { Button } from '../blocks/Button'
 import { sendMessage } from './sendMessage'
 
 const CHAT_TIMEOUT = 5 * 1000
@@ -21,11 +21,11 @@ export class Chat extends React.PureComponent {
         }
 
         // Force open Hire Me dialog
-        if (PRODUCTION) {
+        // if (PRODUCTION) {
             setTimeout(() => {
                 this.toggle(CHAT_STATES.OPENED)
             }, CHAT_TIMEOUT)
-        }
+        // }
     }
 
     render() {
@@ -73,7 +73,7 @@ export class Chat extends React.PureComponent {
                     value={sender}
                 />
 
-                <Button primary onClick={this.send} disabled={!(sender && message)}>Send!</Button>
+                <Button secondary onClick={this.send} disabled={!(sender && message)}>Send!</Button>
             </div>
         )
     }

@@ -1,4 +1,4 @@
-import { MK } from '../../../keys'
+// import { MK } from '../../../keys'
 
 export const sendMessage = PRODUCTION
     ? sendMessageInternal
@@ -19,7 +19,7 @@ function sendMessageInternal(subject, text) {
     request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
     request.send(toParams({
-        access_token: MK,
+        access_token: 'MK',
         subject,
         text
     }));
