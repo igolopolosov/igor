@@ -6,6 +6,22 @@
     height: 0;
 }
 
+.rotate-left() {
+    transform: rotate(-15deg); 
+
+    &:hover {
+        transform: translateY(-2px) rotate(-15deg);
+    }
+}
+
+.rotate-right() {
+    transform: rotate(15deg); 
+
+    &:hover {
+        transform: translateY(-2px) rotate(15deg);
+    }
+}
+
 .js,
 .go,
 .csharp,
@@ -31,7 +47,7 @@
     justify-content: flex-end;
     align-items: flex-end;
 
-    transform: rotate(-15deg); 
+    .rotate-left(); 
 
     background: gold;
     color: #333;
@@ -44,7 +60,7 @@
     justify-content: center;
     align-items: center;
 
-    transform: rotate(15deg); 
+    .rotate-right(); 
 
     background: lightskyblue;
     color: #fff;
@@ -57,7 +73,7 @@
     justify-content: center;
     align-items: center;
 
-    transform: rotate(-15deg); 
+    .rotate-left();
 
     background: purple;
     color: #fff;
@@ -69,7 +85,7 @@
     justify-content: flex-end;
     align-items: flex-end;
 
-    transform: rotate(15deg); 
+    .rotate-right();
 
     background: dodgerblue;
     color: #fff;
