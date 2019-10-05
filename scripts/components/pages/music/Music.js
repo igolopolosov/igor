@@ -5,13 +5,13 @@ import styles from './music.less'
 
 export const Music = () => (
 	<div className={styles.container}>
-		{artists.map(albums =>
-			<div className={styles.artist}>
+		{artists.map(([artist, ...albums]) =>
+			<div className={styles.artist} key={artist.band}>
 				<div className={styles.artistName}>
-					{albums[0].band}
+					{artist.band}
 				</div>
 				<div className={styles.albums}>
-					{albums.slice(1).map(
+					{albums.map(
 						album => <Album {...album} key={album.album} />
 					)}
 				</div>
