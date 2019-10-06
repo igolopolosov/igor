@@ -11,7 +11,7 @@ export const Button = props => {
     (tertiary && styles.btnTertiary);
 
   return (
-    <button className={className} {...rest}>
+    <button className={className} {...rest} type="button">
       {children}
     </button>
   );

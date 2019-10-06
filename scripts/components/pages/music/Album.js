@@ -42,15 +42,16 @@ export class Album extends React.Component {
           onMouseEnter={() => this.onHover(true)}
           onMouseLeave={() => this.onHover(false)}
         >
-          <img src={coverUrl} className={styles.coverUrl} />
+          <img src={coverUrl} alt={album} className={styles.coverUrl} />
           <a
             className={styles.info}
             style={{ display: isPlayerDisplayed && "none" }}
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
             href={link}
           />
           <iframe
+            title={album}
             {...iframeSettings}
             className={styles.iframe}
             style={{ display: !isPlayerDisplayed && "none" }}

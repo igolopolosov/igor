@@ -9,19 +9,10 @@ import styles from "./Navigation.less";
  * Can show internal and external links
  */
 export class Navigation extends React.PureComponent {
-  static propTypes = {
-    links: PropTypes.arrayOf(
-      PropTypes.shape({
-        to: PropTypes.string,
-        title: PropTypes.string
-      })
-    ),
-    external: PropTypes.bool
-  };
-
   renderLink = link => {
-    return this.props.external ? (
-      <a target="_blank" rel="noopener" key={link.to} href={link.to}>
+    const { external } = this.props;
+    return external ? (
+      <a target="_blank" rel="noopener noreferrer" key={link.to} href={link.to}>
         {`- ${link.title} -`}
       </a>
     ) : (
@@ -32,10 +23,17 @@ export class Navigation extends React.PureComponent {
   };
 
   render() {
-    return (
-      <div className={styles.container}>
-        {(this.props.links || []).map(this.renderLink)}
-      </div>
-    );
+    const { links = [] } = this.props;
+    return <div className={styles.container}>{links.map(this.renderLink)}</div>;
   }
 }
+
+Navigation.propTypes = {
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      to: PropTypes.string,
+      title: PropTypes.string
+    })
+  ),
+  external: PropTypes.bool
+};

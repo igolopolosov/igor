@@ -13,20 +13,12 @@ function extractPage(search) {
  * Used to control pages for list of items
  */
 class PagerContainer extends React.PureComponent {
-  static propTypes = {
-    pathName: PropTypes.string,
-    items: PropTypes.arrayOf(PropTypes.any),
-    renderItem: PropTypes.func,
-    history: PropTypes.object,
-    location: PropTypes.object
-  };
-
   constructor(props) {
     super(props);
 
     this.state = {
       limit: props.limit,
-      page: parseInt(extractPage(this.props.location.search), 10) || 1
+      page: parseInt(extractPage(props.location.search), 10) || 1
     };
   }
 
@@ -76,5 +68,13 @@ class PagerContainer extends React.PureComponent {
     );
   }
 }
+
+PagerContainer.propTypes = {
+  pathName: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(PropTypes.any).isRequired,
+  renderItem: PropTypes.func.isRequired,
+  history: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired
+};
 
 export const Pager = withRouter(PagerContainer);
