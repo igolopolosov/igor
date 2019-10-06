@@ -2,91 +2,91 @@
 @import "../../../../styles/color.less";
 
 .main {
-    position: relative;
-    height: 0;
+  position: relative;
+  height: 0;
 }
 
 .rotate-left() {
-    transform: rotate(-15deg); 
+  transform: rotate(-15deg);
 
-    &:hover {
-        transform: translateY(-2px) rotate(-15deg);
-    }
+  &:hover {
+    transform: translateY(-2px) rotate(-15deg);
+  }
 }
 
 .rotate-right() {
-    transform: rotate(15deg); 
+  transform: rotate(15deg);
 
-    &:hover {
-        transform: translateY(-2px) rotate(15deg);
-    }
+  &:hover {
+    transform: translateY(-2px) rotate(15deg);
+  }
 }
 
 .js,
 .go,
 .csharp,
 .ts {
-    position: absolute;
-    display: flex;
-    padding: @sizeS;
+  position: absolute;
+  display: flex;
+  padding: @sizeS;
 
-    width: @sizeXXL;
-    height: @sizeXXL;
+  width: @sizeXXL;
+  height: @sizeXXL;
 
-    border-radius: 10%;
+  border-radius: 10%;
 
-    font-size: 1.2rem;
-    font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
 
-    border-bottom: @sizeXS solid var(--fgMediumAccent);
+  border-bottom: @sizeXS solid var(--fgMediumAccent);
 }
 
 .js {
-    top: @sizeXL;
-    right: 0;
-    justify-content: flex-end;
-    align-items: flex-end;
+  top: @sizeXL;
+  right: 0;
+  justify-content: flex-end;
+  align-items: flex-end;
 
-    .rotate-left(); 
+  .rotate-left();
 
-    background: gold;
-    color: #333;
+  background: gold;
+  color: #333;
 }
 
 .go {
-    top: @sizeXL;
-    left: 0;
+  top: @sizeXL;
+  left: 0;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    .rotate-right(); 
+  .rotate-right();
 
-    background: lightskyblue;
-    color: #fff;
+  background: lightskyblue;
+  color: #fff;
 }
 
 .csharp {
-    top: 10rem;
-    left: 0;
+  top: 10rem;
+  left: 0;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    .rotate-left();
+  .rotate-left();
 
-    background: purple;
-    color: #fff;
+  background: purple;
+  color: #fff;
 }
 
 .ts {
-    top: 10rem;
-    right: 0;
-    justify-content: flex-end;
-    align-items: flex-end;
+  top: 10rem;
+  right: 0;
+  justify-content: flex-end;
+  align-items: flex-end;
 
-    .rotate-right();
+  .rotate-right();
 
-    background: dodgerblue;
-    color: #fff;
+  background: dodgerblue;
+  color: #fff;
 }

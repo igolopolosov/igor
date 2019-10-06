@@ -2,40 +2,40 @@
 @import "../../../styles/color.less";
 
 .container {
-    display: flex;
-    align-items: center;
-    margin-bottom: @sizeM;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: @sizeM;
+  cursor: pointer;
 }
 
 .toggleBar {
-    display: flex;
+  display: flex;
 
-    width: @sizeXL;
-    height: @sizeM;
+  width: @sizeXL;
+  height: @sizeM;
 
-    margin-right: @sizeXS;
-    padding: @sizeXXS;
+  margin-right: @sizeXS;
+  padding: @sizeXXS;
 
-    border-radius: @sizeM;
+  border-radius: @sizeM;
 
-    background: @secondaryLight;
+  background: @secondaryLight;
 }
 
 .toggleBarDay {
-    .toggleBar();
+  .toggleBar();
 }
 
 .toggleBarNight {
-    .toggleBar();
-    justify-content: flex-end;
+  .toggleBar();
+  justify-content: flex-end;
 }
 
 .toggleCircle {
-    width: @sizeM;
-    height: @sizeM;
+  width: @sizeM;
+  height: @sizeM;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    background: @tertiary;
+  background: @tertiary;
 }

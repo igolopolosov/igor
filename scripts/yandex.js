@@ -1,3 +1,3 @@
 export function getMetrika() {
-    return yaCounter46361322;
+  return yaCounter46361322;
 }

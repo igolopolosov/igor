@@ -3,62 +3,62 @@
 @import "../../styles/color.less";
 
 .container {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .fullScreen {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: @phoneMedia) {
-    .fullScreen {
-        position: fixed;
-        right: 0;
-        top: 0;
-    
-        height: @sizeXXXL;
-        width: @sizeXXXL;
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-        cursor: pointer;
-        background: @tertiary;
-    
-        &:hover {
-            background: @tertiaryDark;
-        }
+  .fullScreen {
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    height: @sizeXXXL;
+    width: @sizeXXXL;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    cursor: pointer;
+    background: @tertiary;
+
+    &:hover {
+      background: @tertiaryDark;
     }
+  }
 }
 
 .header {
-    width: 100%;
-    min-height: @sizeXXXL;
-    
-    padding: @sizeM;
-    box-sizing: border-box;
+  width: 100%;
+  min-height: @sizeXXXL;
 
-    background-color: @bgShade;
+  padding: @sizeM;
+  box-sizing: border-box;
+
+  background-color: @bgShade;
 }
 
 .content {
-    display: block;
+  display: block;
 }
 
 .footer {
-    margin: @sizeM 0;
+  margin: @sizeM 0;
 }
 
 .footer > * {
-    margin-bottom: @sizeM;
+  margin-bottom: @sizeM;
 }
 
 .socialNav {
-    padding: @sizeM;
-    border: @sizeXS solid @secondaryLight;
+  padding: @sizeM;
+  border: @sizeXS solid @secondaryLight;
 }

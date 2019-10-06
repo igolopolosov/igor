@@ -2,5 +2,5 @@
  * Slow time
  */
 export function lapse(time: number): number {
-    return time / 100;
+  return time / 100;
 }

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 const SECOND = 1000;
 
@@ -6,23 +6,21 @@ const SECOND = 1000;
  * Displays current time in unix and human readable formats
  */
 export class CurrentTime extends React.PureComponent {
+  state;
 
-    state;
+  constructor(props) {
+    super(props);
 
-    constructor(props) {
-        super(props);
+    this.state = {
+      date: new Date()
+    };
 
-        this.state = {
-            date: new Date()
-        };
+    setInterval(() => this.setState({ date: new Date() }), 5 * SECOND);
+  }
 
-        setInterval(() => this.setState({date: new Date()}), 5 * SECOND);
-    }
+  render() {
+    const { date } = this.state;
 
-    render() {
-        const { date } = this.state;
-
-        return this.props.children({ date });
-    }
-
+    return this.props.children({ date });
+  }
 }

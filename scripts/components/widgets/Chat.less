@@ -2,44 +2,42 @@
 @import "../../../styles/color.less";
 
 .fixedContainer {
-    position: fixed;
-    right: @sizeXL;
-    bottom: @sizeM;
+  position: fixed;
+  right: @sizeXL;
+  bottom: @sizeM;
 }
 
 .chatContainer {
-    position: relative;
-    padding: @sizeM;
+  position: relative;
+  padding: @sizeM;
 
-    color: var(--fgStrongAccent);
-    background-color: @tertiarySolid;
-    border-radius: @borderRadius;
+  color: var(--fgStrongAccent);
+  background-color: @tertiarySolid;
+  border-radius: @borderRadius;
 
-    & > * {
-        width: 100%;
-        margin-top: 0;
-        margin-bottom: @sizeS;
-    }
+  & > * {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: @sizeS;
+  }
 }
 
 .closeMark {
-    position: absolute;
-    top: @sizeXS;
-    right: @sizeS;
+  position: absolute;
+  top: @sizeXS;
+  right: @sizeS;
 
-    margin: 0;
-    width: auto;
+  margin: 0;
+  width: auto;
 
-    cursor: pointer;
-    opacity: 0.5;
+  cursor: pointer;
+  opacity: 0.5;
 
-    &:hover {
-        opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
+  }
 }
 
-
-
 .message {
-    resize: none;
+  resize: none;
 }

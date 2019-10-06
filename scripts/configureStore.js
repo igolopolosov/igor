@@ -1,17 +1,14 @@
-import { createStore, applyMiddleware } from 'redux'
-import { createLogger } from 'redux-logger'
-import promise from 'redux-promise'
-import { rootReducer } from './reducers/index'
+import { createStore, applyMiddleware } from "redux";
+import { createLogger } from "redux-logger";
+import promise from "redux-promise";
+import { rootReducer } from "./reducers/index";
 
 export const configureStore = () => {
-   let middlewares = [promise]
+  let middlewares = [promise];
 
-   if (process.env.NODE_ENV !== 'production') {
-      middlewares = [...middlewares, createLogger({})]
-   }
+  if (process.env.NODE_ENV !== "production") {
+    middlewares = [...middlewares, createLogger({})];
+  }
 
-   return createStore(
-      rootReducer,
-      applyMiddleware(...middlewares)
-   )
-}
+  return createStore(rootReducer, applyMiddleware(...middlewares));
+};

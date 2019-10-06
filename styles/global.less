@@ -1,58 +1,75 @@
 @import "./color.less";
 @import "./size.less";
 
-html, body, #entry-point {
-    height: 100%;
-    overflow: auto;
+html,
+body,
+#entry-point {
+  height: 100%;
+  overflow: auto;
 }
 
 body {
-    margin: 0;
-    background: var(--bgPrimary);
-    color: var(--fgLightAccent);
+  margin: 0;
+  background: var(--bgPrimary);
+  color: var(--fgLightAccent);
 }
 
-body, button, input, textarea {
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 0.1em;
+body,
+button,
+input,
+textarea {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.1em;
 }
 
 a {
-    color: var(--fgLightAccent);
-    text-decoration: none;
-    cursor: pointer;
-    padding-bottom: @sizeXS;
-    border-bottom: @sizeXS solid transparent;
+  color: var(--fgLightAccent);
+  text-decoration: none;
+  cursor: pointer;
+  padding-bottom: @sizeXS;
+  border-bottom: @sizeXS solid transparent;
 }
 
 a:hover {
-    border-bottom: @sizeXS solid var(--fgLightAccent);
+  border-bottom: @sizeXS solid var(--fgLightAccent);
 }
 
 /* large desktop */
 @media all and (min-width: 1500px) {
-    body, button, input, textarea {
-        font-size: 25px;
-    }
+  body,
+  button,
+  input,
+  textarea {
+    font-size: 25px;
+  }
 }
 
 /* small desktop */
 @media all and (max-width: 1500px) {
-    body, button, input, textarea {
-        font-size: 20px;
-    }
+  body,
+  button,
+  input,
+  textarea {
+    font-size: 20px;
+  }
 }
 
 /* tablet */
 @media all and (max-width: 1024px) {
-    body, button, input, textarea {
-        font-size: 25px;
-    }
+  body,
+  button,
+  input,
+  textarea {
+    font-size: 25px;
+  }
 }
 
 /* mobile phone */
 @media all and (max-width: 768px) {
-    body, button, input, textarea {
-        font-size: 15px;
-    }
+  body,
+  button,
+  input,
+  textarea {
+    font-size: 15px;
+  }
 }
