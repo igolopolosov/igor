@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Route, Redirect, Switch } from 'react-router'
 
+import { ThemeToggle } from './ThemeToggle'
 import { Footer } from './Footer'
 import { Header } from './Header'
 import { NAVIGATION_LINKS } from '../consts/navigation'
@@ -40,7 +41,6 @@ export class Main extends React.PureComponent<{}, MainState> {
 		return (
 			<div className={styles.container}>
 				{notFullScreen && <Header />}
-
 				<div className={styles.fullScreen} onClick={this.toggleFullScreen}>
 					{isFullScreen ? '+' : '='}
 				</div>
@@ -66,6 +66,8 @@ export class Main extends React.PureComponent<{}, MainState> {
 				</main>
 
 				{notFullScreen && <Footer />}
+
+				<ThemeToggle />
 			</div>
 		)
 	}

@@ -8,7 +8,8 @@ html, body, #entry-point {
 
 body {
     margin: 0;
-    color: @fgLightAccent;
+    background: var(--bgPrimary);
+    color: var(--fgLightAccent);
 }
 
 body, button, input, textarea {
@@ -17,7 +18,7 @@ body, button, input, textarea {
 }
 
 a {
-    color: @fgLightAccent;
+    color: var(--fgLightAccent);
     text-decoration: none;
     cursor: pointer;
     padding-bottom: @sizeXS;
@@ -25,7 +26,7 @@ a {
 }
 
 a:hover {
-    border-bottom: @sizeXS solid @fgLightAccent;
+    border-bottom: @sizeXS solid var(--fgLightAccent);
 }
 
 /* large desktop */
