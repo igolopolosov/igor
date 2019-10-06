@@ -67,12 +67,12 @@ class PagerContainer extends React.PureComponent {
     const visiblePages = pages.length > 1 ? pages : [];
 
     return (
-      <React.Fragment>
+      <>
         {items.filter(visiblePosts).map((props, index) => (
           <Item key={index} {...props} />
         ))}
         {visiblePages.map(this.renderPageItem)}
-      </React.Fragment>
+      </>
     );
   }
 }

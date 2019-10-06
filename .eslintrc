@@ -1,5 +1,7 @@
 {
-  "extends": "prettier",
+  "extends": [
+    "prettier"
+  ],
   "env": {
     "browser": true,
     "es6": true,
@@ -8,14 +10,26 @@
   "parser": "babel-eslint",
   "rules": {
     "eol-last": 2,
-    "indent": [0, 3],
-    "jsx-quotes": [2, "prefer-single"],
-    "max-len": [1, 140, 4],
-    "no-underscore-dangle": [0],
+    "indent": [
+      0,
+      3
+    ],
+    "max-len": [
+      1,
+      140,
+      4
+    ],
+    "no-underscore-dangle": [
+      0
+    ],
+    "import/prefer-default-export": 0,
+    "import/no-unresolved": 0,
     "no-var": 2,
     "react/display-name": 0,
     "react/jsx-boolean-value": 2,
-    "react/jsx-no-undef": 2,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-no-undef": 0,
     "react/jsx-sort-props": 0,
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
@@ -23,15 +37,20 @@
     "react/no-did-update-set-state": 2,
     "react/no-multi-comp": 0,
     "react/no-unknown-property": 2,
-    "react/prop-types": 2,
+    "react/prop-types": 0,
     "react/react-in-jsx-scope": 2,
     "react/self-closing-comp": 2,
-    "space-before-function-paren": [2, {
-      "anonymous": "always",
-      "named": "never"
-    }],
-    "strict": [2, "global"],
-    "quotes": [2, "single", { "avoidEscape": true, "allowTemplateLiterals": true }]
+    "space-before-function-paren": [
+      2,
+      {
+        "anonymous": "always",
+        "named": "never"
+      }
+    ],
+    "strict": [
+      2,
+      "global"
+    ]
   },
   "plugins": [
     "react"

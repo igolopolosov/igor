@@ -1,5 +1,5 @@
 import React from "react";
-import { Album } from "./Album.js";
+import { Album } from "./Album";
 import { artists } from "./artists";
 import styles from "./music.less";
 

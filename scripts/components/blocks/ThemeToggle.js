@@ -30,11 +30,11 @@ export const ThemeToggle = () => {
     themeName === "light" ? styles.toggleBarDay : styles.toggleBarNight;
   return (
     <div className={styles.container} onClick={toggle}>
-      ☀️
+      <span role="img" aria-label="sun">☀️</span>
       <div className={toggleClassName}>
         <div className={styles.toggleCircle} />
       </div>
-      🌙
+      <span role="img" aria-label="moon">🌙</span>
     </div>
   );
 };

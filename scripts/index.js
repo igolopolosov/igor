@@ -5,7 +5,7 @@ import { App } from "./components/App";
 import "./assets";
 
 console.log(
-  "=================================================================="
+  '=================================================================='
 );
 console.log(
   "= Hi Mate! Feel free to write an email to igolopolosov@gmail.com ="
