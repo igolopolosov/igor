@@ -1,0 +1,41 @@
+@import "../../../styles/size.less";
+@import "../../../styles/color.less";
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: @sizeM;
+    cursor: pointer;
+}
+
+.toggleBar {
+    display: flex;
+
+    width: @sizeXL;
+    height: @sizeM;
+
+    margin-right: @sizeXS;
+    padding: @sizeXXS;
+
+    border-radius: @sizeM;
+
+    background: @secondaryLight;
+}
+
+.toggleBarLeft {
+    .toggleBar();
+}
+
+.toggleBarRight {
+    .toggleBar();
+    justify-content: flex-end;
+}
+
+.toggleCircle {
+    width: @sizeM;
+    height: @sizeM;
+
+    border-radius: 50%;
+
+    background: @tertiary;
+}

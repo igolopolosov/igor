@@ -19,13 +19,16 @@ export const ThemeToggle = () => {
         document.body.classList.toggle(theme.dark);
         document.body.classList.toggle(theme.light);
     };
-    const label = isDayTheme
-        ? 'day'
-        : 'night';
+    const toggleClassName = isDayTheme
+        ? styles.toggleBarLeft
+        : styles.toggleBarRight;
     return (
-        <div className={styles.container}>
-            <label htmlFor='theme-toggle'>{label}</label>
-            <input id='theme-toggle' onChange={toggle} type='checkbox' checked={!isDayTheme} />
+        <div className={styles.container} onClick={toggle}>
+            ☀️
+            <div className={toggleClassName}>
+                <div className={styles.toggleCircle} />
+            </div>
+            🌙
         </div>
     )
 }
