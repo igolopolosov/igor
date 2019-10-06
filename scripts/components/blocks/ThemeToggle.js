@@ -1,27 +1,36 @@
 import React, { useState, useEffect } from 'react'
 import styles from './ThemeToggle.less'
-import theme from '../../../styles/theme.less'
+import themeStyles from '../../../styles/theme.less'
+
+const pickTheme = (isDayTheme) => {
+    return isDayTheme
+            ? 'light'
+            : 'dark';
+}
 
 export const ThemeToggle = () => {
     const now = new Date();
     const isDayTime = now.getHours() >= 6 && now.getHours() <= 20;
-    const [isDayTheme, setTheme] = useState(isDayTime);
+    const initialTheme = pickTheme(isDayTime);
+    const [themeName, setTheme] = useState(localStorage.themeName || initialTheme);
 
     useEffect(() => {
-        const initialTheme = isDayTheme
-            ? theme.light
-            : theme.dark;
-        document.body.classList.toggle(initialTheme);
+        const initialThemeStyles = themeStyles[themeName];
+        document.body.classList.toggle(initialThemeStyles);
     }, []);
 
     const toggle = () => {
-        setTheme(!isDayTheme);
-        document.body.classList.toggle(theme.dark);
-        document.body.classList.toggle(theme.light);
+        const newThemeName = themeName === 'light'
+            ? 'dark'
+            : 'light';
+        setTheme(newThemeName);
+        localStorage.themeName = newThemeName;
+        document.body.classList.toggle(themeStyles.dark);
+        document.body.classList.toggle(themeStyles.light);
     };
-    const toggleClassName = isDayTheme
-        ? styles.toggleBarLeft
-        : styles.toggleBarRight;
+    const toggleClassName = themeName === 'light'
+        ? styles.toggleBarDay
+        : styles.toggleBarNight;
     return (
         <div className={styles.container} onClick={toggle}>
             ☀️
