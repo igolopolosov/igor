@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Route, Redirect, Switch } from 'react-router'
 
-import { ThemeToggle } from './ThemeToggle'
+import { ThemeToggle } from './theme/ThemeToggle'
 import { Footer } from './Footer'
 import { Header } from './Header'
 import { NAVIGATION_LINKS } from '../consts/navigation'

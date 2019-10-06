@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styles from './ThemeToggle.less'
+import theme from '../../../styles/theme.less'
 
 export const ThemeToggle = () => {
     const now = new Date();
@@ -8,15 +9,15 @@ export const ThemeToggle = () => {
 
     useEffect(() => {
         const initialTheme = isDayTheme
-            ? styles.lightTheme
-            : styles.darkTheme;
+            ? theme.light
+            : theme.dark;
         document.body.classList.toggle(initialTheme);
     }, []);
 
     const toggle = () => {
         setTheme(!isDayTheme);
-        document.body.classList.toggle(styles.darkTheme);
-        document.body.classList.toggle(styles.lightTheme);
+        document.body.classList.toggle(theme.dark);
+        document.body.classList.toggle(theme.light);
     };
     const label = isDayTheme
         ? 'day'
