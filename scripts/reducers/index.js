@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import { blog } from "./blog";
-import { prediction } from "./prediction";
+import { blog } from "./blog.ts";
+import { prediction } from "./prediction.ts";
 
 export const rootReducer = combineReducers({
   prediction,

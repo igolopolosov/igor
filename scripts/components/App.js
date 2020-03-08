@@ -4,7 +4,7 @@ import { Route } from "react-router";
 import { HashRouter } from "react-router-dom";
 
 import { configureStore } from "../configureStore";
-import { Main } from "./Main";
+import { Main } from "./Main.tsx";
 
 const store = configureStore();
 
