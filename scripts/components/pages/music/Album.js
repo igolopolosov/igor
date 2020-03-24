@@ -32,7 +32,7 @@ export class Album extends React.Component {
   }
 
   render() {
-    const { band, album, link, soundloud, coverUrl } = this.props;
+    const { band, album, link, soundloudPlaylistId, coverUrl } = this.props;
     const { isPlayerDisplayed } = this.state;
 
     return (
@@ -55,7 +55,7 @@ export class Album extends React.Component {
             {...iframeSettings}
             className={styles.iframe}
             style={{ display: !isPlayerDisplayed && "none" }}
-            src={getSouncloudIframeSrc(soundloud)}
+            src={getSouncloudIframeSrc(soundloudPlaylistId)}
           />
         </div>
         <div className={styles.album}>{album}</div>
