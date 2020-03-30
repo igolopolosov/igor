@@ -1,5 +1,6 @@
 @import "./color.less";
 @import "./size.less";
+@import "./media.less";
 
 html,
 body,
@@ -35,7 +36,7 @@ a:hover {
 }
 
 /* large desktop */
-@media all and (min-width: 1500px) {
+@media all and (min-width: @largeDsktopMediaMin) {
   body,
   button,
   input,
@@ -45,7 +46,7 @@ a:hover {
 }
 
 /* small desktop */
-@media all and (max-width: 1500px) {
+@media all and (max-width: @smallDesktopMediaMax) {
   body,
   button,
   input,
@@ -55,17 +56,17 @@ a:hover {
 }
 
 /* tablet */
-@media all and (max-width: 1024px) {
+@media all and (max-width: @tabletMediaMax) {
   body,
   button,
   input,
   textarea {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
 /* mobile phone */
-@media all and (max-width: 768px) {
+@media all and (max-width: @phoneMediaMax) {
   body,
   button,
   input,

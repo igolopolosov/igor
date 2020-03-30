@@ -1,5 +1,6 @@
 @import "../../../styles/size.less";
 @import "../../../styles/color.less";
+@import "../../../styles/media.less";
 
 .tabHeader {
   display: flex;
@@ -27,5 +28,16 @@
 
   &:hover {
     background: @tertiaryLight;
+  }
+}
+
+@media all and (min-width: @phoneMediaMax) {
+  .tabHeader {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  .tabHeaderItem {
+    flex: 1;
   }
 }

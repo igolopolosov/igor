@@ -1,4 +1,10 @@
 @import "../../../../styles/size.less";
+@import "../../../../styles/media.less";
+
+.playgroundHeadline {
+  display: flex;
+  flex-direction: column;
+}
 
 .playgroundIntro {
   text-align: left;
@@ -13,4 +19,10 @@
 
 .separator {
   margin: @sizeS 0;
+}
+
+@media all and (min-width: @phoneMediaMax) {
+  .playgroundHeadline {
+    flex-direction: row;
+  }
 }

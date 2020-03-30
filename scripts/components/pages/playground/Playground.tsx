@@ -25,6 +25,14 @@ const tabs = [
   [wordReminder, WordReminder]
 ];
 
+function PlaygroundHeadline({ children }) {
+  return (
+    <>
+      {children}
+    </>
+  );
+}
+
 function PlaygroundIntro() {
   return (
     <div className={styles.playgroundIntro}>
@@ -52,12 +60,14 @@ function PlaygroundItem({ children }) {
 export function Playground() {
   return (
     <>
-      <PlaygroundIntro />
-      <Tabs>
-        {tabs.map(([link]) => (
-          <Pane key={link.title} label={link.title} url={link.to} />
-        ))}
-      </Tabs>
+      <div className={styles.playgroundHeadline}>
+        <PlaygroundIntro />
+        <Tabs>
+          {tabs.map(([link]) => (
+            <Pane key={link.title} label={link.title} url={link.to} />
+          ))}
+        </Tabs>
+      </div>
 
       <PlaygroundItem>
         <Switch>
