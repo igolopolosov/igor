@@ -12,7 +12,7 @@
     "build": "webpack --colors --config webpack.config.production.js",
     "release": "sh release.sh",
     "test": "jest -c jest.config.json",
-    "lint": "eslint ."
+    "lint": "eslint . --ext .js,.jsx"
   },
   "dependencies": {
     "@babel/polyfill": "7.8.7",

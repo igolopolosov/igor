@@ -6,8 +6,6 @@ const SECOND = 1000;
  * Displays current time in unix and human readable formats
  */
 export class CurrentTime extends React.PureComponent {
-  state;
-
   constructor(props) {
     super(props);
 
@@ -20,7 +18,8 @@ export class CurrentTime extends React.PureComponent {
 
   render() {
     const { date } = this.state;
+    const { children } = this.props;
 
-    return this.props.children({ date });
+    return children({ date });
   }
 }
