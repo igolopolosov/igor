@@ -1,28 +1,21 @@
-@import "../../../../../styles/size.less";
-@import "../../../../../styles/color.less";
+@import "../../../styles/size.less";
+@import "../../../styles/color.less";
 
 .tabHeader {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   padding-bottom: @sizeS;
 }
 
-.tabHeaderItemSelected,
 .tabHeaderItem {
-  margin-right: @sizeM;
+  flex: 150px;
   padding: @sizeS;
-
-  border-radius: 0 0 @sizeS @sizeS;
 
   &:last-child {
     margin-right: 0;
   }
-}
-
-.tabHeaderItem {
-  background: @neutralLight;
-  cursor: pointer;
 
   &:hover {
     background: @neutral;

@@ -55,12 +55,13 @@ export class WordReminder extends React.PureComponent<{}, WordReminderState> {
 
     return (
       <>
+        <h2>🚧 work in progress 🚧</h2>
         <h3>Add words to reminder</h3>
 
-        <p>
+        <div className={styles.controls}>
           <input placeholder="Type word" onBlur={this.enterWord} />
           <input placeholder="Type sentence" onBlur={this.enterSentence} />
-        </p>
+        </div>
 
         <p>
           <Button tertiary onClick={this.addWord}>
