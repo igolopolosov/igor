@@ -38,6 +38,6 @@ export const NAVIGATION_LINKS = {
   },
   appearences: {
     to: "/appearences",
-    title: "Appearences"
+    title: "⭐Appearences"
   }
 };

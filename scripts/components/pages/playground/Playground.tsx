@@ -2,7 +2,7 @@ import * as React from "react";
 import { Route, Switch } from "react-router";
 
 import { NAVIGATION_LINKS } from "../../../consts/navigation";
-import { ALink } from "../../blocks/ALink";
+import { ActionLink } from "../../blocks/ALink";
 import { Pane } from "../../blocks/Pane";
 import { Tabs } from "../../blocks/Tabs";
 import { DaysFromJune13 } from "./DaysFromJune13";
@@ -31,7 +31,7 @@ function PlaygroundIntro() {
     <div className={styles.playgroundIntro}>
       <p>Here I collect my mini projects that I developed 😀</p>
       <p>
-        Please welcome under the hood to see how it's implemented on <ALink href='https://github.com/igolopolosov/igor'>My Github 🔥</ALink>
+        Please welcome under the hood to see how it's implemented on <ActionLink href='https://github.com/igolopolosov/igor'>My Github 🔥</ActionLink>
       </p>
       <br/>
     </div>

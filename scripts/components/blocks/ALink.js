@@ -21,3 +21,16 @@ export const ALink = ({ children, className = '', internal = false, ...props }) 
     </Link>
   )
 )
+
+export const ActionLink = ({ children, className = '', ...props }) => (
+  <span className={className}>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${styles.actionLink} ${className}`}
+      {...props}
+    >
+      {children}
+    </a>
+  </span>
+)

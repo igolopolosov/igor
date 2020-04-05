@@ -64,7 +64,7 @@ class PredictionBookComponent extends React.PureComponent<
         </p>
         <p>
           <Button onClick={this.generateRandomLine} primary>
-            {`Make Magic!`}
+            Make Magic!
           </Button>
         </p>
       </>

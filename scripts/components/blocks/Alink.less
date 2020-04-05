@@ -1,6 +1,8 @@
 @import "../../../styles/size.less";
+@import "../../../styles/color.less";
 
-a,.link {
+a,
+.link {
   color: var(--fgLightAccent);
   text-decoration: none;
   cursor: pointer;
@@ -11,4 +13,16 @@ a,.link {
 a:hover,
 .link:hover {
   border-bottom: @sizeXS solid var(--fgLightAccent);
+}
+
+.actionLink {
+  color: @accent;
+  cursor: pointer;
+  padding-bottom: @sizeXXS;
+  border-bottom: @sizeXXS solid @accent;
+}
+
+.actionLink:hover {
+  color: @accentSolid;
+  border-bottom: @sizeXXS solid @accentSolid;
 }
