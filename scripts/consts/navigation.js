@@ -7,7 +7,6 @@ export const NAVIGATION_LINKS = {
     to: "/blog",
     title: "📕Blog"
   },
-
   playground: {
     to: "/playground",
     title: "🎃Playground",
@@ -28,13 +27,17 @@ export const NAVIGATION_LINKS = {
       title: "🚨Word Reminder"
     }
   },
-
   music: {
     to: "/music",
     title: "🎵Music"
   },
+
   privacyPolicyTap: {
     to: "/privacy-policy-tap",
     title: "Privacy Policy for Tap! Tap!"
+  },
+  appearences: {
+    to: "/appearences",
+    title: "Appearences"
   }
 };
