@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 
 import styles from "./Navigation.less";
+import { ALink } from './ALink';
 
 /**
  * Main navigation component
@@ -11,14 +11,19 @@ import styles from "./Navigation.less";
 export class Navigation extends React.PureComponent {
   renderLink = link => {
     const { external } = this.props;
-    return external ? (
-      <a target="_blank" rel="noopener noreferrer" key={link.to} href={link.to}>
-        {`- ${link.title} -`}
-      </a>
-    ) : (
-      <Link key={link.to} to={link.to}>
+
+    if (external) {
+      return (
+        <ALink key={link.to} href={link.to}>
+          {`- ${link.title} -`}
+        </ALink>
+      );
+    }
+
+    return (
+      <ALink key={link.to} to={link.to} internal>
         {link.title}
-      </Link>
+      </ALink>
     );
   };
 

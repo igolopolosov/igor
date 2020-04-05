@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./CTM.less";
 
+import { ALink } from '../../blocks/ALink';
+
 export const CTM = () => (
-  <a
-    target="_blank"
-    rel="noopener noreferrer"
+  <ALink
     href="https://www.comparethemarket.com"
   >
     <img
@@ -12,8 +12,6 @@ export const CTM = () => (
       src="https://cdn.comparethemarket.com/market/assets/logos/favicon.ico"
       alt="CTM Logo"
     />
-    <b>compare</b>
-    the
-    <b>market</b>
-  </a>
+    <b>compare</b>the<b>market</b>
+  </ALink>
 );

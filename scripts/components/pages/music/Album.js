@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./album.less";
 
+import { ALink } from "../../blocks/ALink";
+
 const iframeSettings = {
   width: "100%",
   height: "300",
@@ -43,11 +45,9 @@ export class Album extends React.Component {
           onMouseLeave={() => this.onHover(false)}
         >
           <img src={coverUrl} alt={album} className={styles.coverUrl} />
-          <a
+          <ALink
             className={styles.info}
             style={{ display: isPlayerDisplayed && "none" }}
-            target="_blank"
-            rel="noopener noreferrer"
             href={link}
           />
           <iframe

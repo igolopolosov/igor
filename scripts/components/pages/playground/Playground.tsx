@@ -2,6 +2,7 @@ import * as React from "react";
 import { Route, Switch } from "react-router";
 
 import { NAVIGATION_LINKS } from "../../../consts/navigation";
+import { ALink } from "../../blocks/ALink";
 import { Pane } from "../../blocks/Pane";
 import { Tabs } from "../../blocks/Tabs";
 import { DaysFromJune13 } from "./DaysFromJune13";
@@ -25,20 +26,12 @@ const tabs = [
   [wordReminder, WordReminder]
 ];
 
-function PlaygroundHeadline({ children }) {
-  return (
-    <>
-      {children}
-    </>
-  );
-}
-
 function PlaygroundIntro() {
   return (
     <div className={styles.playgroundIntro}>
       <p>Here I collect my mini projects that I developed 😀</p>
       <p>
-        Please welcome under the hood to see how it's implemented on <a href='https://github.com/igolopolosov/igor'>My Github 🔥</a>
+        Please welcome under the hood to see how it's implemented on <ALink href='https://github.com/igolopolosov/igor'>My Github 🔥</ALink>
       </p>
       <br/>
     </div>
