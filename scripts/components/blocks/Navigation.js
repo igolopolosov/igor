@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import styles from "./Navigation.less";
-import { ALink } from './ALink';
+import { ALink } from './Link';
 
 /**
  * Main navigation component

@@ -6,7 +6,7 @@ import { withRouter } from "react-router";
 import { BlogPost } from "../../../reducers/blog";
 import { Pager } from "../../blocks/Pager";
 import { Button } from "../../blocks/Button";
-import { ALink } from '../../blocks/ALink';
+import { ALink } from '../../blocks/Link';
 import { NAVIGATION_LINKS } from "../../../consts/navigation";
 import { loadBlog } from "./loadBlog";
 

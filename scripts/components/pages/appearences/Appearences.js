@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./appearences.less";
 
-import { ActionLink } from '../../blocks/ALink';
+import { ActionLink } from '../../blocks/Link';
 
 const linksToInteviews = [
   {

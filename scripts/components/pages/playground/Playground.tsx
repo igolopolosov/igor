@@ -2,7 +2,7 @@ import * as React from "react";
 import { Route, Switch } from "react-router";
 
 import { NAVIGATION_LINKS } from "../../../consts/navigation";
-import { ActionLink } from "../../blocks/ALink";
+import { ActionLink } from "../../blocks/Link";
 import { Pane } from "../../blocks/Pane";
 import { Tabs } from "../../blocks/Tabs";
 import { DaysFromJune13 } from "./DaysFromJune13";

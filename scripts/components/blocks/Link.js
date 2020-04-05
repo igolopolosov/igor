@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import styles from "./ALink.less";
+import styles from "./Link.less";
 
 export const ALink = ({ children, className = '', internal = false, ...props }) => (
   !internal

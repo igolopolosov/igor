@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./CTM.less";
 
-import { ALink } from '../../blocks/ALink';
+import { ALink } from '../../blocks/Link';
 
 export const CTM = () => (
   <ALink

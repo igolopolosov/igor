@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./album.less";
 
-import { ALink } from "../../blocks/ALink";
+import { ALink } from "../../blocks/Link";
 
 const iframeSettings = {
   width: "100%",
