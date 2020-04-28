@@ -9,6 +9,7 @@ import { DaysFromJune13 } from "./DaysFromJune13";
 import { PredictionBook } from "./PredictionBook";
 import { CircleCanon } from "./CircleCanon";
 import { WordReminder } from "./WordReminder";
+import { Instructions } from "./Instructions";
 
 const styles = require("./Playground.less");
 
@@ -16,14 +17,16 @@ const {
   circleCanon,
   predictionBook,
   daysFromJune13,
-  wordReminder
+  wordReminder,
+  instructions,
 } = NAVIGATION_LINKS.playground;
 
 const tabs = [
   [circleCanon, CircleCanon],
   [predictionBook, PredictionBook],
   [daysFromJune13, DaysFromJune13],
-  [wordReminder, WordReminder]
+  [wordReminder, WordReminder],
+  [instructions, Instructions],
 ];
 
 function PlaygroundIntro() {

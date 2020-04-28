@@ -25,6 +25,10 @@ export const NAVIGATION_LINKS = {
     wordReminder: {
       to: "/playground/word-reminder",
       title: "🚨Word Reminder"
+    },
+    instructions: {
+      to: "/playground/instructions",
+      title: "📝 Instructions"
     }
   },
   music: {
