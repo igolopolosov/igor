@@ -66,10 +66,10 @@ const scriptBody = `
 `;
 
 export const Instructions = () => (
+  <div>
+    <div>Добавьте эту ссылку на панель закладок браузера:</div>
     <div>
-        <div>Добавьте эту ссылку на панель закладок браузера:</div>
-        <div>
-            <ActionLink href={`javascript:${scriptBody}`}>Добавить задачу в Asana</ActionLink>
-        </div>
+      <ActionLink href={`javascript:${scriptBody}`}>Добавить задачу в Asana</ActionLink>
     </div>
+  </div>
 );
