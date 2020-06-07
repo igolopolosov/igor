@@ -8,7 +8,7 @@ I highly recommend to visit [playgorund section to find some awesome projects�
 
 And actually, **Hello, World!** 🌎
 
-©️ Igor Golopolosov. Senior Software Enginner at [comparethemarket](https://www.comparethemarket.com/)
+©️ Igor Golopolosov
 
 
 ## Powered by:
