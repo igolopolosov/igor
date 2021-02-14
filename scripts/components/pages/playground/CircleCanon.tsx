@@ -1,7 +1,7 @@
 import * as React from "react";
 import { fireCircles } from "./circleCanon/fireCircles";
 import { getRandomNumberInRangeRounded } from "./circleCanon/utils/getRandomNumberInRange";
-const styles = require("./circleCanon.less");
+import styles from "./circleCanon.less";
 
 export class CircleCanon extends React.PureComponent<{}, {}> {
   private panelRef: React.RefObject<any>;

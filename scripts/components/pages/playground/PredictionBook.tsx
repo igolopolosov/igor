@@ -7,7 +7,7 @@ import { setLines, setPages } from "../../../reducers/prediction";
 import { Button } from "../../blocks/Button";
 import { NumberInput } from "../../blocks/NumberInput";
 
-const styles = require("./PredictionBook.less");
+import styles from "./PredictionBook.less";
 
 namespace PredictionBookNS {
   export interface OwnProps {}

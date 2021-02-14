@@ -11,12 +11,11 @@ config.entry = [
 ];
 config.output = {
     path: path.join(__dirname, './dist'),
-	filename: 'bundle.[hash].js',
-	publicPath: '/'
+    filename: 'bundle.[fullhash].js',
+    publicPath: '/'
 };
 config.devtool = 'source-map';
 config.plugins = [
-    new webpack.optimize.OccurrenceOrderPlugin(),
     new MiniCssExtractPlugin({
         filename: '[name].css',
         chunkFilename: '[id].css'

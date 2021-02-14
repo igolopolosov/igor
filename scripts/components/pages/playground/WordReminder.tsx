@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Button } from "../../blocks/Button";
-const styles = require("./WordReminder.less");
+import styles from "./WordReminder.less";
 
 interface WordReminderState {
   newWord: string;

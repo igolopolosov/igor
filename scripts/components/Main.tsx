@@ -4,8 +4,7 @@ import { Routes } from "./Routes";
 import { ThemeToggle } from "./blocks/ThemeToggle";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
-
-const styles = require("./Main.less");
+import styles from "./Main.less";
 
 interface MainState {
   isFullScreen: boolean;

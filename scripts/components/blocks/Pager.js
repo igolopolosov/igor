@@ -72,7 +72,7 @@ class PagerContainer extends React.PureComponent {
 PagerContainer.propTypes = {
   pathName: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(PropTypes.any).isRequired,
-  renderItem: PropTypes.func.isRequired,
+  renderItem: PropTypes.func,
   history: PropTypes.object.isRequired,
   location: PropTypes.object.isRequired
 };

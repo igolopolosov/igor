@@ -10,7 +10,7 @@ import { PredictionBook } from "./PredictionBook";
 import { CircleCanon } from "./CircleCanon";
 import { WordReminder } from "./WordReminder";
 
-const styles = require("./Playground.less");
+import styles from "./Playground.less";
 
 const {
   circleCanon,

@@ -10,7 +10,7 @@ import { ALink } from '../../blocks/Link';
 import { NAVIGATION_LINKS } from "../../../consts/navigation";
 import { loadBlog } from "./loadBlog";
 
-const styles = require("./Blog.less");
+import styles from "./Blog.less";
 
 namespace BlogContainerNS {
   interface OwnProps {
