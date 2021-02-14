@@ -20,7 +20,7 @@ describe("createSvgElement", () => {
 
   test("should enhance svg and add method get/set number attributes", () => {
     const path = createSvgElement("g", {
-      r: 1
+      r: '1'
     });
 
     path.setNumberAttribute("x", 2);

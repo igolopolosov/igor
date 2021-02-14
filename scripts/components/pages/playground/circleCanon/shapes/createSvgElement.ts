@@ -8,7 +8,7 @@ export interface ISVGElement extends SVGElement {
  */
 export function createSvgElement<
   N extends keyof ElementTagNameMap,
-  P extends any
+  P extends Record<string, string>
 >(name: N, params?: P): ISVGElement {
   const node = document.createElementNS(
     "http://www.w3.org/2000/svg",
