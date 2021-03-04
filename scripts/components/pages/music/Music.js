@@ -6,8 +6,11 @@ import styles from "./music.less";
 export const Music = () => (
   <div className={styles.container}>
     {artists.map(([artist, ...albums]) => (
-      <div className={styles.artist} key={artist.band}>
-        <div className={styles.artistName}>{artist.band}</div>
+      <div className={styles.artist} key={artist.title}>
+        <div className={styles.artistHeading}>
+          <span className={styles.artistTitle}>{artist.title}</span>
+          <span className={styles.artistStyle}>{artist.style}</span>
+        </div>
         <div className={styles.albums}>
           {albums.map(album => (
             <Album {...album} key={album.album} />

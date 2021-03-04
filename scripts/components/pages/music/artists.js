@@ -1,6 +1,7 @@
 const StackDo = [
   {
-    band: "Stack Do"
+    title: "Stack Do",
+    style: "Electroical Beats",
   },
   {
     band: "Stack Do",
@@ -60,7 +61,8 @@ const StackDo = [
 
 const FourteenthOfMaySaturday = [
   {
-    band: "14th of May, Saturday"
+    title: "14th of May, Saturday",
+    style: "3/4 Yamaha Acoustic Hardcore"
   },
   {
     band: "14th of May, Saturday",
@@ -91,9 +93,10 @@ const FourteenthOfMaySaturday = [
   }
 ];
 
-const Randoms = [
+const Palekh = [
   {
-    band: "Randoms"
+    title: "North Palekh Records",
+    style: "Homemade Acoustic"
   },
   {
     band: "Бублики",
@@ -132,7 +135,7 @@ const Randoms = [
       "04 - Run, Baby, Run!",
       "05 - Мотылёк"
     ],
-    tags: ["Acoustic Punk", "Ivanovo", "IzP"],
+    tags: ["Acoustic Punk", "Ivanovo", "Palekh", "IzP"],
     info: `
       Блюзовые ритмы, акустический панк и нежная лирика от Саши(vk.com/iz__p) и Гоши(vk.com/htkmsc)
 
@@ -177,6 +180,13 @@ const Randoms = [
       yadi.sk/d/_SxerQh3wFvap
       vk.com/htkmsc
     `
+  }
+];
+
+const Ivanovo = [
+  {
+    title: "Ivanovo",
+    style: "Rock'n'roll",
   },
   {
     band: "Nothing Personal",
@@ -197,12 +207,6 @@ const Randoms = [
       vk.com/club14492586
       soundcloud.com/hotkeymusic/sets/nothing-personal-nothing-wasted
     `
-  }
-];
-
-const TwoAM = [
-  {
-    band: "2 a.m."
   },
   {
     band: "2 a.m.",
@@ -234,4 +238,4 @@ const TwoAM = [
   }
 ];
 
-export const artists = [StackDo, FourteenthOfMaySaturday, Randoms, TwoAM];
+export const artists = [StackDo, FourteenthOfMaySaturday, Palekh, Ivanovo];
