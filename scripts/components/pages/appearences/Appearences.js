@@ -10,7 +10,8 @@ const linksToInteviews = [
     date: '15-02-2020'
   },
   {
-    url: 'http://obucharium.com/blog/34',
+//     url: 'https://vk.com/golopolosov?w=wall-86709385_650',
+    url: 'https://web.archive.org/web/20180429103113/http://www.obucharium.com/blog/34',
     description: 'Igor Golopolosov. Путь программиста: Палех(RU) - Лимассол(CYP) - Питерборо(UK)...',
     date: '09-04-2018'
   },
