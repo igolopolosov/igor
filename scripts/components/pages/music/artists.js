@@ -30,6 +30,87 @@ const GafanRecords = [
     I was lost somewhere in between North Palekh and East Peterborough, perhaps it was a dream. Dream?
     Last 3 years made me grow up so I tried to catch this moment in my music. Cheers, Igor
     `
+  },
+  {
+    band: "Stack Do",
+    album: "Fasten Seat Belts",
+    date: "22 October 2019",
+    link: "https://soundcloud.com/hotkeymusic/stack-do-fasten-seat-belts-2",
+    soundloudPlaylistId: "907259329",
+    coverUrl: "https://i1.sndcdn.com/artworks-000619834309-dbbr4d-t500x500.jpg",
+    tracks: ["Fasten Seat Belts"],
+    tags: ["Electronic", "Beat", "Indie"],
+    info: `
+      Every now and when we need to be safe. Fasten seat belts, we are going faster!
+    `
+  },
+  {
+    band: "Stack Do",
+    album: "Stranger Things",
+    date: "8 September 2019",
+    link: "https://soundcloud.com/hotkeymusic/sets/stack-do-stranger-things",
+    soundloudPlaylistId: "876388999",
+    coverUrl: "https://i1.sndcdn.com/artworks-000594470427-fltsyp-t500x500.jpg",
+    tracks: ["Stranger Things"],
+    tags: ["Dance", "EDM", "Synth", "Indie", "Instrumental"],
+    info: `
+      The last survivors of this world watching the Moon...
+    `
+  },
+  {
+    band: "Stack Do",
+    album: "Dance Party Dance Dance",
+    date: "30 May 2019",
+    link: "https://soundcloud.com/hotkeymusic/sets/stack-do-dance-party-dance",
+    soundloudPlaylistId: "876393892",
+    coverUrl: "https://i1.sndcdn.com/artworks-000544686168-zgo7k4-t500x500.jpg",
+    tracks: ["Dance Party Dance Dance"],
+    tags: ["Dance Pop", "Dance", "Ambient", "EDM"],
+    info: `
+      I feel good when I listen this,
+      I wanna move, I wanna go and fly somewhere,
+      Take a plain and follow your dream!
+    `
+  },
+  {
+    band: "Stack Do",
+    album: "Good Morning Galaxy",
+    date: "23 May 2019",
+    link: "https://soundcloud.com/hotkeymusic/sets/good-morning-galaxy",
+    soundloudPlaylistId: "877541485",
+    coverUrl: "https://i1.sndcdn.com/artworks-000541030359-4uucae-t500x500.jpg",
+    tracks: ["Good Morning Galaxy"],
+    tags: ["8bit", "Indie"],
+    info: `
+      A long time ago in a galaxy far, far away....
+    `
+  },
+  {
+    band: "14th of May, Saturday",
+    album: "Killing Spree",
+    date: "26 August 2018",
+    link:
+      "https://soundcloud.com/hotkeymusic/sets/14th-of-may-saturday-killing",
+    soundloudPlaylistId: "592466907",
+    coverUrl: "https://i1.sndcdn.com/artworks-000395151423-wzmk3g-t500x500.jpg",
+    tracks: ["Killing Spree"],
+    tags: ["Hardcore", "Peterborough", "14hOfMaySaturday"],
+    info: `
+      Move fast
+    `
+  },
+  {
+    band: "14th of May, Saturday",
+    album: "Night Stalker",
+    date: "9 August 2018",
+    link: "https://soundcloud.com/hotkeymusic/sets/14th-of-may-saturday-night",
+    soundloudPlaylistId: "592463973",
+    coverUrl: "https://i1.sndcdn.com/artworks-000386732148-akdas0-t500x500.jpg",
+    tracks: ["Night Stalker"],
+    tags: ["Trash", "Peterborough", "14hOfMaySaturday"],
+    info: `
+      Techo darkness
+    `
   }
 ];
 
@@ -174,6 +255,24 @@ const Ivanovo = [
     info: `
       soundcloud.com/hotkeymusic/sets/2-a-m-verve
       vk.com/club69046948
+    `
+  },
+  {
+    band: "frankly pirates",
+    album: "demos",
+    date: "19 October 2014",
+    link: "https://soundcloud.com/hotkeymusic/sets/frankly-pirates-demos",
+    soundloudPlaylistId: "1275530542",
+    coverUrl: "https://i1.sndcdn.com/artworks-ltFcRTT0n1vEVhGv-KxJjgA-t500x500.jpg",
+    tracks: [
+      "яжка (demo)",
+      "i don't think / help me please (demo)",
+      "help me please / i don't think (demo)",
+      "me vs cactus (demo)",
+    ],
+    tags: ["Punk"],
+    info: `
+      Демки для концерта в Машинке!
     `
   }
 ];

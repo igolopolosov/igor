@@ -47,7 +47,7 @@
 
 .band,
 .album {
-  padding: @sizeXS @sizeS;
+  padding: @sizeXXS @sizeS;
 
   width: calc(@square - @sizeS);
 
@@ -57,7 +57,19 @@
 }
 
 .band {
-  opacity: 0.5;
+  opacity: 0.7;
+}
+
+.date {
+  position: absolute;
+  bottom: -(@sizeS + @sizeXXS * 2);
+  right: 0;
+  padding: @sizeXXS;
+
+  background-color: @neutralSolid;
+  border-radius: 0 0 @sizeXXS @sizeXXS;
+  line-height: @sizeS;
+  font-size: @sizeS;
 }
 
 .info,
