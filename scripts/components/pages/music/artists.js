@@ -1,94 +1,34 @@
-const StackDo = [
+const GafanRecords = [
   {
-    title: "Stack Do",
-    style: "Electroical Beats",
+    title: "Gafan Records",
+    style: "Full House",
   },
   {
-    band: "Stack Do",
-    album: "Fasten Seat Belts",
-    date: "22 October 2019",
-    link: "https://soundcloud.com/hotkeymusic/stack-do-fasten-seat-belts-2",
-    soundloudPlaylistId: "907259329",
-    coverUrl: "https://i1.sndcdn.com/artworks-000619834309-dbbr4d-t500x500.jpg",
-    tracks: ["Fasten Seat Belts"],
-    tags: ["Electronic", "Beat", "Indie"],
+    band: "Igor",
+    album: "Outta Space",
+    date: "20 July 2020",
+    link: "https://soundcloud.com/hotkeymusic/sets/outta-space",
+    soundloudPlaylistId: "1221094066",
+    coverUrl: "https://i1.sndcdn.com/artworks-0tFsdql1lqJHKe6A-sZ9R5A-t500x500.jpg",
+    tracks: [
+      "Stack Do - Fasten Seat Belts",
+      "Stack Do - Good Morning Galaxy",
+      "Igor - Emerald Gems",
+      "Stack Do - Stranger Things",
+      "Laser Boys - Newww Yearrr (Karaoke)",
+      "Stack Do - Dance Party Dance Dance",
+      "ГИП, ГИП, УРА - ХУЙМАНА (РЕМАСТЕР)",
+      "14th of May, Saturday - Killing Spree",
+      "Mainminder - Fuzz it",
+      "Main Minder - Minsk",
+      "14th of May, Saturday - Night Stalker",
+      "14th of May, Saturday - Last Fight",
+      "ГИП, ГИП, УРА - ХУЙМАНА"
+    ],
+    tags: ["Electronic", "Acoustic", "Hardcore", "Indie"],
     info: `
-      Every now and when we need to be safe. Fasten seat belts, we are going faster!
-    `
-  },
-  {
-    band: "Stack Do",
-    album: "Stranger Things",
-    date: "8 September 2019",
-    link: "https://soundcloud.com/hotkeymusic/sets/stack-do-stranger-things",
-    soundloudPlaylistId: "876388999",
-    coverUrl: "https://i1.sndcdn.com/artworks-000594470427-fltsyp-t500x500.jpg",
-    tracks: ["Stranger Things"],
-    tags: ["Dance", "EDM", "Synth", "Indie", "Instrumental"],
-    info: `
-      The last survivors of this world watching the Moon...
-    `
-  },
-  {
-    band: "Stack Do",
-    album: "Dance Party Dance Dance",
-    date: "30 May 2019",
-    link: "https://soundcloud.com/hotkeymusic/sets/stack-do-dance-party-dance",
-    soundloudPlaylistId: "876393892",
-    coverUrl: "https://i1.sndcdn.com/artworks-000544686168-zgo7k4-t500x500.jpg",
-    tracks: ["Dance Party Dance Dance"],
-    tags: ["Dance Pop", "Dance", "Ambient", "EDM"],
-    info: `
-      I feel good when I listen this,
-      I wanna move, I wanna go and fly somewhere,
-      Take a plain and follow your dream!
-    `
-  },
-  {
-    band: "Stack Do",
-    album: "Good Morning Galaxy",
-    date: "23 May 2019",
-    link: "https://soundcloud.com/hotkeymusic/sets/good-morning-galaxy",
-    soundloudPlaylistId: "877541485",
-    coverUrl: "https://i1.sndcdn.com/artworks-000541030359-4uucae-t500x500.jpg",
-    tracks: ["Good Morning Galaxy"],
-    tags: ["8bit", "Indie"],
-    info: `
-      A long time ago in a galaxy far, far away....
-    `
-  }
-];
-
-const FourteenthOfMaySaturday = [
-  {
-    title: "14th of May, Saturday",
-    style: "3/4 Yamaha Acoustic Hardcore"
-  },
-  {
-    band: "14th of May, Saturday",
-    album: "Killing Spree",
-    date: "26 August 2018",
-    link:
-      "https://soundcloud.com/hotkeymusic/sets/14th-of-may-saturday-killing",
-    soundloudPlaylistId: "592466907",
-    coverUrl: "https://i1.sndcdn.com/artworks-000395151423-wzmk3g-t500x500.jpg",
-    tracks: ["Killing Spree"],
-    tags: ["Hardcore", "Peterborough", "14hOfMaySaturday"],
-    info: `
-      Move fast
-    `
-  },
-  {
-    band: "14th of May, Saturday",
-    album: "Night Stalker",
-    date: "9 August 2018",
-    link: "https://soundcloud.com/hotkeymusic/sets/14th-of-may-saturday-night",
-    soundloudPlaylistId: "592463973",
-    coverUrl: "https://i1.sndcdn.com/artworks-000386732148-akdas0-t500x500.jpg",
-    tracks: ["Night Stalker"],
-    tags: ["Trash", "Peterborough", "14hOfMaySaturday"],
-    info: `
-      Techo darkness
+    I was lost somewhere in between North Palekh and East Peterborough, perhaps it was a dream. Dream?
+    Last 3 years made me grow up so I tried to catch this moment in my music. Cheers, Igor
     `
   }
 ];
@@ -99,26 +39,20 @@ const Palekh = [
     style: "Homemade Acoustic"
   },
   {
-    band: "Бублики",
-    album: "Гаррисон | Батл",
-    date: "6 October 2016",
-    link: "https://soundcloud.com/hotkeymusic/sets/bubliki-garrison-batl",
-    soundloudPlaylistId: "265226497",
-    coverUrl: "https://i1.sndcdn.com/artworks-000186968347-b5ne0k-t500x500.jpg",
-    tracks: ["Гаррисон", "Батл", "Проба"],
-    tags: ["Acid", "Palekh", "Bubliki"],
+    band: "Чай с мёдом",
+    album: "Новогодние Надежды / Убежав на Закат",
+    date: "17 November 2015",
+    link: "https://soundcloud.com/hotkeymusic/sets/chai-nadezhdy-ubezhav",
+    soundloudPlaylistId: "260868318",
+    coverUrl: "https://i1.sndcdn.com/artworks-000186691319-7tfiqx-t500x500.jpg",
+    tracks: ["Убежав на Закат", "Новогодние Надежды"],
+    tags: ["Acoustic", "Palekh", "ChaiSMedom"],
     info: `
-      Acid хип-хоп в стиле кантри с примесью чёрного хлеба.
-      Из славного города Палех(56°48?00? с. ш. 41°51?00? в. д.) на планете Земля!
+      Однажды Полина и Артём написали строки, а потом Алёна, Ванька и Гоша преобразили их в волновые потоки!
 
-      ССЫЛОЧКИ:
-      soundcloud.com/hotkeymusic/sets/bubliki-garrison-batl
-      yadi.sk/d/oqLt24mNwP98R
-      vk.com/cabagels
+      soundcloud.com/hotkeymusic/sets/chai-nadezhdy-ubezhav
+      yadi.sk/d/9f0zncg1wFv3B
       vk.com/htkmsc
-
-      p.s.
-      Вон комбик, вон какая-то ещё хуйня стоит!
     `
   },
   {
@@ -147,23 +81,6 @@ const Palekh = [
     `
   },
   {
-    band: "Чай с мёдом",
-    album: "Новогодние Надежды / Убежав на Закат",
-    date: "17 November 2015",
-    link: "https://soundcloud.com/hotkeymusic/sets/chai-nadezhdy-ubezhav",
-    soundloudPlaylistId: "260868318",
-    coverUrl: "https://i1.sndcdn.com/artworks-000186691319-7tfiqx-t500x500.jpg",
-    tracks: ["Убежав на Закат", "Новогодние Надежды"],
-    tags: ["Acoustic", "Palekh", "ChaiSMedom"],
-    info: `
-      Однажды Полина и Артём написали строки, а потом Алёна, Ванька и Гоша преобразили их в волновые потоки!
-
-      soundcloud.com/hotkeymusic/sets/chai-nadezhdy-ubezhav
-      yadi.sk/d/9f0zncg1wFv3B
-      vk.com/htkmsc
-    `
-  },
-  {
     band: "сиг?",
     album: "обогнавшие скорость!",
     date: "17 July 2015",
@@ -179,6 +96,29 @@ const Palekh = [
       soundcloud.com/hotkeymusic/sets/sig-speed
       yadi.sk/d/_SxerQh3wFvap
       vk.com/htkmsc
+    `
+  },
+  {
+    band: "Бублики",
+    album: "Гаррисон | Батл",
+    date: "6 October 2016",
+    link: "https://soundcloud.com/hotkeymusic/sets/bubliki-garrison-batl",
+    soundloudPlaylistId: "265226497",
+    coverUrl: "https://i1.sndcdn.com/artworks-000186968347-b5ne0k-t500x500.jpg",
+    tracks: ["Гаррисон", "Батл", "Проба"],
+    tags: ["Acid", "Palekh", "Bubliki"],
+    info: `
+      Acid хип-хоп в стиле кантри с примесью чёрного хлеба.
+      Из славного города Палех(56°48?00? с. ш. 41°51?00? в. д.) на планете Земля!
+
+      ССЫЛОЧКИ:
+      soundcloud.com/hotkeymusic/sets/bubliki-garrison-batl
+      yadi.sk/d/oqLt24mNwP98R
+      vk.com/cabagels
+      vk.com/htkmsc
+
+      p.s.
+      Вон комбик, вон какая-то ещё хуйня стоит!
     `
   }
 ];
@@ -238,4 +178,4 @@ const Ivanovo = [
   }
 ];
 
-export const artists = [StackDo, FourteenthOfMaySaturday, Palekh, Ivanovo];
+export const artists = [GafanRecords, Palekh, Ivanovo];
