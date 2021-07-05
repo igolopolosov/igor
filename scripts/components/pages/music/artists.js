@@ -4,6 +4,19 @@ const GafanRecords = [
     style: "Full House",
   },
   {
+    band: "Игорь",
+    album: "Работа Полным Ходом",
+    date: "Сейчас",
+    link: "https://soundcloud.com/hotkeymusic/sets/b4frokptmusf",
+    soundloudPlaylistId: "1282586335",
+    coverUrl: "https://i1.sndcdn.com/avatars-000631963920-143rmx-t500x500.jpg",
+    tracks: [],
+    tags: ["All In"],
+    info: `
+      Кипит!
+    `
+  },
+  {
     band: "Igor",
     album: "Outta Space",
     date: "20 July 2020",
