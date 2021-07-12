@@ -5,18 +5,18 @@ export interface ActionWithPayload<T = any> extends AnyAction {
   payload: T;
 }
 
-interface ActionCreator<T> {
-  (payload: T): ActionWithPayload<T>;
+interface ActionCreator<P> {
+  (payload: P): ActionWithPayload<P>;
   type: string;
 }
 
-export function getActionCreator<T>(type: string): ActionCreator<T> {
-  const actionCreator = (payload: T): ActionWithPayload<T> => ({
+export function getActionCreator<P>(type: string): ActionCreator<P> {
+  const actionCreator = (payload: P): ActionWithPayload<P> => ({
     type,
-    payload
+    payload,
   });
 
-  (<ActionCreator<T>>actionCreator).type = type;
+  actionCreator.type = type;
 
-  return <ActionCreator<T>>actionCreator;
+  return actionCreator;
 }

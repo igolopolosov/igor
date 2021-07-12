@@ -23,11 +23,11 @@ const socialLinks = [
   {
     to: "https://twitter.com/usehotkey",
     title: "Twitter"
-  }
-  // {
-  //     to: 'https://soundcloud.com/hotkeymusic',
-  //     title: 'SoundCloud'
-  // },
+  },
+  {
+      to: 'https://soundcloud.com/hotkeymusic',
+      title: 'SoundCloud'
+  },
 ];
 
 export const Footer = () => {
