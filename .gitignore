@@ -1,17 +1,5 @@
-/* npm */
-node_modules/
+.DS_Store
 *.log
-
-/* idea */
-*.iml
-.idea/workspace.xml
-.idea/
-
-/* vscode */
 .vscode/
-
-/* build */
+node_modules/
 dist/
-
-/* security keys */
-keys.js

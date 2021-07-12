@@ -193,6 +193,20 @@ const Palekh = [
     `
   },
   {
+    band: "sh",
+    album: "waterfire",
+    date: "07 March 2017",
+    link: "https://soundcloud.com/hotkeymusic/sets/sh-waterfire",
+    soundloudPlaylistId: "1285858663",
+    coverUrl: "https://i1.sndcdn.com/artworks-ycUGSFIbuzvBj3wE-FFIgHQ-t500x500.jpg",
+    tracks: ["waterfire"],
+    tags: ["Acoustic", "Acapella"],
+    info: `
+      water, water
+      fire, fire
+    `
+  },
+  {
     band: "Бублики",
     album: "Гаррисон | Батл",
     date: "6 October 2016",
