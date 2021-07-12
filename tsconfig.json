@@ -27,7 +27,6 @@
     "typeRoots": [
       "node_modules/@types"
     ],
-    "sourceMap": false,
     "lib": [
       "es6",
       "dom"
