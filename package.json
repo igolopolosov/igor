@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "7.8.7",
-    "@babel/runtime-corejs2": "7.14.6",
+    "@babel/runtime-corejs2": "7.14.8",
     "date-fns": "2.22.1",
     "prop-types": "15.7.2",
     "react": "17.0.2",
