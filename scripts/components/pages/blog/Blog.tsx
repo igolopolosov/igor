@@ -76,7 +76,6 @@ class BlogContainer extends React.PureComponent<
 
   public render() {
     const { posts } = this.props;
-    console.log();
 
     return (
       <div className={styles.container}>

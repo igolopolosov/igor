@@ -3,7 +3,6 @@ import { ALink } from '../../blocks/Link';
 import styles from "./Kaluza.less";
 
 export const Kaluza = () => {
-  console.log(document.body.classList.contains("light"))
   return <ALink
     href="https://www.kaluza.com"
   >
